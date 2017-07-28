@@ -29,6 +29,24 @@ span.mdl-layout-title {
 
 }
 
+header.mdl-layout__header {
+
+    background-color: #153F72;
+
+}
+
+.mdl-layout__tab-bar {
+
+    background-color: #3F9DD0;
+
+}
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
+
+    background: #F5CD90;
+
+}
+
 .mdl-layout-title, .mdl-layout__tab {
 
     font-family: 'Lato';
