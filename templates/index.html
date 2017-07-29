@@ -4,7 +4,7 @@
     Great Walks Passport
 {% endblock %}
 
-{%  block main %}
+{% block main %}
 
 
 
@@ -12,54 +12,65 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
                 mdl-layout--fixed-tabs">
 
-      <header class="mdl-layout__header">
+        <header class="mdl-layout__header">
 
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">Great Walks Passport</span>
-        </div>
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Great Walks Passport</span>
+            </div>
 
-        <!-- Tabs -->
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-          <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Home</a>
-          <a href="#fixed-tab-2" class="mdl-layout__tab">Tab 2</a>
-          <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
-        </div>
-      </header>
+            <!-- Tabs -->
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                <a href="#home" class="mdl-layout__tab is-active"><div class="icon-hiker home-icon"></div></a>
+                <a href="#my-walks" class="mdl-layout__tab">My Journey</a>
+                <a href="#fixed-tab-3" class="mdl-layout__tab"><div class="icon-hiker tab-icon"></div></a>
+            </div>
+        </header>
 
+        {#-- App Home Page Content --#}
+        <main class="mdl-layout__content">
 
-{#      <div class="mdl-layout__drawer">#}
-{#        <span class="mdl-layout-title">Great Walks Passport</span>#}
-{#      </div>#}
-      <main class="mdl-layout__content">
+            <section class="mdl-layout__tab-panel is-active" id="home">
+                <div class="page-content">
+                    <img id="map" class="center-block"
+                         src="{{ url_for('static', filename='Media/Photographs/nz_map_v2.png') }}"
+                         alt="New Zealand Map"/>
 
-        <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
-          <div class="page-content">
-              <img id="map" class="center-block" src="{{ url_for('static', filename='Media/Photographs/nz_map_v2.png') }}" alt="New Zealand Map" />
-          </div>
-        </section>
+                </div>
+                <div class="feature-walk card">
+                  <div class="card-title">
+                    <h2 class="card-title-text">The Abel Tasman Coastal Track</h2>
+                  </div>
+                  <div class="card-icon">
+                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                      <i class="material-icons walk-card-icon">directions_walk</i>
+                    </button>
+                  </div>
+                </div>
 
-        <section class="mdl-layout__tab-panel" id="fixed-tab-2">
-          <div class="page-content">TEST2</div>
-        </section>
+            </section>
 
-        <section class="mdl-layout__tab-panel" id="fixed-tab-3">
-          <div class="page-content">TEST3</div>
-        </section>
+            <section class="mdl-layout__tab-panel" id="my-walks">
+                <div class="page-content">TEST2</div>
+            </section>
 
-      </main>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+                <div class="page-content">TEST3</div>
+            </section>
+
+        </main>
     </div>
-{#        #}
-{##}
-{#        <div id="page-heading" class="text-center">#}
-{#            <h3>Great Walks Passport</h3>#}
-{#        </div>#}
-{##}
-{#        <div class="walk-card">#}
-{#            <div>#}
-{##}
-{#            </div>#}
-{#        </div>#}
+    {#        #}
+    {##}
+    {#        <div id="page-heading" class="text-center">#}
+    {#            <h3>Great Walks Passport</h3>#}
+    {#        </div>#}
+    {##}
+    {#        <div class="walk-card">#}
+    {#            <div>#}
+    {##}
+    {#            </div>#}
+    {#        </div>#}
 
 
 {% endblock %}

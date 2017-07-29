@@ -24,7 +24,7 @@ div.page-content {
 #map {
 
     position: absolute;
-    height: 100%;
+    height: 70%;
     width: auto;
     left: 0;
     right: 0;
@@ -48,25 +48,94 @@ span.mdl-layout-title {
 
 header.mdl-layout__header {
 
-    background-color: #153F72;
+    background-color: #5BA1D2;
 
 }
 
 .mdl-layout__tab-bar {
-
-    background-color: #3F9DD0;
+    background-color: #F9E4C5;
 
 }
 
 .mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
-
     background: #F5CD90;
 
 }
 
-.mdl-layout-title, .mdl-layout__tab {
+.mdl-layout-title {
+    font-family: 'Lato';
+    color: white;
+
+}
+
+.mdl-layout__tab, .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
+    font-family: 'Lato';
+    color: #B8935C;
+
+}
+
+/*Card formatting*/
+
+.feature-walk.card {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+
+}
+
+h2.card-title-text {
+    padding-left: 10px;
+    font-size: 18px;
+    color: #FFF;
+    height: 20%;
+    background: url('/static/Media/Photographs/abel-tasman.jpg') center / cover;
+    border-radius: 15px;
+}
+
+.card-icon {
+    position: absolute;
+    right: 16px;
+    top: 33px;
+}
+
+.walk-card-icon {
+
+    color: #FFF;
+
+}
+
+.mdl-button--fab.mdl-button--colored, .mdl-button--fab.mdl-button--colored:hover {
+
+    background: #5BA1D2;
+
+}
+
+h1, h2, h3, h4, h5, p {
 
     font-family: 'Lato';
 
 }
+
+.home-icon {
+
+    font-size: 32px;
+
+}
+
+a:focus, a:hover {
+
+    text-decoration: none;
+    color: #F5CD90;
+
+}
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active {
+
+    color: black;
+
+}
+
 
