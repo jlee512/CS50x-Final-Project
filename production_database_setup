@@ -1,0 +1,3 @@
+#-----------------Production Database Development---------------------
+/*DROP TABLE if it exists*/
+DROP TABLE IF EXISTS testTable;

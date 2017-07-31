@@ -76,7 +76,7 @@ header.mdl-layout__header {
 
 /*Card formatting*/
 
-.feature-walk.card {
+.walk-card-feed {
     position: absolute;
     top: 70%;
     left: 0;
@@ -89,16 +89,46 @@ header.mdl-layout__header {
 h2.card-title-text {
     padding-left: 10px;
     font-size: 18px;
-    color: #FFF;
+    color: black;
     height: 20%;
-    background: url('/static/Media/Photographs/abel-tasman.jpg') center / cover;
     border-radius: 15px;
+    margin: 5px;
+    width: 100%;
+    float: left;
+
 }
 
-.card-icon {
-    position: absolute;
-    right: 16px;
-    top: 33px;
+.abel-walk h2.card-title-text {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/abel-tasman.jpg') center / cover; /*Safari 5.1-6*/
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/abel-tasman.jpg') center / cover; /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/abel-tasman.jpg') center / cover; /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/abel-tasman.jpg') center / cover; /*Standard*/
+
+}
+
+.waikare-walk h2.card-title-text {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), url('/static/Media/Photographs/abel-tasman.jpg') center / cover; /*Safari 5.1-6*/
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), url('/static/Media/Photographs/lake-waikaremoana.jpg') center / cover; /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), url('/static/Media/Photographs/lake-waikaremoana.jpg') center / cover; /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), url('/static/Media/Photographs/lake-waikaremoana.jpg') center / cover; /*Standard*/
+
+}
+
+.tongariro-walk h2.card-title-text {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/abel-tasman.jpg') center / cover; /*Safari 5.1-6*/
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/tongariro_northern_circuit.jpg') center / cover; /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/tongariro_northern_circuit.jpg') center / cover; /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/tongariro_northern_circuit.jpg') center / cover; /*Standard*/
+
+}
+
+span.card-icon {
+    float: right;
+    padding-right: 5%;
+
 }
 
 .walk-card-icon {
