@@ -134,6 +134,60 @@ h2.card-title-text {
 
 }
 
+.heaphy-walk h2.card-title-text {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/heaphy-track.jpg') center / cover; /*Safari 5.1-6*/
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/heaphy-track.jpg') center / cover; /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/heaphy-track.jpg') center / cover; /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/heaphy-track.jpg') center / cover; /*Standard*/
+
+}
+
+.paparoa-walk h2.card-title-text {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.65)), url('/static/Media/Photographs/paparoa-track.jpg') center / cover; /*Safari 5.1-6*/
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.65)), url('/static/Media/Photographs/paparoa-track.jpg') center / cover; /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.65)), url('/static/Media/Photographs/paparoa-track.jpg') center / cover; /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.65)), url('/static/Media/Photographs/paparoa-track.jpg') center / cover; /*Standard*/
+    font-size: 14px;
+}
+
+.milford-walk h2.card-title-text {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/milford-track.jpg') center / cover; /*Safari 5.1-6*/
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/milford-track.jpg') center / cover; /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/milford-track.jpg') center / cover; /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/milford-track.jpg') center / cover; /*Standard*/
+
+}
+
+.kepler-walk h2.card-title-text {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/kepler-track.jpg') center / cover; /*Safari 5.1-6*/
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/kepler-track.jpg') center / cover; /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/kepler-track.jpg') center / cover; /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/kepler-track.jpg') center / cover; /*Standard*/
+
+}
+
+.routeburn-walk h2.card-title-text {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/routeburn track.jpg') center / cover; /*Safari 5.1-6*/
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/routeburn track.jpg') center / cover; /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/routeburn track.jpg') center / cover; /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/routeburn track.jpg') center / cover; /*Standard*/
+
+}
+
+.rakiura-walk h2.card-title-text {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/rakiura track.jpg') center / cover; /*Safari 5.1-6*/
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/rakiura track.jpg') center / cover; /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/rakiura track.jpg') center / cover; /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/rakiura track.jpg') center / cover; /*Standard*/
+
+}
+
 span.card-icon {
     float: right;
     padding-right: 5%;
