@@ -125,6 +125,15 @@ h2.card-title-text {
 
 }
 
+.whanganui-walk h2.card-title-text {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/whanganui-river-journey.jpg') center / cover; /*Safari 5.1-6*/
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/whanganui-river-journey.jpg') center / cover; /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/whanganui-river-journey.jpg') center / cover; /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/whanganui-river-journey.jpg') center / cover; /*Standard*/
+
+}
+
 span.card-icon {
     float: right;
     padding-right: 5%;
