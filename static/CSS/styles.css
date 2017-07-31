@@ -125,6 +125,25 @@ h1, h2, h3, h4, h5, p {
 
 }
 
+.account-icon, .about-icon {
+
+    padding-top: 5px;
+    font-size: 32px;
+
+}
+
+.my-journey-icon, .my-memories-icon {
+
+    padding-top: 3px;
+
+}
+
+.my-memories-icon {
+
+    font-size: 42px;
+
+}
+
 a:focus, a:hover {
 
     text-decoration: none;
