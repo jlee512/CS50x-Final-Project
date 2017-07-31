@@ -418,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501284288089</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Development of cover page">
+      <created>1501474178724</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1501474178724</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -529,7 +536,8 @@
     <MESSAGE value="revision 27/07/2017" />
     <MESSAGE value="implemented basic react component" />
     <MESSAGE value="positioning of map updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="positioning of map updated" />
+    <MESSAGE value="Development of cover page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Development of cover page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
