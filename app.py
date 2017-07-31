@@ -1,4 +1,9 @@
-from flask import Flask, render_template
+import flask
+from flask import Flask, render_template, flash, redirect, request, session, url_for
+from flask_session import Session
+
+from passlib.hash import sha256_crypt
+
 import os
 
 from mysql_db import MySQL_Database
@@ -6,10 +11,23 @@ from mysql_db import MySQL_Database
 app = Flask(__name__)
 
 
+
 @app.route('/')
 def index():
-
+    # if request.method
     return render_template('index.html')
+
+@app.route('/home')
+def welcome():
+    return render_template('welcome.html')
+
+@app.route('/login')
+def login():
+    return render_template('under_construction.html')
+
+@app.route('/logout')
+def logout():
+    return render_template('under_construction.html')
 
 
 @app.route('/test')

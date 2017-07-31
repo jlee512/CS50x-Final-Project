@@ -145,10 +145,10 @@ h2.card-title-text {
 
 .paparoa-walk h2.card-title-text {
     background: white; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.65)), url('/static/Media/Photographs/paparoa-track.jpg') center / cover; /*Safari 5.1-6*/
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.65)), url('/static/Media/Photographs/paparoa-track.jpg') center / cover; /*Opera 11.1-12*/
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.65)), url('/static/Media/Photographs/paparoa-track.jpg') center / cover; /*Fx 3.6-15*/
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.65)), url('/static/Media/Photographs/paparoa-track.jpg') center / cover; /*Standard*/
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('/static/Media/Photographs/paparoa-track.jpg') center / cover; /*Safari 5.1-6*/
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('/static/Media/Photographs/paparoa-track.jpg') center / cover; /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('/static/Media/Photographs/paparoa-track.jpg') center / cover; /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('/static/Media/Photographs/paparoa-track.jpg') center / cover; /*Standard*/
     font-size: 14px;
 }
 
@@ -218,7 +218,7 @@ h1, h2, h3, h4, h5, p {
 
 }
 
-.account-icon, .about-icon {
+.account-icon, .about-icon, .logout-icon {
 
     padding-top: 5px;
     font-size: 32px;
