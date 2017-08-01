@@ -1,5 +1,13 @@
-body, html, .under-construction-main-container, .under-construction-background {
+body, html, .under-construction-main-container, .under-construction-background, .under-construction-background-temp {
     height: 100%;
+
+}
+
+.under-construction-background-temp {
+
+    background-color: #CCE9D5;
+    position: absolute;
+    width: 100%;
 
 }
 
@@ -36,5 +44,10 @@ body, html, .under-construction-main-container, .under-construction-background {
 
 .mdl-button--fab.mdl-button--colored, .mdl-button--fab.mdl-button--colored:hover {
     background: #FFFFFF;
+
+}
+
+h4 {
+    margin-bottom: 0;
 
 }
