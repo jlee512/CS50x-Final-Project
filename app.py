@@ -4,6 +4,8 @@ from flask_session import Session
 
 from passlib.hash import sha256_crypt
 
+from helpers import *
+
 import os
 
 from mysql_db import MySQL_Database
@@ -11,19 +13,16 @@ from mysql_db import MySQL_Database
 app = Flask(__name__)
 
 
-
 @app.route('/')
+@login_required
 def index():
-    # if request.method
     return render_template('index.html')
 
-@app.route('/passport')
-def welcome():
-    return render_template('welcome.html')
 
 @app.route('/login')
 def login():
-    return render_template('under_construction.html')
+    return render_template('login.html')
+
 
 @app.route('/logout')
 def logout():
