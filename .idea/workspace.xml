@@ -585,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501553335767</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="&quot;Finalised under construction page&quot;">
+      <created>1501555536239</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1501555536239</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
