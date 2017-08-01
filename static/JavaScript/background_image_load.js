@@ -11,7 +11,7 @@ $(document).ready(function () {
             "background-position": "center",
             "background-repeat": "no-repeat",
             "background-size": "cover"
-        }).fadeIn(1000, function () {
+        }).fadeIn(500, function () {
             /*Remove temporary background colour*/
             $(".under-construction-background-temp").remove();
 
