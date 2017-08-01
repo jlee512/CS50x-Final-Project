@@ -59,13 +59,13 @@ header.mdl-layout__header {
 }
 
 .mdl-layout-title {
-    font-family: 'Lato', serif;
+    font-family: 'Lato', Open-Sans, serif;
     color: white;
 
 }
 
 .mdl-layout__tab, .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
-    font-family: 'Lato', serif;
+    font-family: 'Lato', Open-Sans, serif;
     color: #B8935C;
 
 }
@@ -204,7 +204,7 @@ span.card-icon {
 
 h1, h2, h3, h4, h5, p {
 
-    font-family: 'Lato';
+    font-family: Lato, Open-Sans, Serif;
 
 }
 
