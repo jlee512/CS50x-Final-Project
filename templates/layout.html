@@ -17,7 +17,8 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
     {#----------------Custom CSS Rules----------------------#}
-    <link href="{{ url_for('static', filename='CSS/styles.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='CSS/default_styles.css') }}" rel="stylesheet"/>
+    {% block custom_styles %} {% endblock %}
 
     {#-----------------------FONT---------------------------#}
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">

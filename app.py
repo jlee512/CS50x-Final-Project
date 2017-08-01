@@ -17,7 +17,7 @@ def index():
     # if request.method
     return render_template('index.html')
 
-@app.route('/home')
+@app.route('/passport')
 def welcome():
     return render_template('welcome.html')
 

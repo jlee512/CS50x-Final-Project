@@ -1,10 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "layout.html" %}
 
-</body>
-</html>
+{% block custom_styles %}
+    <link href="{{ url_for('static', filename='CSS/page_construction_styles.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block title %}
+    Page Under Construction
+{% endblock %}
+
+{% block main %}
+
+    <div class="under-construction-main-container">
+        <div>
+            <button class="return-home-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                <i class="material-icons">exit_to_app</i>
+            </button>
+        </div>
+        <div class="under-construction-message-outer">
+            <div class="under-construction-message-inner">
+                <h4><strong>This page is under construction</strong></h4>
+            </div>
+        </div>
+        <div class="under-construction-background">
+        </div>
+    </div>
+
+{% endblock %}

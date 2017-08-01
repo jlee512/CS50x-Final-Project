@@ -1,0 +1,46 @@
+body, html, .under-construction-main-container, .under-construction-background {
+    height: 100%;
+
+}
+
+.under-construction-background {
+    background-image: url("/static/Media/Photographs/page_under_construction.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.under-construction-message-outer {
+    font-family: Lato, Serif;
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 1em;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.under-construction-message-inner {
+    width: 65%;
+    margin: 0 auto;
+    background-color: rgba(173, 205, 140, 0.8);
+    border-radius: 5px;
+
+}
+
+.return-home-button {
+    position: absolute;
+    right: 0%;
+    margin-right: 15px;
+    margin-top: 15px;
+
+
+}
+
+.mdl-button--fab.mdl-button--colored, .mdl-button--fab.mdl-button--colored:hover {
+
+    background: #FFFFFF;
+
+}

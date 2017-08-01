@@ -1,5 +1,4 @@
 html, body {
-
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -7,13 +6,11 @@ html, body {
 }
 
 .mdl-layout__content, .mdl-layout__tab-panel {
-
     height: 100%;
 
 }
 
 div.page-content {
-
     max-height: 100%;
     max-width: 100%;
     margin: 0;
@@ -22,7 +19,6 @@ div.page-content {
 }
 
 #map {
-
     position: absolute;
     height: 70%;
     width: auto;
@@ -63,13 +59,13 @@ header.mdl-layout__header {
 }
 
 .mdl-layout-title {
-    font-family: 'Lato';
+    font-family: 'Lato', serif;
     color: white;
 
 }
 
 .mdl-layout__tab, .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
-    font-family: 'Lato';
+    font-family: 'Lato', serif;
     color: #B8935C;
 
 }
