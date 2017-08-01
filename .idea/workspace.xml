@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
+    <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="Updated requirements.txt">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Walks/routeburn track.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/JavaScript/background_image_load.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/Media/Photographs/abel-tasman.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Walks/abel-tasman.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/Media/Photographs/heaphy-track.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Walks/heaphy-track.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/Media/Photographs/kepler-track.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Walks/kepler-track.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/Media/Photographs/lake-waikaremoana.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Walks/lake-waikaremoana.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/Media/Photographs/milford-track.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Walks/milford-track.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/Media/Photographs/page_under_construction.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/Media/Photographs/paparoa-track.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Walks/paparoa-track.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/Media/Photographs/rakiura track.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Walks/rakiura track.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/Media/Photographs/routeburn track.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/Media/Photographs/tongariro_northern_circuit.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Walks/tongariro_northern_circuit.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/Media/Photographs/whanganui-river-journey.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Walks/whanganui-river-journey.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/page_construction_styles.css" afterPath="$PROJECT_DIR$/static/CSS/page_construction_styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/welcome_styles.css" afterPath="$PROJECT_DIR$/static/CSS/welcome_styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.html" afterPath="$PROJECT_DIR$/templates/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/under_construction.html" afterPath="$PROJECT_DIR$/templates/under_construction.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +35,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Unittests_in_app_py.coverage" NAME="Unittests in app.py Coverage Results" MODIFIED="1501308526534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1501548667399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1501553231438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -51,51 +72,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcome.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/welcome.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="under_construction.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/under_construction.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="14" column="127" lean-forward="false" selection-start-line="14" selection-start-column="127" selection-end-line="14" selection-end-column="127" />
+            <state relative-caret-position="297">
+              <caret line="7" column="94" lean-forward="false" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_construction_styles.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="background_image_load.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/JavaScript/background_image_load.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page_construction_styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/CSS/page_construction_styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="899">
-              <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            <state relative-caret-position="264">
+              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -108,6 +109,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -138,13 +140,14 @@
         <option value="$PROJECT_DIR$/static/CSS/styles.css" />
         <option value="$PROJECT_DIR$/static/CSS/page_construction_Styles.css" />
         <option value="$PROJECT_DIR$/static/CSS/default_styles.css" />
-        <option value="$PROJECT_DIR$/templates/layout.html" />
         <option value="$PROJECT_DIR$/templates/welcome.html" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/static/CSS/welcome_styles.css" />
-        <option value="$PROJECT_DIR$/templates/under_construction.html" />
-        <option value="$PROJECT_DIR$/static/CSS/page_construction_styles.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/layout.html" />
+        <option value="$PROJECT_DIR$/templates/under_construction.html" />
+        <option value="$PROJECT_DIR$/static/JavaScript/background_image_load.js" />
+        <option value="$PROJECT_DIR$/static/CSS/page_construction_styles.css" />
       </list>
     </option>
   </component>
@@ -156,7 +159,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-11" />
-    <option name="width" value="1572" />
+    <option name="width" value="1668" />
     <option name="height" value="1931" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -216,50 +219,6 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Photographs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fonts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -272,6 +231,14 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/julia/Documents/CS50x/Code/Final_Project_Deployment/templates/index.html" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/Media/Photographs/Backgrounds" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\julia\Documents\CS50x\Code\Final_Project_Deployment\static\Media\Photographs\Backgrounds" />
+      <recent name="C:\Users\julia\Documents\CS50x\Code\Final_Project_Deployment\static\Media\Photographs\Walks" />
+      <recent name="C:\Users\julia\Documents\CS50x\Code\Final_Project_Deployment\static\Media\Photographs" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -517,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501548850522</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated requirements.txt">
+      <created>1501548998895</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1501548998895</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -547,15 +521,15 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="0" width="1572" height="1931" extended-state="0" />
+    <frame x="-11" y="0" width="1668" height="1931" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.50721157" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.4971591" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3321386" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3196159" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3321386" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2998713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5276989" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -629,7 +603,8 @@
     <MESSAGE value="positioning of map updated" />
     <MESSAGE value="Development of cover page" />
     <MESSAGE value="development of broader application structure and construction page" />
-    <option name="LAST_COMMIT_MESSAGE" value="development of broader application structure and construction page" />
+    <MESSAGE value="Updated requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated requirements.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -951,34 +926,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="94" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-924">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/CSS/welcome_styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="202" column="1" lean-forward="true" selection-start-line="198" selection-start-column="0" selection-end-line="202" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/CSS/page_construction_styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="899">
-          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/under_construction.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="14" column="127" lean-forward="false" selection-start-line="14" selection-start-column="127" selection-end-line="14" selection-end-column="127" />
+        <state relative-caret-position="409">
+          <caret line="167" column="0" lean-forward="true" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -991,20 +966,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Backgrounds/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
@@ -1018,10 +982,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="714">
+          <caret line="33" column="45" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/under_construction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="7" column="94" lean-forward="false" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/JavaScript/background_image_load.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/CSS/page_construction_styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding />
         </state>
       </provider>

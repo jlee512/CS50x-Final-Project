@@ -3,30 +3,24 @@ body, html, .under-construction-main-container, .under-construction-background {
 
 }
 
-.under-construction-background {
-    background-image: url("/static/Media/Photographs/page_under_construction.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
 .under-construction-message-outer {
     font-family: Lato, Serif;
-    color: #FFFFFF;
+    color: black;
     position: absolute;
     font-size: 1em;
     top: 40%;
     width: 100%;
     text-align: center;
+    z-index: 1;
 
 }
 
 .under-construction-message-inner {
     width: 65%;
     margin: 0 auto;
-    background-color: rgba(173, 205, 140, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
+    z-index: 2;
 
 }
 
@@ -35,12 +29,12 @@ body, html, .under-construction-main-container, .under-construction-background {
     right: 0%;
     margin-right: 15px;
     margin-top: 15px;
+    z-index: 3;
 
 
 }
 
 .mdl-button--fab.mdl-button--colored, .mdl-button--fab.mdl-button--colored:hover {
-
     background: #FFFFFF;
 
 }

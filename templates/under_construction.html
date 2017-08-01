@@ -4,6 +4,10 @@
     <link href="{{ url_for('static', filename='CSS/page_construction_styles.css') }}" rel="stylesheet"/>
 {% endblock %}
 
+{% block custom_javascript %}
+    <script type="text/javascript" src="/static/JavaScript/background_image_load.js"></script>
+{% endblock %}
+
 {% block title %}
     Page Under Construction
 {% endblock %}
@@ -12,9 +16,11 @@
 
     <div class="under-construction-main-container">
         <div>
-            <button class="return-home-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-                <i class="material-icons">exit_to_app</i>
-            </button>
+            <a href="/">
+                <button class="return-home-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                    <i class="material-icons">exit_to_app</i>
+                </button>
+            </a>
         </div>
         <div class="under-construction-message-outer">
             <div class="under-construction-message-inner">
