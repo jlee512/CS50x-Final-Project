@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="&quot;Finalised under construction page&quot;">
+    <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/1.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/2.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/3.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/4.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/6.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/7.jpg" afterPath="$PROJECT_DIR$/static/Media/Photographs/Backgrounds/7.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/page_construction_styles.css" afterPath="$PROJECT_DIR$/static/CSS/page_construction_styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JavaScript/background_image_load.js" afterPath="$PROJECT_DIR$/static/JavaScript/background_image_load.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/under_construction.html" afterPath="$PROJECT_DIR$/templates/under_construction.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -574,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501555536239</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updated construction page to have a background colour during loading to reduce harshness of fade-in">
+      <created>1501557149220</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1501557149220</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -689,7 +699,8 @@
     <MESSAGE value="development of broader application structure and construction page" />
     <MESSAGE value="Updated requirements.txt" />
     <MESSAGE value="&quot;Finalised under construction page&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Finalised under construction page&quot;" />
+    <MESSAGE value="Updated construction page to have a background colour during loading to reduce harshness of fade-in" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated construction page to have a background colour during loading to reduce harshness of fade-in" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
