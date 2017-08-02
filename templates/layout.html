@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 
+    {#----------------------Favicion------------------------#}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Media/favicon.png') }}">
+
     {# -------------Fundamental <meta> tags----------------#}
     <meta charset="UTF-8">
     <meta content="initial-scale=1, width=device-width" name="viewport"/>
@@ -9,11 +12,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
     {#--------------Bootstrap CSS Rules---------------------#}
-{#    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>#}
+    {#    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>#}
 
     {#--------------Material Design Lite--------------------#}
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_blue.min.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_blue.min.css"/>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
     {#----------------Custom CSS Rules----------------------#}
@@ -25,7 +28,7 @@
 
     {#------------Bootstrap JS and jQuery plugin------------#}
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-{#    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>#}
+    {#    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>#}
 
     {#------------------CUSTOM JAVASCRIPT---------------#}
     {% block custom_javascript %} {% endblock %}
@@ -35,7 +38,7 @@
 
 </head>
 <body>
-    {% block main %}
-    {% endblock %}
+{% block main %}
+{% endblock %}
 </body>
 </html>

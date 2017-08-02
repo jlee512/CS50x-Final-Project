@@ -27,7 +27,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/login')
+@app.route("/login", methods=["GET", "POST"])
 def login():
     """Log user in."""
 
@@ -45,6 +45,10 @@ def login():
         elif not request.form.get("password"):
             return render_template("login.html", err_message="Please provide your password")
 
+        print(request.form.get("username"))
+        print(request.form.get("password"))
+
+        return render_template("index.html")
     #     # query database for username
     #     rows = db.execute("SELECT * FROM users WHERE username = :username", username=request.form.get("username"))
     #

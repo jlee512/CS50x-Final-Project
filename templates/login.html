@@ -46,16 +46,16 @@
                         </div>
 
                         <div class="mdl-card__actions mdl-card--border">
-                            <form class="not-bootstrap" action="#">
+                            <form class="login-form" action="{{ url_for('login') }}" method="POST">
                                 {#-----Username Entry-----#}
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="username" id="username">
+                                    <input class="mdl-textfield__input" type="username" id="username" name="username">
                                     <label class="mdl-textfield__label" for="username">Username</label>
                                 </div>
 
                                 {#-----Password Entry-----#}
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="password" id="password">
+                                    <input class="mdl-textfield__input" type="password" id="password" name="password">
                                     <label class="mdl-textfield__label" for="password">Password</label>
                                 </div>
 
