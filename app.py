@@ -32,11 +32,13 @@ def login():
     """Log user in."""
 
     # forget any user_id
+    print(session.get("id"))
     session.clear()
+    print("session cleared")
+
 
     # if user reached route via POST (i.e. login form submission)
     if request.method == "POST":
-
         # ensure username was submitted
         if not request.form.get("username"):
             return render_template("login.html", err_message="Please provide a username")
