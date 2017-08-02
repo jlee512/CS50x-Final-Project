@@ -47,6 +47,7 @@ def login():
 
         print(request.form.get("username"))
         print(request.form.get("password"))
+        
         session["user_id"] = request.form.get("username")
 
         return redirect(url_for("index"))
