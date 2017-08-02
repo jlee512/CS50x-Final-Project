@@ -48,7 +48,7 @@ def login():
         print(request.form.get("username"))
         print(request.form.get("password"))
 
-        session["user_id"] = request.form.get("username")
+        session["user_id"] = 1
 
         print(session.get("user_id"))
 
