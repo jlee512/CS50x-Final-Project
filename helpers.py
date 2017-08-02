@@ -12,6 +12,7 @@ def login_required(f):
 
     @wraps(f)
     def decorated_function(*args, **kwargs):
+        print(session.get("user_id"))
         if session.get("user_id") is None:
             print("failed because of login_required")
             return redirect(url_for("login", next=request.url))
