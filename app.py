@@ -32,7 +32,7 @@ def login():
     """Log user in."""
 
     # forget any user_id
-    print(session.get("id"))
+    print(session.get("user_id"))
     session.clear()
     print("session cleared")
 
@@ -101,4 +101,5 @@ def test():
     return render_template("test.html", rows=rows, test=test)
 
 if __name__ == '__main__':
+    app.secret_key = os.urandom(12)
     app.run()
