@@ -50,6 +50,8 @@ def login():
 
         session["user_id"] = request.form.get("username")
 
+        print(session.get("user_id"))
+
         return redirect(url_for("index"))
     #     # query database for username
     #     rows = db.execute("SELECT * FROM users WHERE username = :username", username=request.form.get("username"))
