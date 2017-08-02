@@ -82,15 +82,20 @@ header.mdl-layout__header {
 
 }
 
+.card-title {
+    width: 100%;
+
+}
+
 h2.card-title-text {
     padding-left: 10px;
     font-size: 18px;
     color: black;
     height: 20%;
     border-radius: 15px;
-    margin: 5px;
-    width: 100%;
+    margin: 5px 0;
     float: left;
+    width: 100%;
 
 }
 

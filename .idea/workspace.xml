@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Media/favicon.png" afterPath="$PROJECT_DIR$/static/Media/favicon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/welcome_styles.css" afterPath="$PROJECT_DIR$/static/CSS/welcome_styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +16,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Unittests_in_app_py.coverage" NAME="Unittests in app.py Coverage Results" MODIFIED="1501308526534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1501708927565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1501710212770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -38,15 +40,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state relative-caret-position="713">
+              <caret line="49" column="57" lean-forward="false" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
-                <marker date="1501706872887" expanded="true" signature="1402:1448" ph="SELECT * FRO... users" />
-                <marker date="1501706872887" expanded="true" signature="2428:2451" ph="SELECT * FRO... testtable" />
+                <marker date="1501710212745" expanded="true" signature="1457:1503" ph="SELECT * FRO... users" />
+                <marker date="1501710212745" expanded="true" signature="2483:2506" ph="SELECT * FRO... testtable" />
               </folding>
             </state>
           </provider>
@@ -55,7 +57,7 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
+            <state relative-caret-position="1290">
               <caret line="57" column="116" lean-forward="false" selection-start-line="57" selection-start-column="116" selection-end-line="57" selection-end-column="116" />
               <folding />
             </state>
@@ -65,14 +67,24 @@
       <file leaf-file-name="welcome_styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/CSS/welcome_styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="146" column="181" lean-forward="false" selection-start-line="146" selection-start-column="181" selection-end-line="146" selection-end-column="181" />
+            <state relative-caret-position="693">
+              <caret line="97" column="14" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1782">
+              <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -125,16 +137,16 @@
         <option value="$PROJECT_DIR$/templates/welcome.html" />
         <option value="$PROJECT_DIR$/static/CSS/default_styles.css" />
         <option value="$PROJECT_DIR$/helpers.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/under_construction.html" />
         <option value="$PROJECT_DIR$/static/CSS/page_construction_styles.css" />
         <option value="$PROJECT_DIR$/static/JavaScript/button_color_selection.js" />
         <option value="$PROJECT_DIR$/static/JavaScript/background_image_load.js" />
         <option value="$PROJECT_DIR$/static/CSS/login.css" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/static/CSS/welcome_styles.css" />
         <option value="$PROJECT_DIR$/templates/layout.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/CSS/welcome_styles.css" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -176,6 +188,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Final_Project_Deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project_Deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project_Deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -603,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501708730012</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added favicon">
+      <created>1501708955869</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1501708955869</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -756,8 +789,8 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1501706872887" expanded="true" signature="1402:1448" ph="SELECT * FRO... users" />
-            <marker date="1501706872887" expanded="true" signature="2428:2451" ph="SELECT * FRO... testtable" />
+            <marker date="1501710212745" expanded="true" signature="1457:1503" ph="SELECT * FRO... users" />
+            <marker date="1501710212745" expanded="true" signature="2483:2506" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -787,6 +820,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="957">
           <caret line="29" column="107" lean-forward="false" selection-start-line="29" selection-start-column="107" selection-end-line="29" selection-end-column="107" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -796,8 +830,8 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1501706872887" expanded="true" signature="1402:1448" ph="SELECT * FRO... users" />
-            <marker date="1501706872887" expanded="true" signature="2428:2451" ph="SELECT * FRO... testtable" />
+            <marker date="1501710212745" expanded="true" signature="1457:1503" ph="SELECT * FRO... users" />
+            <marker date="1501710212745" expanded="true" signature="2483:2506" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -827,6 +861,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1716">
           <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -836,8 +871,8 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1501706872887" expanded="true" signature="1402:1448" ph="SELECT * FRO... users" />
-            <marker date="1501706872887" expanded="true" signature="2428:2451" ph="SELECT * FRO... testtable" />
+            <marker date="1501710212745" expanded="true" signature="1457:1503" ph="SELECT * FRO... users" />
+            <marker date="1501710212745" expanded="true" signature="2483:2506" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -847,6 +882,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="759">
           <caret line="23" column="89" lean-forward="false" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="89" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -856,8 +892,8 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1501706872887" expanded="true" signature="1402:1448" ph="SELECT * FRO... users" />
-            <marker date="1501706872887" expanded="true" signature="2428:2451" ph="SELECT * FRO... testtable" />
+            <marker date="1501710212745" expanded="true" signature="1457:1503" ph="SELECT * FRO... users" />
+            <marker date="1501710212745" expanded="true" signature="2483:2506" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -873,6 +909,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
           <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -889,8 +926,8 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1501706872887" expanded="true" signature="1402:1448" ph="SELECT * FRO... users" />
-            <marker date="1501706872887" expanded="true" signature="2428:2451" ph="SELECT * FRO... testtable" />
+            <marker date="1501710212745" expanded="true" signature="1457:1503" ph="SELECT * FRO... users" />
+            <marker date="1501710212745" expanded="true" signature="2483:2506" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -899,6 +936,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -908,8 +946,8 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1501706872887" expanded="true" signature="1402:1448" ph="SELECT * FRO... users" />
-            <marker date="1501706872887" expanded="true" signature="2428:2451" ph="SELECT * FRO... testtable" />
+            <marker date="1501710212745" expanded="true" signature="1457:1503" ph="SELECT * FRO... users" />
+            <marker date="1501710212745" expanded="true" signature="2483:2506" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -918,6 +956,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -927,8 +966,8 @@
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1501706872887" expanded="true" signature="1402:1448" ph="SELECT * FRO... users" />
-            <marker date="1501706872887" expanded="true" signature="2428:2451" ph="SELECT * FRO... testtable" />
+            <marker date="1501710212745" expanded="true" signature="1457:1503" ph="SELECT * FRO... users" />
+            <marker date="1501710212745" expanded="true" signature="2483:2506" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -946,8 +985,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1501706872887" expanded="true" signature="1402:1448" ph="SELECT * FRO... users" />
-            <marker date="1501706872887" expanded="true" signature="2428:2451" ph="SELECT * FRO... testtable" />
+            <marker date="1501710212745" expanded="true" signature="1457:1503" ph="SELECT * FRO... users" />
+            <marker date="1501710212745" expanded="true" signature="2483:2506" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1007,6 +1046,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,13 +1076,6 @@
           <folding>
             <element signature="e#0#70#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="3" column="69" lean-forward="false" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -1079,34 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <marker date="1501706872887" expanded="true" signature="1402:1448" ph="SELECT * FRO... users" />
-            <marker date="1501706872887" expanded="true" signature="2428:2451" ph="SELECT * FRO... testtable" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="57" column="116" lean-forward="false" selection-start-line="57" selection-start-column="116" selection-end-line="57" selection-end-column="116" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/CSS/welcome_styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="146" column="181" lean-forward="false" selection-start-line="146" selection-start-column="181" selection-end-line="146" selection-end-column="181" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/Media/favicon.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1117,6 +1122,42 @@
         <state relative-caret-position="165">
           <caret line="5" column="68" lean-forward="false" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="57" column="116" lean-forward="false" selection-start-line="57" selection-start-column="116" selection-end-line="57" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/CSS/welcome_styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="97" column="14" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="49" column="57" lean-forward="false" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <marker date="1501710212745" expanded="true" signature="1457:1503" ph="SELECT * FRO... users" />
+            <marker date="1501710212745" expanded="true" signature="2483:2506" ph="SELECT * FRO... testtable" />
+          </folding>
         </state>
       </provider>
     </entry>
