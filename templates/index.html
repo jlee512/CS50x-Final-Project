@@ -1,11 +1,15 @@
 {% extends "layout.html" %}
 
 {% block custom_styles %}
-<link href="{{ url_for('static', filename='CSS/welcome_styles.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='CSS/welcome_Styles.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block custom_javascript %}
+
 {% endblock %}
 
 {% block title %}
-    Your Great Walks Passport
+    Great Walks Passport
 {% endblock %}
 
 {% block main %}

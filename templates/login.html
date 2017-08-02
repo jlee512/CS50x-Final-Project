@@ -1,11 +1,85 @@
 {% extends "layout.html" %}
 
+{% block custom_styles %}
+    <link href="{{ url_for('static', filename='CSS/login.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block custom_javascript %}
+    <script type="text/javascript" src="/static/JavaScript/background_image_load.js"></script>
+{% endblock %}
+
 {% block title %}
-    Great Walks Passport
+    Login
 {% endblock %}
 
 {% block main %}
 
-    <p>Login</p>
+    <div class="mdl-layout mdl-js-layout">
+        <main class="mdl-layout__content">
+
+            <div class="mdl-grid center-items-outer">
+                {#                <div class="mdl-layout-spacer">#}
+                {#                </div>#}
+                <div class="center-items-middle">
+                    <div class="mdl-card mdl-shadow--6dp center-items-inner">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text"> LOGIN </h2>
+                        </div>
+
+                        <div class="passport-outer">
+                            <div class="mdl-card mdl-shadow--6dp center-items-inner passport-graphic">
+
+                                <div class="passport-face">
+                                    <i class="material-icons passport-face-icon">account_box</i>
+                                </div>
+                                <div class="passport-text">
+                                    <i class="material-icons passport-text-icon">view_headline</i>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="mdl-card__supporting-text">
+                            <div class="subheading-1"> Passport of New Zealand</div>
+                            <div class="passport-divider"></div>
+                            <div class="subheading-2">Uruwhenua o Aotearoa</div>
+                        </div>
+
+                        <div class="mdl-card__actions mdl-card--border">
+                            <form class="not-bootstrap" action="#">
+                                {#-----Username Entry-----#}
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="username" id="username">
+                                    <label class="mdl-textfield__label" for="username">Username</label>
+                                </div>
+
+                                {#-----Password Entry-----#}
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="password" id="password">
+                                    <label class="mdl-textfield__label" for="password">Password</label>
+                                </div>
+
+                                <div>
+                                    <button id="login" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="fullpage-background-temp">
+                </div>
+                <div class="fullpage-background">
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    </main>
+    </div>
 
 {% endblock %}

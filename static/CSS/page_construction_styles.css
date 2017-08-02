@@ -1,13 +1,16 @@
-body, html, .under-construction-main-container, .under-construction-background, .under-construction-background-temp {
-    height: 100%;
+body, html, .under-construction-main-container, .fullpage-background, .fullpage-background-temp {
+    height: 100vh;
 
 }
 
-.under-construction-background-temp {
-
-    background-color: #CCE9D5;
+.fullpage-background, .fullpage-background-temp {
+    width: 100vw;
     position: absolute;
-    width: 100%;
+
+}
+
+.fullpage-background-temp {
+    background-color: #CCE9D5;
 
 }
 

@@ -73,6 +73,9 @@ def logout():
     # redirect user to login form
     return redirect(url_for("login"))
 
+@app.route('/underconstruction')
+def under_construction():
+    return render_template("under_construction.html")
 
 @app.route('/test')
 def test():
