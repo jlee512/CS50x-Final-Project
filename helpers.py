@@ -1,5 +1,4 @@
 from flask import redirect, render_template, request, session, url_for
-from flask_session import Session
 from functools import wraps
 
 
@@ -13,7 +12,7 @@ def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         print(session.get("user_id"))
-        if session.get("user_id") is None:
+        if "user_id" not in session:
             print("failed because of login_required")
             return redirect(url_for("login", next=request.url))
         return f(*args, **kwargs)

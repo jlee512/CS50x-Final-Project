@@ -4,13 +4,9 @@ from mysql_db import MySQL_Database
 from passlib.hash import sha256_crypt
 
 from helpers import *
-from redissession import RedisSessionInterface
 
 # Configure application
 app = Flask(__name__)
-
-# configure session to use redis data store
-app.session_interface = RedisSessionInterface
 
 @app.route('/')
 @login_required
