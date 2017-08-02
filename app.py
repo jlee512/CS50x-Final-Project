@@ -7,6 +7,7 @@ from helpers import *
 
 # Configure application
 app = Flask(__name__)
+app.secret_key = os.urandom(24)
 
 @app.route('/')
 @login_required
@@ -90,5 +91,4 @@ def test():
     return render_template("test.html", rows=rows, test=test)
 
 if __name__ == '__main__':
-    app.secret_key = os.urandom(24)
     app.run()
