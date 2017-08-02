@@ -41,10 +41,12 @@ def login():
     if request.method == "POST":
         # ensure username was submitted
         if not request.form.get("username"):
+            print("username empty")
             return render_template("login.html", err_message="Please provide a username")
 
         # ensure password was submitted
         elif not request.form.get("password"):
+            print("password empty")
             return render_template("login.html", err_message="Please provide your password")
 
         print(request.form.get("username"))
