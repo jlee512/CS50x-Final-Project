@@ -1,25 +1,16 @@
-import flask
 from flask import Flask, render_template, flash, redirect, request, session, url_for
-from flask_session import Session
-from tempfile import mkdtemp
-
+import os
+from mysql_db import MySQL_Database
 from passlib.hash import sha256_crypt
 
 from helpers import *
-
-import os
-
-from mysql_db import MySQL_Database
+from redissession import RedisSessionInterface
 
 # Configure application
 app = Flask(__name__)
 
-# configure session to use filesystem (instead of signed cookies)
-app.config["SESSION_FILE_DIR"] = mkdtemp()
-app.config["SESSION_PERMANENT"] = False
-app.config["SESSION_TYPE"] = "filesystem"
-Session(app)
-
+# configure session to use redis data store
+app.session_interface = RedisSessionInterface
 
 @app.route('/')
 @login_required
@@ -32,8 +23,8 @@ def login():
     """Log user in."""
 
     # forget any user_id
-    print(session.get("user_id"))
-    session.clear()
+    print()
+    session.pop("user_id", None)
     print("session cleared")
 
 
@@ -80,7 +71,7 @@ def logout():
     """Log user out."""
 
     # forget any user_id
-    session.clear()
+    session.pop('user_id', None)
 
     # redirect user to login form
     return redirect(url_for("login"))
@@ -103,5 +94,5 @@ def test():
     return render_template("test.html", rows=rows, test=test)
 
 if __name__ == '__main__':
-    app.secret_key = os.urandom(12)
+    app.secret_key = os.urandom(24)
     app.run()
