@@ -7,7 +7,6 @@ from helpers import *
 
 # Configure application
 app = Flask(__name__)
-app.secret_key = os.urandom(24)
 
 @app.route('/')
 @login_required
@@ -91,4 +90,18 @@ def test():
     return render_template("test.html", rows=rows, test=test)
 
 if __name__ == '__main__':
+
+    if os.environ['ENV_TYPE'] == 'LOCAL':
+        import configparser
+
+        dir = os.path.dirname(__file__)
+        filename = os.path.join(dir, 'config.ini')
+        config = configparser.ConfigParser()
+        config.read(filename)
+
+        local = config['LOCAL']
+        app.secret_key = local['SECRET_KEY']
+    else:
+        app.secret_key = os.environ['DB_HOST']
+
     app.run()
