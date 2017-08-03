@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ini" afterPath="$PROJECT_DIR$/config.ini" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,7 +40,7 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
+            <state relative-caret-position="1386">
               <caret line="70" column="55" lean-forward="false" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
@@ -762,7 +760,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501733525330</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Configured redis database and session storage">
+      <created>1501739701779</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1501739701779</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -801,7 +806,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="0" width="1522" height="1931" extended-state="0" />
+    <frame x="-11" y="0" width="1522" height="1931" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -879,7 +884,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Development of cover page" />
     <MESSAGE value="development of broader application structure and construction page" />
     <MESSAGE value="Updated requirements.txt" />
     <MESSAGE value="&quot;Finalised under construction page&quot;" />
@@ -904,7 +908,8 @@
     <MESSAGE value="tweaking sessions" />
     <MESSAGE value="filesystem sessions used - resolution appears to be successfully configuring the app's secret key" />
     <MESSAGE value="attempting to setup redis server for session storage" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempting to setup redis server for session storage" />
+    <MESSAGE value="Configured redis database and session storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configured redis database and session storage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1287,7 +1292,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
+        <state relative-caret-position="1386">
           <caret line="70" column="55" lean-forward="false" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
