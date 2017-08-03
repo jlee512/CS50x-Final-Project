@@ -1,4 +1,6 @@
 from flask import Flask, render_template, flash, redirect, request, session, url_for
+from flask_session import Session
+from tempfile import mkdtemp
 import os
 from mysql_db import MySQL_Database
 from passlib.hash import sha256_crypt
@@ -19,8 +21,13 @@ if os.environ['ENV_TYPE'] == 'LOCAL':
     local = config['LOCAL']
     app.secret_key = local['SECRET_KEY']
 else:
-    print("test")
     app.secret_key = os.environ['SECRET_KEY']
+
+# configure session to use filesystem (instead of signed cookies)
+app.config["SESSION_FILE_DIR"] = mkdtemp()
+app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_TYPE"] = "filesystem"
+Session(app)
 
 @app.route('/')
 @login_required
@@ -33,9 +40,7 @@ def login():
     """Log user in."""
 
     # forget any user_id
-    print()
-    session.pop("user_id", None)
-    print("session cleared")
+    session.clear()
 
 
     # if user reached route via POST (i.e. login form submission)
@@ -81,7 +86,7 @@ def logout():
     """Log user out."""
 
     # forget any user_id
-    session.pop('user_id', None)
+    session.clear()
 
     # redirect user to login form
     return redirect(url_for("login"))
