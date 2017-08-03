@@ -102,6 +102,7 @@ if __name__ == '__main__':
         local = config['LOCAL']
         app.secret_key = local['SECRET_KEY']
     else:
+        print("test")
         app.secret_key = os.environ['SECRET_KEY']
 
     app.run()

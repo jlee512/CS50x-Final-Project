@@ -42,11 +42,11 @@
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="764">
-              <caret line="104" column="47" lean-forward="false" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
+              <caret line="104" column="19" lean-forward="false" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
-                <marker date="1501730603439" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
-                <marker date="1501730603439" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
+                <marker date="1501730764167" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
+                <marker date="1501730764167" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
               </folding>
             </state>
           </provider>
@@ -55,22 +55,10 @@
       <file leaf-file-name="helpers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
+            <state relative-caret-position="528">
               <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding>
                 <element signature="e#0#70#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql_db.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysql_db.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -728,7 +716,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501730486020</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="tweaking sessions">
+      <created>1501730609425</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1501730609425</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -767,7 +762,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5276989" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.4971591" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3339307" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3339307" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -883,8 +878,8 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501730603439" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
-            <marker date="1501730603439" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
+            <marker date="1501730764167" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
+            <marker date="1501730764167" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -923,8 +918,8 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501730603439" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
-            <marker date="1501730603439" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
+            <marker date="1501730764167" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
+            <marker date="1501730764167" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -963,8 +958,8 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501730603439" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
-            <marker date="1501730603439" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
+            <marker date="1501730764167" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
+            <marker date="1501730764167" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -983,8 +978,8 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501730603439" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
-            <marker date="1501730603439" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
+            <marker date="1501730764167" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
+            <marker date="1501730764167" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1016,8 +1011,8 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501730603439" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
-            <marker date="1501730603439" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
+            <marker date="1501730764167" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
+            <marker date="1501730764167" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1035,8 +1030,8 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501730603439" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
-            <marker date="1501730603439" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
+            <marker date="1501730764167" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
+            <marker date="1501730764167" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1054,8 +1049,8 @@
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501730603439" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
-            <marker date="1501730603439" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
+            <marker date="1501730764167" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
+            <marker date="1501730764167" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1073,8 +1068,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501730603439" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
-            <marker date="1501730603439" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
+            <marker date="1501730764167" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
+            <marker date="1501730764167" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1199,16 +1194,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/redissession.py" />
-    <entry file="file://$PROJECT_DIR$/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1235,14 +1220,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="764">
-          <caret line="104" column="47" lean-forward="false" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
+          <caret line="104" column="19" lean-forward="false" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501730603439" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
-            <marker date="1501730603439" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
+            <marker date="1501730764167" expanded="true" signature="1311:1357" ph="SELECT * FRO... users" />
+            <marker date="1501730764167" expanded="true" signature="2350:2373" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
