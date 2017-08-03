@@ -746,7 +746,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501732166690</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="attempting to setup redis server for session storage">
+      <created>1501733525330</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1501733525330</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -854,7 +861,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="positioning of map updated" />
     <MESSAGE value="Development of cover page" />
     <MESSAGE value="development of broader application structure and construction page" />
     <MESSAGE value="Updated requirements.txt" />
@@ -879,7 +885,8 @@
     <MESSAGE value="simplified session implementation within the browser cookies" />
     <MESSAGE value="tweaking sessions" />
     <MESSAGE value="filesystem sessions used - resolution appears to be successfully configuring the app's secret key" />
-    <option name="LAST_COMMIT_MESSAGE" value="filesystem sessions used - resolution appears to be successfully configuring the app's secret key" />
+    <MESSAGE value="attempting to setup redis server for session storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempting to setup redis server for session storage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
