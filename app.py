@@ -102,6 +102,6 @@ if __name__ == '__main__':
         local = config['LOCAL']
         app.secret_key = local['SECRET_KEY']
     else:
-        app.secret_key = os.environ['DB_HOST']
+        app.secret_key = os.environ['SECRET_KEY']
 
     app.run()
