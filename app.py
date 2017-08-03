@@ -1,7 +1,7 @@
 from flask import Flask, render_template, flash, redirect, request, session, url_for
 from flask_session import Session
-from tempfile import mkdtemp
 import os
+import redis
 from redissession import *
 from mysql_db import MySQL_Database
 from passlib.hash import sha256_crypt
@@ -10,7 +10,6 @@ from helpers import *
 
 # Configure application
 app = Flask(__name__)
-redis = Redis(app)
 
 if os.environ['ENV_TYPE'] == 'LOCAL':
     import configparser
@@ -22,12 +21,23 @@ if os.environ['ENV_TYPE'] == 'LOCAL':
 
     local = config['LOCAL']
     app.secret_key = local['SECRET_KEY']
+
+    redis_instance = redis.Redis(host=local["REDIS_HOST"], port=local["REDIS_PORT"], password=local["REDIS_PASSWORD"])
+
 else:
+    # Configure app secret key
     app.secret_key = os.environ['SECRET_KEY']
+
+    # Configure app redis instance for session storage
+    import urllib
+
+    url = urllib.parse.urlparse(os.environ.get('REDISCLOUD_URL'))
+    redis_instance = redis.Redis(host=url.hostname, port=url.port, password=url.password)
 
 # configure session to use Redis (instead of signed cookies or local storage. Local storage was causing issues amongst multiple workers used for gunicorn server)
 app.config["SESSION_TYPE"] = "redis"
-app.session_interface = RedisSessionInterface()
+app.config["SESSION_REDIS"] = redis_instance
+app.session_interface = RedisSessionInterface(redis=redis_instance, prefix="session:")
 
 
 @app.route('/')
@@ -42,7 +52,6 @@ def login():
 
     # forget any user_id
     session.clear()
-
 
     # if user reached route via POST (i.e. login form submission)
     if request.method == "POST":
@@ -59,12 +68,12 @@ def login():
         print(request.form.get("username"))
         print(request.form.get("password"))
 
-        session["user_id"] = 1
+        session["user_id"] = request.form.get("username")
 
         print(session.get("user_id"))
 
         return redirect(url_for("index"))
-    #     # query database for username
+    # # query database for username
     #     rows = db.execute("SELECT * FROM users WHERE username = :username", username=request.form.get("username"))
     #
     #     # ensure username exists and password is correct
@@ -92,9 +101,11 @@ def logout():
     # redirect user to login form
     return redirect(url_for("login"))
 
+
 @app.route('/underconstruction')
 def under_construction():
     return render_template("under_construction.html")
+
 
 @app.route('/test')
 def test():
@@ -108,6 +119,7 @@ def test():
         return "Sorry no results"
 
     return render_template("test.html", rows=rows, test=test)
+
 
 if __name__ == '__main__':
     app.run()
