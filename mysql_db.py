@@ -33,9 +33,24 @@ class MySQL_Database:
 
     # Query Method with parameters
     def query(self, sql, parameters):
-        self._db_cursor.execute(sql, parameters)
+        try:
+            self._db_cursor.execute(sql, parameters)
+            self._db_conn.commit()
+        except (MySQLdb.Error, MySQLdb.Warning) as e:
+            print(e)
+            self._db_conn.rollback()
+            return None
+
         return self._db_cursor.fetchall()
+
+    # def addUserToDB(self, username, password):
+    #     try:
+    #         self._db_cursor.execute('INSERT INTO registered_users (username, hash) VALUES()')
 
     # When the class is deleted, the database will disconnect
     def __del__(self):
         self._db_conn.close()
+
+
+
+

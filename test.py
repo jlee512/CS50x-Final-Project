@@ -1,14 +1,32 @@
 from mysql_db import MySQL_Database
+from passlib.hash import bcrypt
 
 def main():
     db = MySQL_Database()
-    rows1 = db.query('SELECT * FROM testtable',[])
 
-    rows2 = db.query('SELECT * FROM testtable where name=%s AND id=%s', ["Julian4321", 22])
+    # # Example query (no parameters)
+    # rows1 = db.query('SELECT * FROM testtable',[])
+    #
+    # name_test = "Julian4321"
+    # # Example query (multi-parameter)
+    # rows2 = db.query('SELECT * FROM testtable WHERE name=%s AND id=%s', [name_test, 22])
 
-    print(rows1[0])
-    print(rows2[0])
+    # print(rows2)
 
+    # # Test user insertion into database
+    # username = "Julian"
+    # password = "test"
+    # hash = bcrypt.using(rounds=13).hash(password)
+    # hash_bin = bytes(hash, 'utf-8')
+    # hash_test_decode = hash_bin.decode('utf-8')
+    #
+    # db.query('INSERT INTO registered_users (username, hash) VALUES(%s, %s)', [username, hash_bin])
+    #
+    # # Example query (no parameters)
+    # rows3 = db.query('SELECT * FROM registered_users', [])
+    #
+    # print(rows3[0]['hash'].decode('utf-8'))
+    # print(rows3)
 
 if __name__ == '__main__':
     main()
