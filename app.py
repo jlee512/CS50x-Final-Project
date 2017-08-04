@@ -92,6 +92,10 @@ def logout():
     # redirect user to login form
     return redirect(url_for("login"))
 
+@app.route('/register')
+def register():
+
+    return render_template("register.html")
 
 @app.route('/underconstruction')
 def under_construction():

@@ -23,8 +23,8 @@ main, .fullpage-background, .fullpage-background-temp {
     font-family: Lato, Open-Sans, Serif;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    padding: 0;
 
 }
 
@@ -138,5 +138,10 @@ main, .fullpage-background, .fullpage-background-temp {
 
 #username, #password, #login {
     display: inline-block;
+
+}
+
+.login-tab, .register-tab {
+    padding: 16px;
 
 }
