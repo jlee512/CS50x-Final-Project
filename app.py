@@ -4,13 +4,14 @@ import os
 import redis
 from redissession import *
 from mysql_db import MySQL_Database
-from passlib.hash import sha256_crypt
+from passlib.hash import bcrypt
 
 from helpers import *
 
 # Configure application
 app = Flask(__name__)
 
+# Configure application secret key and database depending on local/production instance
 if os.environ['ENV_TYPE'] == 'LOCAL':
     import configparser
 
@@ -38,7 +39,7 @@ else:
 app.config["SESSION_TYPE"] = "redis"
 app.config["SESSION_REDIS"] = redis_instance
 app.session_interface = RedisSessionInterface(redis=redis_instance, prefix="session:")
-
+db = MySQL_Database()
 
 @app.route('/')
 @login_required
@@ -65,8 +66,8 @@ def login():
             print("password empty")
             return render_template("login.html", err_message="Please provide your password")
 
-        print(request.form.get("username"))
-        print(request.form.get("password"))
+        # query database for username
+        rows = db.query('SELECT * FROM registered_users', ["username"])
 
         session["user_id"] = request.form.get("username")
 
@@ -109,7 +110,6 @@ def under_construction():
 
 @app.route('/test')
 def test():
-    db = MySQL_Database()
 
     rows = db.query('SELECT * FROM testtable', [])
 
