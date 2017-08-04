@@ -8,7 +8,7 @@ CREATE TABLE registered_users (
   user_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   username VARCHAR(36) NOT NULL UNIQUE,
   hash BLOB NOT NULL,
-  email VARCHAR(254),
+  email VARCHAR(254) NOT NULL,
   city VARCHAR(90),
   profile_description TEXT,
   firstname VARCHAR(60),

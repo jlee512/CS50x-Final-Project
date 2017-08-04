@@ -36,16 +36,38 @@ $(document).ready(function () {
     login_form += '<label class="mdl-textfield__label" for="password">Password</label>';
     login_form += '</div>';
     login_form += '<div>';
-    login_form += '<button id="login" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">Submit</button>';
-    login_form += '</div>';
+    login_form += '<button id="action-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">LOGIN</button>';
+    login_form += '</div></form>';
 
-    var registration_form = '<p>hello world</p>'
+    var registration_form = '<form class="login-form" action="{{ url_for("register") }}" method="POST">';
+    // Username Entry
+    registration_form += '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">';
+    registration_form += '<input class="mdl-textfield__input" type="text" id="username" name="username">';
+    registration_form += '<label class="mdl-textfield__label" for="username">Enter a Username</label>';
+    registration_form += '</div>'
+    // Email Entry
+    registration_form += '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">';
+    registration_form += '<input class="mdl-textfield__input" type="email" id="email" name="email">';
+    registration_form += '<label class="mdl-textfield__label" for="email">Email</label>';
+    registration_form += '</div>';
+    //Password Entry
+    registration_form += '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">';
+    registration_form += '<input class="mdl-textfield__input" type="password" id="password" name="password">';
+    registration_form += '<label class="mdl-textfield__label" for="password">Choose a Password</label>';
+    registration_form += '</div>';
+    registration_form += '<div>';
+    registration_form += '<button id="action-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">Register</button>';
+    registration_form += '</div></form>';
 
+
+    /*Toggle of login/registration tab*/
     $('.login-tab').on("click", function () {
         $(this).removeClass("form-inactive").addClass("form-active");
         $('.register-tab').removeClass("form-active").addClass("form-inactive");
         $('.mdl-card__actions').empty().append(login_form);
         assign_form_header_colors(image_num);
+        $("#action-button").css(image_button);
+        $('#action-button').text("LOGIN");
     });
 
     $('.register-tab').on("click", function () {
@@ -53,6 +75,8 @@ $(document).ready(function () {
         $(".login-tab").removeClass("form-active").addClass("form-inactive");
         $('.mdl-card__actions').empty().append(registration_form);
         assign_form_header_colors(image_num);
+        $("#action-button").css(image_button);
+        $('#action-button').text("REGISTER");
 
     });
 
@@ -131,7 +155,7 @@ function assign_form_colors(image_num) {
 
     $(".form-active").css(image_title);
     $(".form-inactive").css(image_inactive);
-    $("#login").css(image_button);
+    $("#action-button").css(image_button);
 
 }
 

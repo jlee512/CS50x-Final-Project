@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block title %}
-    Register
+    Login
 {% endblock %}
 
 {% block main %}
@@ -21,7 +21,8 @@
                 <div class="center-items-middle">
                     <div class="mdl-card mdl-shadow--6dp center-items-inner">
                         <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text"> Register </h2>
+                            <h2 class="mdl-card__title-text login-tab form-inactive"> LOGIN </h2>
+                            <h2 class="mdl-card__title-text register-tab form-active"> REGISTER </h2>
                         </div>
 
                         <div class="passport-outer">
@@ -44,22 +45,28 @@
                         </div>
 
                         <div class="mdl-card__actions mdl-card--border">
-                            <form class="login-form" action="{{ url_for('login') }}" method="POST">
+                            <form class="login-form" action="{{ url_for('register') }}" method="POST">
                                 {#-----Username Entry-----#}
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                     <input class="mdl-textfield__input" type="text" id="username" name="username">
-                                    <label class="mdl-textfield__label" for="username">Username</label>
+                                    <label class="mdl-textfield__label" for="username">Enter a Username</label>
+                                </div>
+
+                                {#-----Email Entry-----#}
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="email" id="email" name="email">
+                                    <label class="mdl-textfield__label" for="email">Email</label>
                                 </div>
 
                                 {#-----Password Entry-----#}
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                     <input class="mdl-textfield__input" type="password" id="password" name="password">
-                                    <label class="mdl-textfield__label" for="password">Password</label>
+                                    <label class="mdl-textfield__label" for="password">Choose a Password</label>
                                 </div>
 
                                 <div>
-                                    <button id="login" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">
-                                        Submit
+                                    <button id="action-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">
+                                        Register
                                     </button>
                                 </div>
 

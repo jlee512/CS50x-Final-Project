@@ -136,7 +136,7 @@ main, .fullpage-background, .fullpage-background-temp {
 
 }
 
-#username, #password, #login {
+#username, #password, #action-button {
     display: inline-block;
 
 }
