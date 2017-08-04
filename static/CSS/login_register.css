@@ -56,6 +56,20 @@ main, .fullpage-background, .fullpage-background-temp {
 
 }
 
+.login-tab {
+    width: 40%;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.register-tab {
+    width: 60%;
+    align-content: center;
+    justify-content: center;
+
+}
+
 .mdl-card__supporting-text {
     font-family: Lato, Open-Sans, Serif;
     display: flex;
@@ -66,7 +80,6 @@ main, .fullpage-background, .fullpage-background-temp {
 }
 
 .passport-divider {
-    height: 1em;
     width: 2px;
     background-color: black;
     margin-right: 5px;
@@ -77,6 +90,11 @@ main, .fullpage-background, .fullpage-background-temp {
 @media screen and (min-width: 992px) {
     .mdl-card {
         width: 500px;
+
+    }
+
+    .passport-divider{
+        height: 1em;
 
     }
 }
@@ -92,6 +110,11 @@ main, .fullpage-background, .fullpage-background-temp {
         overflow: auto;
         width: 35%;
         margin: 5px;
+
+    }
+
+    .passport-divider {
+        height: 2em;
 
     }
 }

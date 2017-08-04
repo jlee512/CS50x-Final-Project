@@ -68,6 +68,7 @@ $(document).ready(function () {
         assign_form_header_colors(image_num);
         $("#action-button").css(image_button);
         $('#action-button').text("LOGIN");
+        componentHandler.upgradeDom();
     });
 
     $('.register-tab').on("click", function () {
@@ -77,6 +78,7 @@ $(document).ready(function () {
         assign_form_header_colors(image_num);
         $("#action-button").css(image_button);
         $('#action-button').text("REGISTER");
+        componentHandler.upgradeDom();
 
     });
 
