@@ -67,27 +67,17 @@ def login():
             return render_template("login.html", err_message="Please provide your password")
 
         # query database for username
-        rows = db.query('SELECT * FROM registered_users', ["username"])
+        rows = db.query('SELECT * FROM registered_users WHERE username=%s', ["username"])
 
-        session["user_id"] = request.form.get("username")
+        # ensure username exists and password is correct
+        if len(rows) != 1 or not bcrypt.verify(request.form.get("password"), rows[0]["hash"]):
+            return render_template("login.html", err_message="This username does not exist")
+
+        session["user_id"] = rows[0]['user_id']
 
         print(session.get("user_id"))
 
         return redirect(url_for("index"))
-    # # query database for username
-    #     rows = db.execute("SELECT * FROM users WHERE username = :username", username=request.form.get("username"))
-    #
-    #     # ensure username exists and password is correct
-    #     if len(rows) != 1 or not pwd_context.verify(request.form.get("password"), rows[0]["hash"]):
-    #         return apology("invalid username and/or password")
-    #
-    #     # remember which user has logged in
-    #     session["user_id"] = rows[0]["id"]
-    #
-    #     # redirect user to home page
-    #     return redirect(url_for("index"))
-    #
-    # # else if user reached route via GET (as by clicking a link or via redirect)
     else:
         return render_template("login.html")
 
