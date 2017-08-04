@@ -110,8 +110,9 @@ var image7_inactive = {'background-color': 'rgba(178, 240, 255, 0.5)', 'color': 
 
 /*Assigns modified form colours subject to user selection*/
 function assign_form_header_colors(image_num) {
-    $(".form-active").css(image_title);
-    $(".form-inactive").css(image_inactive);
+    $(".form-active").animate(image_title, 350);
+    $(".form-inactive").animate(image_inactive, 350);
+    $("#action-button").animate(image_button, 200);
 
 }
 
