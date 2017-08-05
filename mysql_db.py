@@ -39,6 +39,7 @@ class MySQL_Database:
         except (MySQLdb.Error, MySQLdb.Warning) as e:
             print(e)
             self._db_conn.rollback()
+            self._db_conn.commit()
             return None
 
         return self._db_cursor.fetchall()
