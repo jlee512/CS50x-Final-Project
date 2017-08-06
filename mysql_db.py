@@ -40,6 +40,7 @@ class MySQL_Database:
             print(e)
             self._db_conn.rollback()
             self._db_conn.commit()
+            self._db_cursor.close()
             return None
 
         return self._db_cursor.fetchall()
@@ -50,6 +51,8 @@ class MySQL_Database:
 
     # When the class is deleted, the database will disconnect
     def __del__(self):
+        print("connection closed")
+        self._db_cursor.close()
         self._db_conn.close()
 
 

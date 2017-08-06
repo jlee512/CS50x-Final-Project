@@ -75,6 +75,8 @@ def login():
         # query database for username
         rows = db.query('SELECT * FROM registered_users WHERE username=%s', [username_entry])
 
+        print(rows[0])
+
         # ensure username exists and password is correct
         if len(rows) != 1 or not bcrypt.verify(password_entry, rows[0]["hash"]):
             return render_template("login.html", err_message="This username does not exist")
