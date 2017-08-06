@@ -34,6 +34,9 @@
     {#------------------CUSTOM JAVASCRIPT---------------#}
     {% block custom_javascript %} {% endblock %}
 
+    {#  Flask-JSGlue (connecting Flask url_for() to front-end development. Credit to -> http://stewartjpark.com/Flask-JSGlue/  #}
+    {{ JSGlue.include() }}
+
     {#--------------------Page Title-----------------------#}
     <title>{% block title %} {% endblock %}</title>
 

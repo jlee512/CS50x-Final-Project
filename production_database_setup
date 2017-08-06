@@ -14,4 +14,3 @@ CREATE TABLE registered_users (
   firstname VARCHAR(60),
   lastname VARCHAR(60)
 );
-

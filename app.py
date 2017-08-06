@@ -1,5 +1,6 @@
 from flask import Flask, render_template, flash, redirect, request, session, url_for
 from flask_session import Session
+from flask_jsglue import JSGlue
 import os
 import redis
 from redissession import *
@@ -10,6 +11,7 @@ from helpers import *
 
 # Configure application
 app = Flask(__name__)
+jsglue = JSGlue(app)
 
 # Configure application secret key and database depending on local/production instance
 if os.environ['ENV_TYPE'] == 'LOCAL':
@@ -54,6 +56,10 @@ def login():
     # forget any user_id
     session.clear()
 
+    # Check details
+    username_entry = request.form.get("username")
+    password_entry = request.form.get("password")
+
     # if user reached route via POST (i.e. login form submission)
     if request.method == "POST":
         # ensure username was submitted
@@ -67,15 +73,13 @@ def login():
             return render_template("login.html", err_message="Please provide your password")
 
         # query database for username
-        rows = db.query('SELECT * FROM registered_users WHERE username=%s', ["username"])
+        rows = db.query('SELECT * FROM registered_users WHERE username=%s', [username_entry])
 
         # ensure username exists and password is correct
-        if len(rows) != 1 or not bcrypt.verify(request.form.get("password"), rows[0]["hash"]):
+        if len(rows) != 1 or not bcrypt.verify(password_entry, rows[0]["hash"]):
             return render_template("login.html", err_message="This username does not exist")
 
         session["user_id"] = rows[0]['user_id']
-
-        print(session.get("user_id"))
 
         return redirect(url_for("index"))
     else:
@@ -84,7 +88,7 @@ def login():
 
 @app.route('/logout')
 def logout():
-    """Log user out."""
+    """Log user out"""
 
     # forget any user_id
     session.clear()
@@ -92,10 +96,23 @@ def logout():
     # redirect user to login form
     return redirect(url_for("login"))
 
-@app.route('/register')
+@app.route('/register', methods=["GET", "POST"])
 def register():
+    """Register user"""
 
-    return render_template("register.html")
+    if request.method == "POST":
+        # If no username is required re-render template with error message
+        if not request.form.get("username"):
+            return render_template("register.html", err_message="Please choose a username")
+        elif not request.form.get("email"):
+            return render_template("register.html", err_message="Please enter your email")
+        elif not request.form.get("password"):
+            return render_template("register.html", err_message="Please choose a password")
+
+
+
+    else:
+        return render_template("register.html")
 
 @app.route('/underconstruction')
 def under_construction():
@@ -104,6 +121,8 @@ def under_construction():
 
 @app.route('/test')
 def test():
+
+    print("test app route")
 
     rows = db.query('SELECT * FROM testtable', [])
 

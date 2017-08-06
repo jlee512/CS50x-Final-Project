@@ -24,7 +24,7 @@ $(document).ready(function () {
     });
 
     //Switch tabs between login and registration seamlessly
-    var login_form = '<form class="login-form" action="{{ url_for("login") }}" method="POST">';
+    var login_form = '<form class="login-form" action="' + Flask.url_for("login") + '" method="POST">';
     /*Username Entry*/
     login_form += '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">';
     login_form += '<input class="mdl-textfield__input" type="text" id="username" name="username">';
@@ -39,7 +39,7 @@ $(document).ready(function () {
     login_form += '<button id="action-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">LOGIN</button>';
     login_form += '</div></form>';
 
-    var registration_form = '<form class="login-form" action="{{ url_for("register") }}" method="POST">';
+    var registration_form = '<form class="login-form" action="' + Flask.url_for("register") + '" method="POST">';
     // Username Entry
     registration_form += '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">';
     registration_form += '<input class="mdl-textfield__input" type="text" id="username" name="username">';
