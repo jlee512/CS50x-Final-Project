@@ -41,7 +41,6 @@ else:
 app.config["SESSION_TYPE"] = "redis"
 app.config["SESSION_REDIS"] = redis_instance
 app.session_interface = RedisSessionInterface(redis=redis_instance, prefix="session:")
-db = MySQL_Database()
 
 @app.route('/')
 @login_required
@@ -73,9 +72,10 @@ def login():
             return render_template("login.html", err_message="Please provide your password")
 
         # query database for username
+        db = MySQL_Database()
         rows = db.query('SELECT * FROM registered_users WHERE username=%s', [username_entry])
-
         print(rows[0])
+        db.check_connection()
 
         # ensure username exists and password is correct
         if len(rows) != 1 or not bcrypt.verify(password_entry, rows[0]["hash"]):

@@ -21,40 +21,54 @@ else:
     DB_PASSWORD = os.environ['DB_PASSWORD']
     DB_NAME = os.environ['DB_NAME']
 
-class MySQL_Database:
 
+class MySQL_Database:
     _db_conn = None
     _db_cursor = None
 
     # Constructor for database connection
     def __init__(self):
-        self._db_conn = MySQLdb.connect(host=DB_HOST, port=3306, user=DB_USER, passwd=DB_PASSWORD, database=DB_NAME)
-        self._db_cursor = self._db_conn.cursor(MySQLdb.cursors.DictCursor)
 
-    # Query Method with parameters
+        # Create Database connection and cursor
+        try:
+            self._db_conn = MySQLdb.connect(host=DB_HOST, port=3306, user=DB_USER, passwd=DB_PASSWORD, database=DB_NAME)
+            self._db_cursor = self._db_conn.cursor(MySQLdb.cursors.DictCursor)
+            print("Database configured and initialised")
+        except MySQLdb.Error as e:
+            print("Connection/cursor error on initialization")
+            print(e.args)
+            print('ERROR: %d: %s' % (e.args[0], e.args[1]))
+
+    # Query method with parameters
     def query(self, sql, parameters):
         try:
             self._db_cursor.execute(sql, parameters)
-            self._db_conn.commit()
+            print("Query completed")
+            return self._db_cursor.fetchall()
+
         except (MySQLdb.Error, MySQLdb.Warning) as e:
             print(e)
-            self._db_conn.rollback()
-            self._db_conn.commit()
-            self._db_cursor.close()
             return None
+        finally:
+            self._db_conn.close()
+            print("Connection closed")
 
-        return self._db_cursor.fetchall()
+    # Insertion method with parameters
+    def insert(self, sql, parameters):
+        try:
+            self._db_cursor.execute(sql, parameters)
+            self._db_conn.commit()
+            print("Insertion completed")
+        except (MySQLdb.Error, MySQLdb.Warning) as e:
+            print("Insertion error")
+            print(e)
+            self._db_conn.rollback()
+            return None
+        finally:
+            self._db_conn.close()
+            print("Connection closed")
 
-    # def addUserToDB(self, username, password):
-    #     try:
-    #         self._db_cursor.execute('INSERT INTO registered_users (username, hash) VALUES()')
-
-    # When the class is deleted, the database will disconnect
-    def __del__(self):
-        print("connection closed")
-        self._db_cursor.close()
-        self._db_conn.close()
-
-
-
+    # Method to check DB connection status
+    def check_connection(self):
+        print(self._db_conn)
 
