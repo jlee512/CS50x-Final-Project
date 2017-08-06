@@ -74,12 +74,12 @@ def login():
         # query database for username
         db = MySQL_Database()
         rows = db.query('SELECT * FROM registered_users WHERE username=%s', [username_entry])
-        print(rows[0])
         db.check_connection()
 
         # ensure username exists and password is correct
         if len(rows) != 1 or not bcrypt.verify(password_entry, rows[0]["hash"]):
-            return render_template("login.html", err_message="This username does not exist")
+            print("Username or password was incorrect")
+            return render_template("login.html", err_message="Your username or password was incorrect")
 
         session["user_id"] = rows[0]['user_id']
 

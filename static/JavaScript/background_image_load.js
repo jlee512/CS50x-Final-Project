@@ -69,6 +69,7 @@ $(document).ready(function () {
         $("#action-button").css(image_button);
         $('#action-button').text("LOGIN");
         componentHandler.upgradeDom();
+        input_is_blank();
     });
 
     $('.register-tab').on("click", function () {
@@ -79,6 +80,7 @@ $(document).ready(function () {
         $("#action-button").css(image_button);
         $('#action-button').text("REGISTER");
         componentHandler.upgradeDom();
+        input_is_blank();
 
     });
 
