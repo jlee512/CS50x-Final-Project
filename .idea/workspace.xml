@@ -4,7 +4,6 @@
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql_db.py" afterPath="$PROJECT_DIR$/mysql_db.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,28 +57,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1432">
-              <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+            <state relative-caret-position="647">
+              <caret line="112" column="4" lean-forward="false" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
-                <marker date="1501983875769" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-                <marker date="1501983875769" expanded="true" signature="4009:4023" ph="SELECT * FRO... testtable" />
-                <marker date="1501983875769" expanded="true" signature="4009:4032" ph="SELECT * FRO... testtable" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql_db.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mysql_db.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1501984148727" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+                <marker date="1501984148727" expanded="true" signature="4013:4027" ph="SELECT * FRO... testtable" />
+                <marker date="1501984148727" expanded="true" signature="4013:4036" ph="SELECT * FRO... testtable" />
               </folding>
             </state>
           </provider>
@@ -173,8 +160,8 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/templates/layout.html" />
         <option value="$PROJECT_DIR$/static/JavaScript/background_image_load.js" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/mysql_db.py" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -548,13 +535,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
     </task>
-    <task id="LOCAL-00006" summary="development of broader application structure and construction page">
-      <created>1501548502937</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1501548502937</updated>
-    </task>
     <task id="LOCAL-00007" summary="development of broader application structure and construction page">
       <created>1501548850522</created>
       <option name="number" value="00007" />
@@ -891,7 +871,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501981165648</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Database connectivity and closing bug-fix implemented - ready for production testing">
+      <created>1501983964650</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1501983964650</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1014,7 +1001,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added favicon" />
     <MESSAGE value="Updated login page and tweaks" />
     <MESSAGE value="welcome_styles.css bugfix" />
     <MESSAGE value="attempting to fix login mechanism" />
@@ -1039,7 +1025,8 @@
     <MESSAGE value="Updated mySQL DB to commit rollback changes on error with login" />
     <MESSAGE value="Implemented JSGlue for Flask for the user of url_for for dynamically created elements" />
     <MESSAGE value="Bug-fix attempt, connection/cursor closing within MySQL Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug-fix attempt, connection/cursor closing within MySQL Class" />
+    <MESSAGE value="Database connectivity and closing bug-fix implemented - ready for production testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database connectivity and closing bug-fix implemented - ready for production testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1054,9 +1041,9 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501983875769" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1501983875769" expanded="true" signature="4009:4023" ph="SELECT * FRO... testtable" />
-            <marker date="1501983875769" expanded="true" signature="4009:4032" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1501984148727" expanded="true" signature="4013:4027" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="4013:4036" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1095,9 +1082,9 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501983875769" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1501983875769" expanded="true" signature="4009:4023" ph="SELECT * FRO... testtable" />
-            <marker date="1501983875769" expanded="true" signature="4009:4032" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1501984148727" expanded="true" signature="4013:4027" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="4013:4036" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1116,9 +1103,9 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501983875769" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1501983875769" expanded="true" signature="4009:4023" ph="SELECT * FRO... testtable" />
-            <marker date="1501983875769" expanded="true" signature="4009:4032" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1501984148727" expanded="true" signature="4013:4027" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="4013:4036" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1150,9 +1137,9 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501983875769" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1501983875769" expanded="true" signature="4009:4023" ph="SELECT * FRO... testtable" />
-            <marker date="1501983875769" expanded="true" signature="4009:4032" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1501984148727" expanded="true" signature="4013:4027" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="4013:4036" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1170,9 +1157,9 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501983875769" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1501983875769" expanded="true" signature="4009:4023" ph="SELECT * FRO... testtable" />
-            <marker date="1501983875769" expanded="true" signature="4009:4032" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1501984148727" expanded="true" signature="4013:4027" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="4013:4036" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1190,9 +1177,9 @@
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501983875769" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1501983875769" expanded="true" signature="4009:4023" ph="SELECT * FRO... testtable" />
-            <marker date="1501983875769" expanded="true" signature="4009:4032" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1501984148727" expanded="true" signature="4013:4027" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="4013:4036" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1210,9 +1197,9 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501983875769" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1501983875769" expanded="true" signature="4009:4023" ph="SELECT * FRO... testtable" />
-            <marker date="1501983875769" expanded="true" signature="4009:4032" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1501984148727" expanded="true" signature="4013:4027" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="4013:4036" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1426,25 +1413,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
+    <entry file="file://$PROJECT_DIR$/mysql_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1432">
-          <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        <state relative-caret-position="170">
+          <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
           <folding>
-            <element signature="e#0#84#0" expanded="true" />
-            <marker date="1501983875769" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1501983875769" expanded="true" signature="4009:4023" ph="SELECT * FRO... testtable" />
-            <marker date="1501983875769" expanded="true" signature="4009:4032" ph="SELECT * FRO... testtable" />
+            <element signature="e#0#14#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql_db.py">
+    <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+        <state relative-caret-position="647">
+          <caret line="112" column="4" lean-forward="false" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#84#0" expanded="true" />
+            <marker date="1501984148727" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1501984148727" expanded="true" signature="4013:4027" ph="SELECT * FRO... testtable" />
+            <marker date="1501984148727" expanded="true" signature="4013:4036" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>

@@ -110,7 +110,7 @@ def register():
             return render_template("register.html", err_message="Please enter your email")
         elif not request.form.get("password"):
             return render_template("register.html", err_message="Please choose a password")
-
+    
 
 
     else:
