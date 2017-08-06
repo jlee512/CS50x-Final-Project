@@ -105,13 +105,37 @@ def register():
     if request.method == "POST":
         # If no username is required re-render template with error message
         if not request.form.get("username"):
+            print("No username input")
             return render_template("register.html", err_message="Please choose a username")
         elif not request.form.get("email"):
+            print("No email input")
             return render_template("register.html", err_message="Please enter your email")
         elif not request.form.get("password"):
+            print("No password input")
             return render_template("register.html", err_message="Please choose a password")
-    
 
+        username_entry = request.form.get("username")
+        email_entry = request.form.get("email")
+        password_entry = request.form.get("password")
+
+        # Check if username is already taken in the database
+        db = MySQL_Database()
+        # rows = db.query('SELECT * FROM registered_users WHERE username=%s', [username_entry])
+
+        # if len(rows) > 0:
+        #     print("Username already exists")
+        #     return render_template("register.html", err_message="The username you have chosen already exists")
+
+        hash = bcrypt.using(rounds=13).hash(password_entry)
+        hash_bin = bytes(hash, 'utf-8')
+
+        result = db.insert('INSERT INTO registered_users (username, hash, email) VALUES (%s, %s, %s)', [username_entry, hash_bin,email_entry])
+
+        if not result:
+            print("Chosen username is already taken")
+            return render_template("register.html", err_message="Your chosen username is already taken")
+
+        return render_template("index.html")
 
     else:
         return render_template("register.html")
@@ -120,11 +144,20 @@ def register():
 def under_construction():
     return render_template("under_construction.html")
 
+@app.route('/username_check')
+def username_check():
+
+    db = MySQL_Database()
+
+    db.query('SELECT * FROM registered_users WHERE username = %s', [])
+
 
 @app.route('/test')
 def test():
 
     print("test app route")
+
+    db = MySQL_Database()
 
     rows = db.query('SELECT * FROM testtable', [])
 

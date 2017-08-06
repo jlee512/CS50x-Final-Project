@@ -56,9 +56,10 @@ class MySQL_Database:
     # Insertion method with parameters
     def insert(self, sql, parameters):
         try:
-            self._db_cursor.execute(sql, parameters)
+            result = self._db_cursor.execute(sql, parameters)
             self._db_conn.commit()
             print("Insertion completed")
+            return result;
         except (MySQLdb.Error, MySQLdb.Warning) as e:
             print("Insertion error")
             print(e)
