@@ -81,6 +81,7 @@ $(document).ready(function () {
         $('#action-button').text("REGISTER");
         componentHandler.upgradeDom();
         input_is_blank();
+        unique_username_check();
 
     });
 

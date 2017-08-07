@@ -144,12 +144,16 @@ def register():
 def under_construction():
     return render_template("under_construction.html")
 
-@app.route('/username_check')
+@app.route('/username_check', methods=['POST'])
 def username_check():
 
-    db = MySQL_Database()
+    print(request.json['username'])
 
-    db.query('SELECT * FROM registered_users WHERE username = %s', [])
+    # db = MySQL_Database()
+    #
+    # db.query('SELECT * FROM registered_users WHERE username = %s', [])
+
+    return "invalid"
 
 
 @app.route('/test')
