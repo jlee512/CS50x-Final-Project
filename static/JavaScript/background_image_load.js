@@ -86,6 +86,7 @@ $(document).ready(function () {
         input_is_blank();
         unique_username_check();
         email_check();
+        password_strength_check();
 
     });
 

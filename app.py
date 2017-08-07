@@ -107,6 +107,9 @@ def register():
         if not request.form.get("username"):
             print("No username input")
             return render_template("register.html", err_message="Please choose a username")
+        elif len(request.form.get("username")) < 6:
+            print("Username too short")
+            return render_template("register.html", err_message="Username must be a minimum of 6 characters long")
         elif not request.form.get("email"):
             print("No email input")
             return render_template("register.html", err_message="Please enter your email")
