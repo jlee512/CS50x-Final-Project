@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JavaScript/background_image_load.js" afterPath="$PROJECT_DIR$/static/JavaScript/background_image_load.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JavaScript/login_registration_form_input_checks.js" afterPath="$PROJECT_DIR$/static/JavaScript/login_registration_form_input_checks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/register.html" afterPath="$PROJECT_DIR$/templates/register.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,7 +39,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="434">
@@ -60,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_registration_form_input_checks.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login_registration_form_input_checks.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/JavaScript/login_registration_form_input_checks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3412">
-              <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+            <state relative-caret-position="400">
+              <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -112,10 +109,10 @@
       <find>330px</find>
       <find>login</find>
       <find>mdl-card__title-text</find>
-      <find>test</find>
       <find>cursor</find>
       <find>favi</find>
       <find>mysql</find>
+      <find>test</find>
     </findStrings>
     <replaceStrings>
       <replace>0.4</replace>
@@ -159,8 +156,8 @@
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/register.html" />
         <option value="$PROJECT_DIR$/static/JavaScript/background_image_load.js" />
-        <option value="$PROJECT_DIR$/static/JavaScript/login_registration_form_input_checks.js" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/static/JavaScript/login_registration_form_input_checks.js" />
       </list>
     </option>
   </component>
@@ -534,13 +531,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
     </task>
-    <task id="LOCAL-00012" summary="Resized images to improve loading time">
-      <created>1501558879033</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1501558879033</updated>
-    </task>
     <task id="LOCAL-00013" summary="adjusted loading time">
       <created>1501559021882</created>
       <option name="number" value="00013" />
@@ -877,7 +867,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502068119951</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Basic password strength checker implemented">
+      <created>1502072330348</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1502072330348</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -929,7 +926,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.50721157" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.4971591" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918888" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33691755" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33691755" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978094" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19744319" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1001,7 +998,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="debugging session persistence issue in production - update 1103" />
     <MESSAGE value="debugging session persistence issue in production - update 1116" />
     <MESSAGE value="debugging session persistence issue in production - update 1121" />
     <MESSAGE value="debugging session persistence issue in production - update 1143" />
@@ -1026,7 +1022,8 @@
     <MESSAGE value="Added front-end check on whether form input is blank" />
     <MESSAGE value="Progress with front-end validation" />
     <MESSAGE value="Frontend username and email validation commenced" />
-    <option name="LAST_COMMIT_MESSAGE" value="Frontend username and email validation commenced" />
+    <MESSAGE value="Basic password strength checker implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic password strength checker implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1425,14 +1422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/JavaScript/login_registration_form_input_checks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3412">
-          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
@@ -1446,6 +1435,14 @@
             <marker date="1502072243589" expanded="true" signature="5798:5812" ph="SELECT * FRO... testtable" />
             <marker date="1502072243589" expanded="true" signature="5798:5821" ph="SELECT * FRO... testtable" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/JavaScript/login_registration_form_input_checks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

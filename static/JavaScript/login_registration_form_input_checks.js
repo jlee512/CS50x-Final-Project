@@ -7,7 +7,6 @@ $(document).ready(function () {
         password_strength_check();
 
     } else {
-        console.log("test")
         username_check();
 
     }
