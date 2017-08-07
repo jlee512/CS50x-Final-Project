@@ -70,6 +70,9 @@ $(document).ready(function () {
         $('#action-button').text("LOGIN");
         componentHandler.upgradeDom();
         input_is_blank();
+        username_check();
+        email_check();
+
     });
 
     $('.register-tab').on("click", function () {
@@ -82,6 +85,7 @@ $(document).ready(function () {
         componentHandler.upgradeDom();
         input_is_blank();
         unique_username_check();
+        email_check();
 
     });
 

@@ -130,6 +130,7 @@ def register():
         hash_bin = bytes(hash, 'utf-8')
 
         result = db.insert('INSERT INTO registered_users (username, hash, email) VALUES (%s, %s, %s)', [username_entry, hash_bin,email_entry])
+        db.check_connection()
 
         if not result:
             print("Chosen username is already taken")
@@ -147,13 +148,19 @@ def under_construction():
 @app.route('/username_check', methods=['POST'])
 def username_check():
 
-    print(request.json['username'])
+    username_input_check = request.json['username']
 
-    # db = MySQL_Database()
-    #
-    # db.query('SELECT * FROM registered_users WHERE username = %s', [])
+    db = MySQL_Database()
 
-    return "invalid"
+    rows = db.query('SELECT * FROM registered_users WHERE username = %s', [username_input_check])
+    db.check_connection()
+
+    print(rows)
+
+    if len(rows) > 0:
+        return "invalid"
+
+    return "valid"
 
 
 @app.route('/test')
