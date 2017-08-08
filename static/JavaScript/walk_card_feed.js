@@ -99,11 +99,6 @@ $(document).ready(function () {
             scroll_registered = true;
             load_walks_increment();
         }
-        //
-        // if (!more_walks) {
-        //     $('#loaded1, #loaded2, #loaded3, #loaded4').show();
-        //
-        // }
     });
 
     //By default, on page loading, load the first walk-cards until the page is full
@@ -194,7 +189,7 @@ function Walk_Card(walk_id, walk_name, class_name, background_image) {
         var background_image = this.background_image;
 
         $(bg_img).on('load', function () {
-            
+
             walk_card_template.find('h2.card-title-text').css('background', '-webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
 
             //Once the content has been loaded, append the walk card to the walk-card-feed\
