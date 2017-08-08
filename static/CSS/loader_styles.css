@@ -1,0 +1,37 @@
+#loaded1 {
+    display: inline-block;
+    background-color: #44A39D;
+    height: 5px;
+    width: 20px;
+}
+
+#loaded2 {
+    display: inline-block;
+    background-color: #53A269;
+    height: 5px;
+    width: 20px;
+}
+
+#loaded3 {
+    display: inline-block;
+    background-color: #F8C826;
+    height: 5px;
+    width: 20px;
+}
+
+#loaded4 {
+    display: inline-block;
+    background-color: #F5CD90;
+    height: 5px;
+    width: 20px;
+}
+
+#loader {
+    text-align: center;
+
+}
+
+.walk-feed-loader, .loaded-wrapper {
+    display: inline-block;
+
+}

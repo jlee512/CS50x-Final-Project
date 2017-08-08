@@ -5,7 +5,7 @@ html, body {
     padding: 0;
 }
 
-.mdl-layout__content, .mdl-layout__tab-panel {
+.mdl-layout__tab-panel {
     height: 100%;
 
 }

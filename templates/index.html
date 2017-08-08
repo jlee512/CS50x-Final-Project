@@ -58,15 +58,18 @@
                 {#To be populated with AJAX at a later stage#}
                 <div class="walk-card-feed">
 
-                </div>
 
-                <div class="walk-feed-loader mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active">
-                </div>
-                <div class="loaded-wrapper" style="text-align: center;">
-                    <div id="loaded1" style="display: inline-block;"></div>
-                    <div id="loaded2" style="display: inline-block;"></div>
-                    <div id="loaded3" style="display: inline-block;"></div>
-                    <div id="loaded4" style="display: inline-block;"></div>
+                    {# Walks to be appended prior to the loader #}
+                    <div id="loader">
+                        <div class="walk-feed-loader mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active">
+                        </div>
+                        <div class="loaded-wrapper">
+                            <div id="loaded1"></div>
+                            <div id="loaded2"></div>
+                            <div id="loaded3"></div>
+                            <div id="loaded4"></div>
+                        </div>
+                    </div>
                 </div>
 
 
