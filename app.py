@@ -1,5 +1,6 @@
-from flask import Flask, render_template, flash, redirect, request, session, url_for
+from flask import Flask, render_template, flash, redirect, request, Response, session, url_for, jsonify
 from flask_session import Session
+import json
 from flask_jsglue import JSGlue
 import os
 import redis
@@ -41,6 +42,7 @@ else:
 app.config["SESSION_TYPE"] = "redis"
 app.config["SESSION_REDIS"] = redis_instance
 app.session_interface = RedisSessionInterface(redis=redis_instance, prefix="session:")
+
 
 @app.route('/')
 @login_required
@@ -98,6 +100,7 @@ def logout():
     # redirect user to login form
     return redirect(url_for("login"))
 
+
 @app.route('/register', methods=["GET", "POST"])
 def register():
     """Register user"""
@@ -132,25 +135,27 @@ def register():
         hash = bcrypt.using(rounds=13).hash(password_entry)
         hash_bin = bytes(hash, 'utf-8')
 
-        result = db.insert('INSERT INTO registered_users (username, hash, email) VALUES (%s, %s, %s)', [username_entry, hash_bin,email_entry])
+        result = db.insert('INSERT INTO registered_users (username, hash, email) VALUES (%s, %s, %s)',
+                           [username_entry, hash_bin, email_entry])
         db.check_connection()
 
         if not result:
             print("Chosen username is already taken")
             return render_template("register.html", err_message="Your chosen username is already taken")
 
-        return render_template("index.html")
+        return redirect(url_for("index"))
 
     else:
         return render_template("register.html")
+
 
 @app.route('/underconstruction')
 def under_construction():
     return render_template("under_construction.html")
 
+
 @app.route('/username_check', methods=['POST'])
 def username_check():
-
     username_input_check = request.json['username']
 
     db = MySQL_Database()
@@ -165,22 +170,32 @@ def username_check():
 
     return "valid"
 
+
 @app.route('/basic_walks_query', methods=['GET'])
 def basic_walks_query():
-
-    from_url_param = request.args.get('from', 0, type=int)
-    count_url_param = request.args.get('count', 0, type=int)
-
+    # Access URL 'GET' parameters
+    from_url_param = request.args.get('from', type=int)
+    count_url_param = request.args.get('count', type=int)
     print(from_url_param)
     print(count_url_param)
+    sort_by_url_param = request.args.get('sort_by')
+    ordering_url_param = request.args.get('ordering')
+    search_term_url_param = request.args.get('search_term')
 
-    return "hello"
+    # Access database and pull the corresponding records and process into a JSON array
+    db = MySQL_Database()
 
+    json_walks = db.query('SELECT * FROM walks_set LIMIT %s OFFSET %s;', [count_url_param, from_url_param])
+
+    for walk in json_walks:
+        walk['distance'] = float(walk['distance'])
+
+    return Response(json.dumps(json_walks), mimetype="application/json"
+                    )
 
 
 @app.route('/test')
 def test():
-
     print("test app route")
 
     db = MySQL_Database()

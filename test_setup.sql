@@ -18,3 +18,5 @@ INSERT INTO testTable (name, quote) VALUES('Julian54321', 'insertion on 27072017
 SELECT * FROM testTable;
 
 # DROP TABLE IF EXISTS testTable;
+
+SELECT * FROM walks_set LIMIT 3 OFFSET 1;

@@ -70,7 +70,7 @@ var count = 3;
 var more_walks = true;
 var sort_by = "name";
 var ordering = "DESC";
-var serach_term = "";
+var search_term = "";
 var scroll_registered = false;
 
 
@@ -116,11 +116,30 @@ function load_walks_increment() {
 
     //AJAX call to go here, temporarily access subarrray of JSON array
 
-    data = great_walks.slice(from, (from + count));
+    $.ajax({
 
-    successful_walks_load(data);
+        url: Flask.url_for("basic_walks_query"),
+        async: true,
+        type: 'GET',
+        data: {from: from, count: count, sort_by: sort_by, ordering: ordering, search_term: search_term},
+
+        success: function (data) {
+            successful_walks_load(data);
+        },
+
+        error: failedArticleLoad
+    });
 
     from += count;
+}
+
+/*-------------------------------------------------------*/
+/*If the AJAX call is failed, output an error message to the console*/
+function failedArticleLoad(jqXHR, textStatus, errorThrown) {
+
+    console.log(jqXHR.status);
+    console.log(textStatus);
+    console.log(errorThrown);
 
 }
 
@@ -146,12 +165,10 @@ function successful_walks_load(data) {
         }
 
         for (var i = 0; i < walk_cards.length; i++) {
-            console.log("test");
             walk_cards[i].load();
 
         }
     }
-    $('.walk-feed-loader').hide();
     //    Once the previous AJAX call has been completed, allow another scroll-bottom event to be registered
     scroll_registered = false;
 }
@@ -181,6 +198,7 @@ function Walk_Card(walk_id, walk_name, class_name, background_image) {
         bg_img.src = this.background_image;
         var walk_card_template = this.walk_card_template;
         var background_image = this.background_image;
+        var walk_name = this.walk_name;
 
         $(bg_img).on('load', function () {
 
@@ -190,12 +208,20 @@ function Walk_Card(walk_id, walk_name, class_name, background_image) {
             set_background.css('background','-o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
             set_background.css('background','-moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover')
             set_background.css('background','linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
+            
+            //If the length of the walk_name is longer than 26 characters, reduce the font size to 14px
+            if (walk_name.length > 26) {
+                set_background.css('font-size','14px');
+                $('h2.card-title-text', walk_card_template).css('font-size', '14px;');
+                // console.log($('.card-title-text', walk_card_template).css('font-size'));
+                console.log(set_background.css('font-size'));
+
+            }
 
             //Once the content has been loaded, append the walk card to the walk-card-feed\
             walk_card_template.insertBefore('#loader');
+            $('.walk-feed-loader').hide();
 
         });
-
     }
-
 }
