@@ -171,6 +171,11 @@ def basic_walks_query():
     from_url_param = request.args.get('from', 0, type=int)
     count_url_param = request.args.get('count', 0, type=int)
 
+    print(from_url_param)
+    print(count_url_param)
+
+    return "hello"
+
 
 
 @app.route('/test')

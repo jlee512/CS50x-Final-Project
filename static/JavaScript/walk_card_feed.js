@@ -150,12 +150,6 @@ function successful_walks_load(data) {
             walk_cards[i].load();
 
         }
-
-//         background: white; /* For browsers that do not support gradients */
-// background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/Walks/abel-tasman.jpg') center / cover; /*Safari 5.1-6*/
-// background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/Walks/abel-tasman.jpg') center / cover; /*Opera 11.1-12*/
-// background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/Walks/abel-tasman.jpg') center / cover; /*Fx 3.6-15*/
-// background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url('/static/Media/Photographs/Walks/abel-tasman.jpg') center / cover; /*Standard*/
     }
     $('.walk-feed-loader').hide();
     //    Once the previous AJAX call has been completed, allow another scroll-bottom event to be registered
@@ -190,7 +184,12 @@ function Walk_Card(walk_id, walk_name, class_name, background_image) {
 
         $(bg_img).on('load', function () {
 
-            walk_card_template.find('h2.card-title-text').css('background', '-webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
+            var set_background = walk_card_template.find('h2.card-title-text');
+            set_background.css('background', 'white');
+            set_background.css('background', '-webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
+            set_background.css('background','-o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
+            set_background.css('background','-moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover')
+            set_background.css('background','linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
 
             //Once the content has been loaded, append the walk card to the walk-card-feed\
             walk_card_template.insertBefore('#loader');

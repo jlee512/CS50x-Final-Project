@@ -4,6 +4,8 @@
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/welcome_styles.css" afterPath="$PROJECT_DIR$/static/CSS/welcome_styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JavaScript/walk_card_feed.js" afterPath="$PROJECT_DIR$/static/JavaScript/walk_card_feed.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +17,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$test.coverage" NAME="test Coverage Results" MODIFIED="1501978662426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Unittests_in_app_py.coverage" NAME="Unittests in app.py Coverage Results" MODIFIED="1501825196593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1502165956012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1502226444532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -71,49 +73,29 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="175" column="19" lean-forward="true" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
+            <state relative-caret-position="315">
+              <caret line="167" column="49" lean-forward="true" selection-start-line="167" selection-start-column="49" selection-end-line="168" selection-end-column="24" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
-                <marker date="1502167980914" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-                <marker date="1502167980914" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
-                <marker date="1502167980914" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
-                <marker date="1502167980914" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
-                <marker date="1502167980914" expanded="true" signature="5996:6010" ph="SELECT * FRO... testtable" />
-                <marker date="1502167980914" expanded="true" signature="5996:6019" ph="SELECT * FRO... testtable" />
+                <marker date="1502226013387" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+                <marker date="1502226013387" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
+                <marker date="1502226013387" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
+                <marker date="1502226013387" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
+                <marker date="1502226013387" expanded="true" signature="6070:6084" ph="SELECT * FRO... testtable" />
+                <marker date="1502226013387" expanded="true" signature="6070:6093" ph="SELECT * FRO... testtable" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="walk_card_feed.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="walk_card_feed.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/JavaScript/walk_card_feed.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="64" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="production_database_setup" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/production_database_setup">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="background_image_load.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/JavaScript/background_image_load.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="13" column="45" lean-forward="true" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+            <state relative-caret-position="893">
+              <caret line="200" column="1" lean-forward="false" selection-start-line="200" selection-start-column="1" selection-end-line="200" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -192,11 +174,11 @@
         <option value="$PROJECT_DIR$/static/JavaScript/login_registration_form_input_checks.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/CSS/loader_styles.css" />
-        <option value="$PROJECT_DIR$/static/CSS/welcome_styles.css" />
         <option value="$PROJECT_DIR$/templates/layout.html" />
-        <option value="$PROJECT_DIR$/static/JavaScript/walk_card_feed.js" />
         <option value="$PROJECT_DIR$/production_database_setup" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/static/CSS/welcome_styles.css" />
+        <option value="$PROJECT_DIR$/static/JavaScript/walk_card_feed.js" />
       </list>
     </option>
   </component>
@@ -207,9 +189,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="width" value="1522" />
-    <option name="height" value="1931" />
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
+    <option name="width" value="3026" />
+    <option name="height" value="1946" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -227,7 +210,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -324,6 +306,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -565,13 +548,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
-    </task>
-    <task id="LOCAL-00019" summary="close of play 02082017 - formatted front-end of login system and additional front-end tweaks">
-      <created>1501655573044</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1501655573044</updated>
     </task>
     <task id="LOCAL-00020" summary="added favicon">
       <created>1501708730012</created>
@@ -909,7 +885,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502167717428</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Commencing development of backend database query for walk information - close of play 08082017">
+      <created>1502167995341</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1502167995341</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -954,16 +937,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="0" width="1522" height="1931" extended-state="0" />
+    <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2002841" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09958791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.50721157" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.421875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.4971591" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3321386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33034647" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978094" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1033,7 +1016,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tweaking sessions" />
     <MESSAGE value="filesystem sessions used - resolution appears to be successfully configuring the app's secret key" />
     <MESSAGE value="attempting to setup redis server for session storage" />
     <MESSAGE value="Configured redis database and session storage" />
@@ -1058,7 +1040,8 @@
     <MESSAGE value="Infinite scrolling partially implemented, next is to implement background image assignment and only have elements show once the background image is loaded." />
     <MESSAGE value="walk_card_feed loading tweaked and progressed" />
     <MESSAGE value="Setup fundamental walks database ready for addition of walk query and ajax call to lighten the front-end." />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup fundamental walks database ready for addition of walk query and ajax call to lighten the front-end." />
+    <MESSAGE value="Commencing development of backend database query for walk information - close of play 08082017" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commencing development of backend database query for walk information - close of play 08082017" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1080,12 +1063,12 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1502167980914" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
-            <marker date="1502167980914" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="5996:6010" ph="SELECT * FRO... testtable" />
-            <marker date="1502167980914" expanded="true" signature="5996:6019" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
+            <marker date="1502226013387" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="6070:6084" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="6070:6093" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1104,12 +1087,12 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1502167980914" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
-            <marker date="1502167980914" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="5996:6010" ph="SELECT * FRO... testtable" />
-            <marker date="1502167980914" expanded="true" signature="5996:6019" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
+            <marker date="1502226013387" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="6070:6084" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="6070:6093" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1141,12 +1124,12 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1502167980914" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
-            <marker date="1502167980914" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="5996:6010" ph="SELECT * FRO... testtable" />
-            <marker date="1502167980914" expanded="true" signature="5996:6019" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
+            <marker date="1502226013387" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="6070:6084" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="6070:6093" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1164,12 +1147,12 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1502167980914" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
-            <marker date="1502167980914" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="5996:6010" ph="SELECT * FRO... testtable" />
-            <marker date="1502167980914" expanded="true" signature="5996:6019" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
+            <marker date="1502226013387" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="6070:6084" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="6070:6093" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1187,12 +1170,12 @@
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1502167980914" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
-            <marker date="1502167980914" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="5996:6010" ph="SELECT * FRO... testtable" />
-            <marker date="1502167980914" expanded="true" signature="5996:6019" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
+            <marker date="1502226013387" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="6070:6084" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="6070:6093" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1210,12 +1193,12 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1502167980914" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
-            <marker date="1502167980914" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="5996:6010" ph="SELECT * FRO... testtable" />
-            <marker date="1502167980914" expanded="true" signature="5996:6019" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
+            <marker date="1502226013387" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="6070:6084" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="6070:6093" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1316,7 +1299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2244">
           <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1368,7 +1350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1683">
           <caret line="51" column="125" lean-forward="false" selection-start-line="51" selection-start-column="125" selection-end-line="51" selection-end-column="125" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1376,7 +1357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,7 +1364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-225">
           <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1392,15 +1371,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/CSS/welcome_styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="190" column="32" lean-forward="false" selection-start-line="190" selection-start-column="14" selection-end-line="190" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1408,7 +1378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-561">
           <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="94" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1416,15 +1385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/JavaScript/walk_card_feed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="64" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1432,7 +1392,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -1445,7 +1404,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -1456,33 +1414,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/production_database_setup">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="825">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/JavaScript/background_image_load.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="13" column="45" lean-forward="true" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+        <state relative-caret-position="-4125">
+          <caret line="13" column="45" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/CSS/welcome_styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="175" column="19" lean-forward="true" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
+        <state relative-caret-position="315">
+          <caret line="167" column="49" lean-forward="true" selection-start-line="167" selection-start-column="49" selection-end-line="168" selection-end-column="24" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
-            <marker date="1502167980914" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
-            <marker date="1502167980914" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
-            <marker date="1502167980914" expanded="true" signature="5996:6010" ph="SELECT * FRO... testtable" />
-            <marker date="1502167980914" expanded="true" signature="5996:6019" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="2458:2506" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4390:4438" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="4778:4850" ph="INSERT INTO registered_users... " />
+            <marker date="1502226013387" expanded="true" signature="5498:5548" ph="SELECT * FRO... registered_users" />
+            <marker date="1502226013387" expanded="true" signature="6070:6084" ph="SELECT * FRO... testtable" />
+            <marker date="1502226013387" expanded="true" signature="6070:6093" ph="SELECT * FRO... testtable" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/JavaScript/walk_card_feed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="200" column="1" lean-forward="false" selection-start-line="200" selection-start-column="1" selection-end-line="200" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
