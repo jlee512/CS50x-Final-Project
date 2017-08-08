@@ -165,6 +165,13 @@ def username_check():
 
     return "valid"
 
+@app.route('/basic_walks_query', methods=['GET'])
+def basic_walks_query():
+
+    from_url_param = request.args.get('from', 0, type=int)
+    count_url_param = request.args.get('count', 0, type=int)
+
+
 
 @app.route('/test')
 def test():
