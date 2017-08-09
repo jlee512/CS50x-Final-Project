@@ -21,7 +21,15 @@ CREATE TABLE walks_set (
   walk_name VARCHAR (50) NOT NULL UNIQUE,
   class_name VARCHAR(15) NOT NULL UNIQUE,
   background_image VARCHAR(150),
-  distance NUMERIC NOT NULL
+  walk_region VARCHAR(100) NOT NULL,
+  walk_country VARCHAR(150) NOT NULL,
+  one_way_distance NUMERIC NOT NULL,
+  loop_track BOOLEAN,
+  doc_site_hyperlink VARCHAR(500),
+  nz_scale_latitude FLOAT,
+  nz_scale_longitude FLOAT,
+  great_walks_season_start TIMESTAMP,
+  great_walks_season_end TIMESTAMP
 );
 
-INSERT INTO walks_set (walk_name, class_name, background_image, distance) VALUES("Lake Waikaremoana", "waikare-walk", "/static/Media/Photographs/Walks/lake-waikaremoana.jpg", 46), ("Tongariro Northern Circuit", "tongariro-walk", "/static/Media/Photographs/Walks/tongariro_northern_circuit.jpg", 43.1), ("Whanganui River Journey", "whanganui-walk", "/static/Media/Photographs/Walks/whanganui-river-journey.jpg", 145), ("Abel Tasman Coastal Track", "abel-walk", "/static/Media/Photographs/Walks/abel-tasman.jpg", 60), ("Heaphy Track", "heaphy-walk", "/static/Media/Photographs/Walks/heaphy-track.jpg", 78.4), ("Paparoa + Pike 29 Memorial Track (2019)", "paparoa-walk", "/static/Media/Photographs/Walks/paparoa-track.jpg", 55), ("Milford Track", "milford-walk", "/static/Media/Photographs/Walks/milford-track.jpg", 53.5), ("Routeburn Track", "routeburn-walk", "/static/Media/Photographs/Walks/kepler-track.jpg", 32), ("Kepler Track", "kepler-walk", "/static/Media/Photographs/Walks/routeburn track.jpg", 60), ("Rakiura Track", "rakiura-walk", "/static/Media/Photographs/Walks/rakiura track.jpg", 32);
+# INSERT INTO walks_set (walk_name, class_name, background_image, distance) VALUES("Lake Waikaremoana", "waikare-walk", "/static/Media/Photographs/Walks/lakewaikaremoana.jpg", 46), ("Tongariro Northern Circuit", "tongariro-walk", "/static/Media/Photographs/Walks/tongarironortherncircuit.jpg", 43.1), ("Whanganui River Journey", "whanganui-walk", "/static/Media/Photographs/Walks/whanganuijourney.jpg", 145), ("Abel Tasman Coastal Track", "abel-walk", "/static/Media/Photographs/Walks/abeltasmancoasttrack.jpg", 60), ("Heaphy Track", "heaphy-walk", "/static/Media/Photographs/Walks/heaphytrack.jpg", 78.4), ("Paparoa + Pike 29 Memorial Track (2019)", "paparoa-walk", "/static/Media/Photographs/Walks/paparoatrackpike29memorialtrack.jpg", 55), ("Milford Track", "milford-walk", "/static/Media/Photographs/Walks/milfordtrack.jpg", 53.5), ("Routeburn Track", "routeburn-walk", "/static/Media/Photographs/Walks/keplertrack.jpg", 32), ("Kepler Track", "kepler-walk", "/static/Media/Photographs/Walks/routeburntrack.jpg", 60), ("Rakiura Track", "rakiura-walk", "/static/Media/Photographs/Walks/rakiuratrack.jpg", 32);

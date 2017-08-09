@@ -7,61 +7,61 @@ var great_walks = [{
     walk_id: 1,
     walk_name: "Lake Waikaremoana",
     class_name: "waikare-walk",
-    background_image: "/static/Media/Photographs/Walks/lake-waikaremoana.jpg"
+    background_image: "/static/Media/Photographs/Walks/lakewaikaremoana.jpg"
 },
     {
         walk_id: 2,
         walk_name: "Tongariro Northern Circuit",
         class_name: "tongariro-walk",
-        background_image: "/static/Media/Photographs/Walks/tongariro_northern_circuit.jpg"
+        background_image: "/static/Media/Photographs/Walks/tongarironortherncircuit.jpg"
     },
     {
         walk_id: 3,
         walk_name: "Whanganui River Journey",
         class_name: "whanganui-walk",
-        background_image: "/static/Media/Photographs/Walks/whanganui-river-journey.jpg"
+        background_image: "/static/Media/Photographs/Walks/whanganuijourney.jpg"
     },
     {
         walk_id: 4,
         walk_name: "Abel Tasman Coastal Track",
         class_name: "abel-walk",
-        background_image: "/static/Media/Photographs/Walks/abel-tasman.jpg"
+        background_image: "/static/Media/Photographs/Walks/abeltasmancoasttrack.jpg"
     },
     {
         walk_id: 5,
         walk_name: "Heaphy Track",
         class_name: "heaphy-walk",
-        background_image: "/static/Media/Photographs/Walks/heaphy-track.jpg"
+        background_image: "/static/Media/Photographs/Walks/heaphytrack.jpg"
     },
     {
         walk_id: 6,
         walk_name: "Paparoa + Pike 29 Memorial Track (2019)",
         class_name: "paparoa-walk",
-        background_image: "/static/Media/Photographs/Walks/paparoa-track.jpg"
+        background_image: "/static/Media/Photographs/Walks/paparoatrackpike29memorialtrack.jpg"
     },
     {
         walk_id: 7,
         walk_name: "Milford Track",
         class_name: "milford-walk",
-        background_image: "/static/Media/Photographs/Walks/milford-track.jpg"
+        background_image: "/static/Media/Photographs/Walks/milfordtrack.jpg"
     },
     {
         walk_id: 8,
         walk_name: "Routeburn Track",
         class_name: "routeburn-walk",
-        background_image: "/static/Media/Photographs/Walks/kepler-track.jpg"
+        background_image: "/static/Media/Photographs/Walks/keplertrack.jpg"
     },
     {
         walk_id: 9,
         walk_name: "Kepler Track",
         class_name: "kepler-walk",
-        background_image: "/static/Media/Photographs/Walks/kepler-track.jpg"
+        background_image: "/static/Media/Photographs/Walks/keplertrack.jpg"
     },
     {
         walk_id: 10,
         walk_name: "Rakiura Track",
         class_name: "rakiura-walk",
-        background_image: "/static/Media/Photographs/Walks/routeburn track.jpg"
+        background_image: "/static/Media/Photographs/Walks/routeburntrack.jpg"
     }];
 
 //Setup global variables to store the state of walk-feed loading on the page at a given point in time (searching/sorting mechanisms to be factored in at a later stage)
@@ -208,7 +208,7 @@ function Walk_Card(walk_id, walk_name, class_name, background_image) {
             set_background.css('background','-o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
             set_background.css('background','-moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover')
             set_background.css('background','linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
-            
+
             //If the length of the walk_name is longer than 26 characters, reduce the font size to 14px
             if (walk_name.length > 26) {
                 set_background.css('font-size','14px');
