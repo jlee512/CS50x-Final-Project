@@ -115,11 +115,15 @@ def parse_walk_information():
         walk_travel_option_time = []
         if specific_walk_page_soup.find('div', attrs={'class','details-walk'}):
             walk_travel_option.append("Walking and Tramping")
-            specific_walk_page_soup.find('div', attrs={'class', 'details-walk'})
+            walk_travel_option_time.append(specific_walk_page_soup.find('div', attrs={'class', 'details-walk'}).find('', attrs={'class', 'details-walk-time'}).text.replace(" - "," to ").replace("-"," to ").replace(" one way",""))
         if specific_walk_page_soup.find('div', attrs={'class','details-paddling'}):
             walk_travel_option.append("Kayaking and Canoeing")
+            walk_travel_option_time.append(specific_walk_page_soup.find('div', attrs={'class', 'details-paddling'}).find('', attrs={'class','details-paddling-time'}).text.replace(" - "," to ").replace("-"," to ").replace(" one way",""))
         if specific_walk_page_soup.find('div', attrs={'class','details-mtb'}):
             walk_travel_option.append("Mountain Biking")
+            walk_travel_option_time.append(specific_walk_page_soup.find('div', attrs={'class', 'details-mtb'}).find('', attrs={'class', 'details-mtb-time'}).text.replace(" - "," to ").replace("-"," to ").replace(" one way",""))
+
+        print(walk_travel_option_time)
 
 
 def main():

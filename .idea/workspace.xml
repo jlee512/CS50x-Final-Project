@@ -15,7 +15,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$test.coverage" NAME="test Coverage Results" MODIFIED="1501978662426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Unittests_in_app_py.coverage" NAME="Unittests in app.py Coverage Results" MODIFIED="1501825196593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1502254478367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1502255919918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1502234819312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
@@ -98,13 +98,13 @@
       <file leaf-file-name="information_gathering.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/information_gathering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="687">
+              <caret line="125" column="38" lean-forward="true" selection-start-line="125" selection-start-column="38" selection-end-line="125" selection-end-column="38" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1502255250621" expanded="true" signature="1746:1790" ph="SELECT * FRO... walks_set" />
-                <marker date="1502255250621" expanded="true" signature="2109:2121" ph="INSERT INTO ealk... " />
-                <marker date="1502255250621" expanded="true" signature="2109:2391" ph="INSERT INTO walks_set... " />
+                <marker date="1502255919906" expanded="true" signature="1746:1790" ph="SELECT * FRO... walks_set" />
+                <marker date="1502255919906" expanded="true" signature="2109:2121" ph="INSERT INTO ealk... " />
+                <marker date="1502255919906" expanded="true" signature="2109:2391" ph="INSERT INTO walks_set... " />
               </folding>
             </state>
           </provider>
@@ -550,13 +550,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
     </task>
-    <task id="LOCAL-00023" summary="Updated login page and tweaks">
-      <created>1501710850749</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1501710850749</updated>
-    </task>
     <task id="LOCAL-00024" summary="welcome_styles.css bugfix">
       <created>1501711863944</created>
       <option name="number" value="00024" />
@@ -893,7 +886,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502253708927</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="data collection crawler development as well as database flesh-out - addition commit">
+      <created>1502255264029</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1502255264029</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1017,7 +1017,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tweaked CSS styling of walk tags on index page for unified display (border-box)" />
     <MESSAGE value="Database for registered users created and testing of parameterized queries carried out" />
     <MESSAGE value="Database for registered users created and testing of parameterized queries carried out - UPDATE 1435 04082017 - TABLE INSERTION METHODS TESTED AND TRY/EXCEPT BLOCK ADDED TO QUERY METHOD" />
     <MESSAGE value="first pass of login backend completed" />
@@ -1042,7 +1041,8 @@
     <MESSAGE value="Tidied up .css() assignments in JavaScript walk_card_feed.js" />
     <MESSAGE value="walk-card-feed connected (via AJAX) to the database. Plan to extract data for each of the walks" />
     <MESSAGE value="data collection crawler development as well as database flesh-out" />
-    <option name="LAST_COMMIT_MESSAGE" value="data collection crawler development as well as database flesh-out" />
+    <MESSAGE value="data collection crawler development as well as database flesh-out - addition commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="data collection crawler development as well as database flesh-out - addition commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1385,7 +1385,7 @@
         <state relative-caret-position="-594">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1459,13 +1459,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/information_gathering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="687">
+          <caret line="125" column="38" lean-forward="true" selection-start-line="125" selection-start-column="38" selection-end-line="125" selection-end-column="38" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1502255250621" expanded="true" signature="1746:1790" ph="SELECT * FRO... walks_set" />
-            <marker date="1502255250621" expanded="true" signature="2109:2121" ph="INSERT INTO ealk... " />
-            <marker date="1502255250621" expanded="true" signature="2109:2391" ph="INSERT INTO walks_set... " />
+            <marker date="1502255919906" expanded="true" signature="1746:1790" ph="SELECT * FRO... walks_set" />
+            <marker date="1502255919906" expanded="true" signature="2109:2121" ph="INSERT INTO ealk... " />
+            <marker date="1502255919906" expanded="true" signature="2109:2391" ph="INSERT INTO walks_set... " />
           </folding>
         </state>
       </provider>
