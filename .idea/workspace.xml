@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information_gathering.py" afterPath="$PROJECT_DIR$/information_gathering.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
     </list>
     <ignored path="Web_Information_Gathering/" />
     <ignored path="config.ini" />
@@ -78,29 +78,30 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3597">
-              <caret line="119" column="30" lean-forward="false" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
+            <state relative-caret-position="858">
+              <caret line="156" column="0" lean-forward="true" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
               <folding>
                 <element signature="e#0#103#0" expanded="true" />
-                <marker date="1502233349842" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
-                <marker date="1502233349842" expanded="true" signature="4423:4471" ph="SELECT * FRO... registered_users" />
-                <marker date="1502233349842" expanded="true" signature="4811:4883" ph="INSERT INTO registered_users... " />
-                <marker date="1502233349842" expanded="true" signature="5557:5607" ph="SELECT * FRO... registered_users" />
-                <marker date="1502233349842" expanded="true" signature="6331:6373" ph="SELECT * FRO... walks_set" />
-                <marker date="1502233349842" expanded="true" signature="6698:6712" ph="SELECT * FRO... testtable" />
-                <marker date="1502233349842" expanded="true" signature="6698:6721" ph="SELECT * FRO... testtable" />
+                <marker date="1502321463507" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
+                <marker date="1502321463507" expanded="true" signature="4423:4471" ph="SELECT * FRO... registered_users" />
+                <marker date="1502321463507" expanded="true" signature="4811:4883" ph="INSERT INTO registered_users... " />
+                <marker date="1502321463507" expanded="true" signature="5261:5309" ph="SELECT * FRO... registered_users" />
+                <marker date="1502321463507" expanded="true" signature="6098:6148" ph="SELECT * FRO... registered_users" />
+                <marker date="1502321463507" expanded="true" signature="6872:6914" ph="SELECT * FRO... walks_set" />
+                <marker date="1502321463507" expanded="true" signature="7239:7253" ph="SELECT * FRO... testtable" />
+                <marker date="1502321463507" expanded="true" signature="7239:7262" ph="SELECT * FRO... testtable" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="information_gathering.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="information_gathering.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/information_gathering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-363">
+            <state relative-caret-position="-660">
               <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -193,10 +194,10 @@
         <option value="$PROJECT_DIR$/templates/layout.html" />
         <option value="$PROJECT_DIR$/static/CSS/welcome_styles.css" />
         <option value="$PROJECT_DIR$/test_setup.sql" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/static/JavaScript/walk_card_feed.js" />
         <option value="$PROJECT_DIR$/production_database_setup" />
         <option value="$PROJECT_DIR$/information_gathering.py" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -238,34 +239,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web_Information_Gathering" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -533,13 +506,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
-    </task>
-    <task id="LOCAL-00025" summary="attempting to fix login mechanism">
-      <created>1501712071418</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1501712071418</updated>
     </task>
     <task id="LOCAL-00026" summary="attempting to fix login mechanism">
       <created>1501712386602</created>
@@ -877,7 +843,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502255985533</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Created local copies of doc html code in order to prevent loading the site and to practice python file I/O">
+      <created>1502320658832</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1502320658832</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1001,7 +974,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Database for registered users created and testing of parameterized queries carried out" />
     <MESSAGE value="Database for registered users created and testing of parameterized queries carried out - UPDATE 1435 04082017 - TABLE INSERTION METHODS TESTED AND TRY/EXCEPT BLOCK ADDED TO QUERY METHOD" />
     <MESSAGE value="first pass of login backend completed" />
     <MESSAGE value="development of login/registration tab interface" />
@@ -1026,7 +998,8 @@
     <MESSAGE value="walk-card-feed connected (via AJAX) to the database. Plan to extract data for each of the walks" />
     <MESSAGE value="data collection crawler development as well as database flesh-out" />
     <MESSAGE value="data collection crawler development as well as database flesh-out - addition commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="data collection crawler development as well as database flesh-out - addition commit" />
+    <MESSAGE value="Created local copies of doc html code in order to prevent loading the site and to practice python file I/O" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created local copies of doc html code in order to prevent loading the site and to practice python file I/O" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1055,13 +1028,14 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#103#0" expanded="true" />
-            <marker date="1502233349842" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="4423:4471" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="4811:4883" ph="INSERT INTO registered_users... " />
-            <marker date="1502233349842" expanded="true" signature="5557:5607" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="6331:6373" ph="SELECT * FRO... walks_set" />
-            <marker date="1502233349842" expanded="true" signature="6698:6712" ph="SELECT * FRO... testtable" />
-            <marker date="1502233349842" expanded="true" signature="6698:6721" ph="SELECT * FRO... testtable" />
+            <marker date="1502321463507" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="4423:4471" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="4811:4883" ph="INSERT INTO registered_users... " />
+            <marker date="1502321463507" expanded="true" signature="5261:5309" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="6098:6148" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="6872:6914" ph="SELECT * FRO... walks_set" />
+            <marker date="1502321463507" expanded="true" signature="7239:7253" ph="SELECT * FRO... testtable" />
+            <marker date="1502321463507" expanded="true" signature="7239:7262" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1079,13 +1053,14 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#103#0" expanded="true" />
-            <marker date="1502233349842" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="4423:4471" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="4811:4883" ph="INSERT INTO registered_users... " />
-            <marker date="1502233349842" expanded="true" signature="5557:5607" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="6331:6373" ph="SELECT * FRO... walks_set" />
-            <marker date="1502233349842" expanded="true" signature="6698:6712" ph="SELECT * FRO... testtable" />
-            <marker date="1502233349842" expanded="true" signature="6698:6721" ph="SELECT * FRO... testtable" />
+            <marker date="1502321463507" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="4423:4471" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="4811:4883" ph="INSERT INTO registered_users... " />
+            <marker date="1502321463507" expanded="true" signature="5261:5309" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="6098:6148" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="6872:6914" ph="SELECT * FRO... walks_set" />
+            <marker date="1502321463507" expanded="true" signature="7239:7253" ph="SELECT * FRO... testtable" />
+            <marker date="1502321463507" expanded="true" signature="7239:7262" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1103,13 +1078,14 @@
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#103#0" expanded="true" />
-            <marker date="1502233349842" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="4423:4471" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="4811:4883" ph="INSERT INTO registered_users... " />
-            <marker date="1502233349842" expanded="true" signature="5557:5607" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="6331:6373" ph="SELECT * FRO... walks_set" />
-            <marker date="1502233349842" expanded="true" signature="6698:6712" ph="SELECT * FRO... testtable" />
-            <marker date="1502233349842" expanded="true" signature="6698:6721" ph="SELECT * FRO... testtable" />
+            <marker date="1502321463507" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="4423:4471" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="4811:4883" ph="INSERT INTO registered_users... " />
+            <marker date="1502321463507" expanded="true" signature="5261:5309" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="6098:6148" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="6872:6914" ph="SELECT * FRO... walks_set" />
+            <marker date="1502321463507" expanded="true" signature="7239:7253" ph="SELECT * FRO... testtable" />
+            <marker date="1502321463507" expanded="true" signature="7239:7262" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1127,13 +1103,14 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#103#0" expanded="true" />
-            <marker date="1502233349842" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="4423:4471" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="4811:4883" ph="INSERT INTO registered_users... " />
-            <marker date="1502233349842" expanded="true" signature="5557:5607" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="6331:6373" ph="SELECT * FRO... walks_set" />
-            <marker date="1502233349842" expanded="true" signature="6698:6712" ph="SELECT * FRO... testtable" />
-            <marker date="1502233349842" expanded="true" signature="6698:6721" ph="SELECT * FRO... testtable" />
+            <marker date="1502321463507" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="4423:4471" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="4811:4883" ph="INSERT INTO registered_users... " />
+            <marker date="1502321463507" expanded="true" signature="5261:5309" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="6098:6148" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="6872:6914" ph="SELECT * FRO... walks_set" />
+            <marker date="1502321463507" expanded="true" signature="7239:7253" ph="SELECT * FRO... testtable" />
+            <marker date="1502321463507" expanded="true" signature="7239:7262" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>
@@ -1238,6 +1215,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1364,23 +1342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3597">
-          <caret line="119" column="30" lean-forward="false" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#103#0" expanded="true" />
-            <marker date="1502233349842" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="4423:4471" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="4811:4883" ph="INSERT INTO registered_users... " />
-            <marker date="1502233349842" expanded="true" signature="5557:5607" ph="SELECT * FRO... registered_users" />
-            <marker date="1502233349842" expanded="true" signature="6331:6373" ph="SELECT * FRO... walks_set" />
-            <marker date="1502233349842" expanded="true" signature="6698:6712" ph="SELECT * FRO... testtable" />
-            <marker date="1502233349842" expanded="true" signature="6698:6721" ph="SELECT * FRO... testtable" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/JavaScript/walk_card_feed.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3825">
@@ -1482,13 +1443,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/information_gathering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-363">
+        <state relative-caret-position="-660">
           <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
             <marker date="1502320629242" expanded="true" signature="1973:2017" ph="SELECT * FRO... walks_set" />
             <marker date="1502320629242" expanded="true" signature="2349:2361" ph="INSERT INTO ealk... " />
             <marker date="1502320629242" expanded="true" signature="2349:2631" ph="INSERT INTO walks_set... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="156" column="0" lean-forward="true" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#103#0" expanded="true" />
+            <marker date="1502321463507" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="4423:4471" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="4811:4883" ph="INSERT INTO registered_users... " />
+            <marker date="1502321463507" expanded="true" signature="5261:5309" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="6098:6148" ph="SELECT * FRO... registered_users" />
+            <marker date="1502321463507" expanded="true" signature="6872:6914" ph="SELECT * FRO... walks_set" />
+            <marker date="1502321463507" expanded="true" signature="7239:7253" ph="SELECT * FRO... testtable" />
+            <marker date="1502321463507" expanded="true" signature="7239:7262" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>

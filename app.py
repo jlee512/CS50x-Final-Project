@@ -143,6 +143,18 @@ def register():
             print("Chosen username is already taken")
             return render_template("register.html", err_message="Your chosen username is already taken")
 
+        # query database for username
+        db = MySQL_Database()
+        rows = db.query('SELECT * FROM registered_users WHERE username=%s', [username_entry])
+        db.check_connection()
+
+        # ensure username exists and password is correct
+        if len(rows) != 1 or not bcrypt.verify(password_entry, rows[0]["hash"]):
+            print("Username or password was incorrect")
+            return render_template("login.html", err_message="Your username or password was incorrect")
+
+        session["user_id"] = rows[0]['user_id']
+
         return redirect(url_for("index"))
 
     else:
