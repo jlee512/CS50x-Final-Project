@@ -11,6 +11,10 @@ def number_span(tag):
     return tag.name == 'strong' and 'Great Walks season' in tag.text
 
 
+def seasonal_restriction(tag):
+    return tag.name == 'h3' and 'Seasonal restrictions' in tag.text
+
+
 class Walk:
     _id = None
     _name = None
@@ -167,15 +171,24 @@ def main():
                                                                                                                     'details-mtb-time'}).text.replace(
                 " - ", " to ").replace("-", " to ").replace(" one way", ""))
 
+        seasonal_restriction = []
+
         if specific_walk_page_soup.find('div', attrs={'class', 'details-seasonal'}):
-            if specific_walk_page_soup.find('div', attrs={'class', 'details-seasonal'}).find(number_span) is not None:
+            seasonal_restrictions_scope = specific_walk_page_soup.find('div', attrs={'class', 'details-seasonal'})
+
+            if seasonal_restrictions_scope.find(number_span) is not None:
                 dates = re.findall("[0-9]+ +.[a-z]+ +[0-9]+",
-                                   specific_walk_page_soup.find('div', attrs={'class', 'details-seasonal'}).find(
+                                   seasonal_restrictions_scope.find(
                                        number_span).text)
                 great_walks_season_start_date = dates[0]
                 great_walks_season_end_date = dates[1]
-                print(great_walks_season_start_date)
-                print(great_walks_season_end_date)
+                seasonal_restriction.append("Great walks season")
+
+            if seasonal_restrictions_scope.find(seasonal_restriction):
+                seasonal_restriction.append(seasonal_restrictions_scope.find('p').text)
+
+
+        print(seasonal_restriction)
 
 
 if __name__ == "__main__":
