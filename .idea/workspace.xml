@@ -17,7 +17,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$test.coverage" NAME="test Coverage Results" MODIFIED="1501978662426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Unittests_in_app_py.coverage" NAME="Unittests in app.py Coverage Results" MODIFIED="1501825196593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1502329124397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1502343195045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1502234819312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
@@ -82,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1458">
-              <caret line="156" column="0" lean-forward="true" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+              <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
               <folding>
                 <element signature="e#0#103#0" expanded="true" />
                 <marker date="1502321463507" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
@@ -101,13 +101,13 @@
       <file leaf-file-name="information_gathering.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/information_gathering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8349">
-              <caret line="190" column="14" lean-forward="false" selection-start-line="190" selection-start-column="14" selection-end-line="190" selection-end-column="14" />
+            <state relative-caret-position="7689">
+              <caret line="178" column="16" lean-forward="true" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="16" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1502329124377" expanded="true" signature="2074:2118" ph="SELECT * FRO... walks_set" />
-                <marker date="1502329124377" expanded="true" signature="2450:2462" ph="INSERT INTO ealk... " />
-                <marker date="1502329124377" expanded="true" signature="2450:2732" ph="INSERT INTO walks_set... " />
+                <marker date="1502343195029" expanded="true" signature="1991:2035" ph="SELECT * FRO... walks_set" />
+                <marker date="1502343195029" expanded="true" signature="2367:2379" ph="INSERT INTO ealk... " />
+                <marker date="1502343195029" expanded="true" signature="2367:2649" ph="INSERT INTO walks_set... " />
               </folding>
             </state>
           </provider>
@@ -506,13 +506,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
     </task>
-    <task id="LOCAL-00027" summary="attempting to fix login mechanism">
-      <created>1501712771984</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1501712771984</updated>
-    </task>
     <task id="LOCAL-00028" summary="attempting to fix login mechanism">
       <created>1501713732380</created>
       <option name="number" value="00028" />
@@ -849,7 +842,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502321475923</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Next step is to pull google maps coordinates using Google Maps Geocoding API">
+      <created>1502342480349</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1502342480349</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -895,13 +895,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1489" y="0" width="1522" height="1931" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.50721157" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.4971591" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33155712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297491" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3321386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3321386" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918888" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20880681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4217033" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -972,7 +973,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first pass of login backend completed" />
     <MESSAGE value="development of login/registration tab interface" />
     <MESSAGE value="form toggling front-end initial completion, backend implementation to come" />
     <MESSAGE value="To work on Material Design Lite Form Inputs - Formatting lost for dynamically created elements" />
@@ -997,7 +997,8 @@
     <MESSAGE value="data collection crawler development as well as database flesh-out - addition commit" />
     <MESSAGE value="Created local copies of doc html code in order to prevent loading the site and to practice python file I/O" />
     <MESSAGE value="Updated registration to create session to fix login error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated registration to create session to fix login error" />
+    <MESSAGE value="Next step is to pull google maps coordinates using Google Maps Geocoding API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Next step is to pull google maps coordinates using Google Maps Geocoding API" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1442,7 +1443,7 @@
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1458">
-          <caret line="156" column="0" lean-forward="true" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
           <folding>
             <element signature="e#0#103#0" expanded="true" />
             <marker date="1502321463507" expanded="true" signature="2490:2538" ph="SELECT * FRO... registered_users" />
@@ -1459,13 +1460,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/information_gathering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8349">
-          <caret line="190" column="14" lean-forward="false" selection-start-line="190" selection-start-column="14" selection-end-line="190" selection-end-column="14" />
+        <state relative-caret-position="7689">
+          <caret line="178" column="16" lean-forward="true" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="16" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1502329124377" expanded="true" signature="2074:2118" ph="SELECT * FRO... walks_set" />
-            <marker date="1502329124377" expanded="true" signature="2450:2462" ph="INSERT INTO ealk... " />
-            <marker date="1502329124377" expanded="true" signature="2450:2732" ph="INSERT INTO walks_set... " />
+            <marker date="1502343195029" expanded="true" signature="1991:2035" ph="SELECT * FRO... walks_set" />
+            <marker date="1502343195029" expanded="true" signature="2367:2379" ph="INSERT INTO ealk... " />
+            <marker date="1502343195029" expanded="true" signature="2367:2649" ph="INSERT INTO walks_set... " />
           </folding>
         </state>
       </provider>

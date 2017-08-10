@@ -36,7 +36,7 @@ class Walk:
 
     # Constructor
     def __init__(self, name, region, country, highlights, one_way_distance, loop, doc_site_hyperlink,
-                 great_walks_season_start, great_walks_season_end, travel_options, travel_time, seasonal_restrictions):
+                 great_walks_season_start, great_walks_season_end, travel_options, travel_time):
         self._name = name
         self._classname = name[:10] + "-walk"
         self._background_image_link = "/static/Media/Photographs/Walks/" + name.replace(" ", "").replace("+",
@@ -53,7 +53,6 @@ class Walk:
         self._highlights = highlights
         self._travel_options = travel_options
         self._travel_option_time = travel_time
-        self._seasonal_restrictions = seasonal_restrictions
 
     # Set the instance id based on the database autoincrement id
     def set_id(self, id):
@@ -105,7 +104,6 @@ def main():
     for walk_card in walk_cards:
         # 1) Get walk_name
         walk_name = walk_card.find('h3').text.replace('and', '+')
-        print("Processing: " + walk_name)
 
         # 2) Get walk region
         walk_region = walk_card.find('span', attrs={'class': 'product-region'}).text
@@ -136,8 +134,6 @@ def main():
         # 5) Store walk distance in kilometers
         track_distance = re.match("([0-9]+.[0-9])+|[0-9]+", track_distance_string).group()
 
-        print("Track distance: " + track_distance)
-
         # 6) Obtain and store the highlights of the walk (for use in a later database table
         specific_walk_highlights = specific_walk_page_soup.find('h2', string="Highlights").find_next_sibling().findAll(
             'li')
@@ -154,8 +150,8 @@ def main():
             walk_travel_option.append("Walking and Tramping")
             walk_travel_option_time.append(specific_walk_page_soup.find('div', attrs={'class', 'details-walk'}).find('',
                                                                                                                      attrs={
-                                                                                                                     'class',
-                                                                                                                     'details-walk-time'}).text.replace(
+                                                                                                                         'class',
+                                                                                                                         'details-walk-time'}).text.replace(
                 " - ", " to ").replace("-", " to ").replace(" one way", ""))
         if specific_walk_page_soup.find('div', attrs={'class', 'details-paddling'}):
             walk_travel_option.append("Kayaking and Canoeing")
@@ -167,8 +163,8 @@ def main():
             walk_travel_option.append("Mountain Biking")
             walk_travel_option_time.append(specific_walk_page_soup.find('div', attrs={'class', 'details-mtb'}).find('',
                                                                                                                     attrs={
-                                                                                                                    'class',
-                                                                                                                    'details-mtb-time'}).text.replace(
+                                                                                                                        'class',
+                                                                                                                        'details-mtb-time'}).text.replace(
                 " - ", " to ").replace("-", " to ").replace(" one way", ""))
 
         seasonal_restriction = []
@@ -187,8 +183,16 @@ def main():
             if seasonal_restrictions_scope.find(seasonal_restriction):
                 seasonal_restriction.append(seasonal_restrictions_scope.find('p').text)
 
+        print(walk_name)
+        print(walk_region)
+        print(walk_country)
+        print(track_distance)
+        print(loop_walk)
+        print(doc_site_hyperlink)
+        if len(seasonal_restriction) > 0:
+            print(great_walks_season_start_date)
+            print(great_walks_season_end_date)
 
-        print(seasonal_restriction)
 
 
 if __name__ == "__main__":
