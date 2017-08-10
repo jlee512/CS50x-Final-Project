@@ -195,6 +195,12 @@ def main():
             print(great_walks_season_start_date)
             print(great_walks_season_end_date)
 
+    gmaps = googlemaps.Client(key='AIzaSyB7DACcjFtDRh7SFgfyKvFq3_rnYJeDz1Q')
+
+    # Geocode each walk name
+    geocode_result = gmaps.geocode('Rakiura Track, Oban')
+    print(geocode_result)
+
 
 
 if __name__ == "__main__":
