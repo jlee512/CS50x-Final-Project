@@ -5,6 +5,8 @@ import lxml
 from bs4 import BeautifulSoup
 import re
 import os
+import googlemaps
+from datetime import datetime
 
 
 def number_span(tag):
@@ -176,8 +178,8 @@ def main():
                 dates = re.findall("[0-9]+ +.[a-z]+ +[0-9]+",
                                    seasonal_restrictions_scope.find(
                                        number_span).text)
-                great_walks_season_start_date = dates[0]
-                great_walks_season_end_date = dates[1]
+                great_walks_season_start_date = datetime.strptime(dates[0], '%d %B %Y')
+                great_walks_season_end_date = datetime.strptime(dates[1], '%d %B %Y')
                 seasonal_restriction.append("Great walks season")
 
             if seasonal_restrictions_scope.find(seasonal_restriction):
