@@ -17,7 +17,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$test.coverage" NAME="test Coverage Results" MODIFIED="1501978662426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Unittests_in_app_py.coverage" NAME="Unittests in app.py Coverage Results" MODIFIED="1501825196593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1502344628034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1502399383070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1502234819312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
@@ -81,7 +81,7 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1557">
+            <state relative-caret-position="4818">
               <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
               <folding>
                 <element signature="e#0#103#0" expanded="true" />
@@ -101,13 +101,13 @@
       <file leaf-file-name="information_gathering.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/information_gathering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="197" column="4" lean-forward="false" selection-start-line="197" selection-start-column="4" selection-end-line="201" selection-end-column="25" />
+            <state relative-caret-position="297">
+              <caret line="99" column="71" lean-forward="false" selection-start-line="99" selection-start-column="71" selection-end-line="99" selection-end-column="71" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1502344628017" expanded="true" signature="2039:2083" ph="SELECT * FRO... walks_set" />
-                <marker date="1502344628017" expanded="true" signature="2415:2427" ph="INSERT INTO ealk... " />
-                <marker date="1502344628017" expanded="true" signature="2415:2697" ph="INSERT INTO walks_set... " />
+                <marker date="1502406321712" expanded="true" signature="2039:2083" ph="SELECT * FRO... walks_set" />
+                <marker date="1502406321712" expanded="true" signature="2415:2427" ph="INSERT INTO ealk... " />
+                <marker date="1502406321712" expanded="true" signature="2415:2697" ph="INSERT INTO walks_set... " />
               </folding>
             </state>
           </provider>
@@ -229,6 +229,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -242,9 +243,88 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project_Deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project_Deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project_Deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project_Deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Photographs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project_Deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project_Deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Photographs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Walks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project_Deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project_Deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -506,13 +586,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
-    </task>
-    <task id="LOCAL-00030" summary="debugging session persistence issue in production - update 1103">
-      <created>1501715033745</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1501715033745</updated>
     </task>
     <task id="LOCAL-00031" summary="debugging session persistence issue in production - update 1116">
       <created>1501715781997</created>
@@ -850,7 +923,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502343616645</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Initialized google maps api connection and api call">
+      <created>1502344783471</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1502344783471</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -896,17 +976,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1489" y="0" width="1522" height="1931" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21519886" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.50721157" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4217033" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.4971591" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33155712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3321386" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918888" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20880681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4217033" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3345281" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918888" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39964157" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -916,6 +996,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -973,7 +1054,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="To work on Material Design Lite Form Inputs - Formatting lost for dynamically created elements" />
     <MESSAGE value="Updated background_image_load.js to include MDL componentHandler update to ensure consistent form field presentation" />
     <MESSAGE value="Updated mySQL DB to commit rollback changes on error with login" />
     <MESSAGE value="Implemented JSGlue for Flask for the user of url_for for dynamically created elements" />
@@ -998,7 +1078,8 @@
     <MESSAGE value="Next step is to pull google maps coordinates using Google Maps Geocoding API" />
     <MESSAGE value="Verified all information (bar geocoding) is available for addition to class and database." />
     <MESSAGE value="Fixed date format for great walks seasonal dates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed date format for great walks seasonal dates" />
+    <MESSAGE value="Initialized google maps api connection and api call" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialized google maps api connection and api call" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1178,14 +1259,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.testtable">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1214,7 +1295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1268,26 +1348,26 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.registered_users">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.walks_set">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1327,9 +1407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1337,7 +1414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1355,59 +1431,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web_Information_Gathering/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web_Information_Gathering/doc_main.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Web_Information_Gathering/test.txt" />
+    <entry file="file://$PROJECT_DIR$/Web_Information_Gathering/doc_main.txt" />
     <entry file="file://$PROJECT_DIR$/Web_Information_Gathering/doc_main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#7173#7178#0#HTML" expanded="false" />
-            <element signature="e#7911#7916#0#HTML" expanded="false" />
-            <element signature="e#8936#8941#0#HTML" expanded="false" />
-            <element signature="e#9556#9561#0#HTML" expanded="false" />
-            <element signature="e#9660#9665#0#HTML" expanded="false" />
-            <element signature="e#13091#13096#0#HTML" expanded="false" />
-            <element signature="e#13269#13274#0#HTML" expanded="false" />
-            <element signature="e#14736#14741#0#HTML" expanded="false" />
-            <element signature="e#15191#15196#0#HTML" expanded="false" />
-            <element signature="e#15366#15371#0#HTML" expanded="false" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#8;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#9;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#section#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#36765#36770#0#HTML" expanded="false" />
-            <element signature="e#39916#39921#0#HTML" expanded="false" />
-            <element signature="e#41325#41330#0#HTML" expanded="false" />
-            <element signature="e#42039#42044#0#HTML" expanded="false" />
-            <element signature="e#42412#42417#0#HTML" expanded="false" />
-            <element signature="e#42637#42642#0#HTML" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#noscript#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1415,34 +1444,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-33">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#9814#9819#0#HTML" expanded="false" />
-            <element signature="e#10552#10557#0#HTML" expanded="false" />
-            <element signature="e#11577#11582#0#HTML" expanded="false" />
-            <element signature="e#12197#12202#0#HTML" expanded="false" />
-            <element signature="e#12301#12306#0#HTML" expanded="false" />
-            <element signature="e#15732#15737#0#HTML" expanded="false" />
-            <element signature="e#15910#15915#0#HTML" expanded="false" />
-            <element signature="e#17377#17382#0#HTML" expanded="false" />
-            <element signature="e#17842#17847#0#HTML" expanded="false" />
-            <element signature="e#24284#24289#0#HTML" expanded="false" />
-            <element signature="e#27526#27531#0#HTML" expanded="false" />
-            <element signature="e#34604#34609#0#HTML" expanded="false" />
-            <element signature="e#39773#39778#0#HTML" expanded="false" />
-            <element signature="e#42924#42929#0#HTML" expanded="false" />
-            <element signature="e#44333#44338#0#HTML" expanded="false" />
-            <element signature="e#45047#45052#0#HTML" expanded="false" />
-            <element signature="e#45420#45425#0#HTML" expanded="false" />
-            <element signature="e#45645#45650#0#HTML" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#noscript#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1557">
+        <state relative-caret-position="4818">
           <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
           <folding>
             <element signature="e#0#103#0" expanded="true" />
@@ -1460,13 +1467,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/information_gathering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="197" column="4" lean-forward="false" selection-start-line="197" selection-start-column="4" selection-end-line="201" selection-end-column="25" />
+        <state relative-caret-position="297">
+          <caret line="99" column="71" lean-forward="false" selection-start-line="99" selection-start-column="71" selection-end-line="99" selection-end-column="71" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1502344628017" expanded="true" signature="2039:2083" ph="SELECT * FRO... walks_set" />
-            <marker date="1502344628017" expanded="true" signature="2415:2427" ph="INSERT INTO ealk... " />
-            <marker date="1502344628017" expanded="true" signature="2415:2697" ph="INSERT INTO walks_set... " />
+            <marker date="1502406321712" expanded="true" signature="2039:2083" ph="SELECT * FRO... walks_set" />
+            <marker date="1502406321712" expanded="true" signature="2415:2427" ph="INSERT INTO ealk... " />
+            <marker date="1502406321712" expanded="true" signature="2415:2697" ph="INSERT INTO walks_set... " />
           </folding>
         </state>
       </provider>

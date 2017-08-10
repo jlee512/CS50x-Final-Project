@@ -95,6 +95,11 @@ class Walk:
 # f.close()
 
 def main():
+
+    # Manually pull walk coordinates for the start of each track from google maps
+    manual_coordinates = {"Lake Waikaremoana" : (-38.800111, 177.120654), "Tongariro Northern Circuit" : (-39.199773, 175.541724), "Whanganui Journey" : (-38.891146,175.255669), "Abel Tasman Coastal Track" : (-40.995846, 173.005098), "Heaphy Track" : (-40.850444, 172.447293), "Paparoa Track + Pike29 Memorial Track" : (-42.337356, 171.397994), "Routeburn Track" : (-44.718545, 168.278506), "Kepler Track" : (-45.492097, 167.663271), "Milford Track" : (-44.683535, 167.902511), "Rakiura Track" : (-46.863378, 168.123124)}
+
+
     # parse_walk_information()
     # Web information written to file to reduce loading of DOC website
     great_walks_page_soup = BeautifulSoup(open(os.path.join("Web_Information_Gathering", "doc_main.html")),
@@ -194,12 +199,17 @@ def main():
         if len(seasonal_restriction) > 0:
             print(great_walks_season_start_date)
             print(great_walks_season_end_date)
+        else:
+            great_walks_season_start_date = None
+            great_walks_season_end_date = None
 
-    gmaps = googlemaps.Client(key='AIzaSyB7DACcjFtDRh7SFgfyKvFq3_rnYJeDz1Q')
+        walk_to_add = Walk(walk_name, walk_region, walk_country, walk_highlights, track_distance, loop_walk, doc_site_hyperlink,
+                 great_walks_season_start_date, great_walks_season_end_date, walk_travel_option, walk_travel_option_time)
 
-    # Geocode each walk name
-    geocode_result = gmaps.geocode('Rakiura Track, Oban')
-    print(geocode_result)
+
+
+
+
 
 
 
