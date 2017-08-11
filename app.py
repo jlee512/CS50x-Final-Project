@@ -200,7 +200,7 @@ def basic_walks_query():
     json_walks = db.query('SELECT * FROM walks_set LIMIT %s OFFSET %s;', [count_url_param, from_url_param])
 
     for walk in json_walks:
-        walk['distance'] = float(walk['distance'])
+        walk['one_way_distance'] = float(walk['one_way_distance'])
 
     return Response(json.dumps(json_walks), mimetype="application/json"
                     )

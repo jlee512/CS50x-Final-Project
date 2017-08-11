@@ -72,11 +72,13 @@ class Walk:
         db = MySQL_Database()
 
         db.insert(
-            "INSERT INTO walks_set(walk_name, class_name, background_image, walk_region, walk_country, one_way_distance, loop_track, doc_site_hyperlink, nz_scale_latitude, nz_scale_longitude, great_walks_season_start, great_walks_season_end) VALUES %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s;",
+            "INSERT INTO walks_set(walk_name, class_name, background_image, walk_region, walk_country, one_way_distance, loop_track, doc_site_hyperlink, nz_scale_latitude, nz_scale_longitude, great_walks_season_start, great_walks_season_end) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);",
             [self._name, self._classname, self._background_image_link, self._region, self._country,
              self._one_way_distance, self._loop, self._doc_site_hyperlink, self._nz_scale_latitude,
              self._nz_scale_longitude, self._great_walks_seasion_start, self._great_walks_seasion_end])
 
+    def __str__(self):
+        return self._name + "\n" + self._classname + "\n" + self._background_image_link + "\n" + self._region + "\n" + self._country + "\n" + self._one_way_distance + "\n" + str(self._loop) + "\n" + self._doc_site_hyperlink + "\n" + str(self._nz_scale_latitude) + "\n" + str(self._nz_scale_longitude) + "\n" + str(self._great_walks_seasion_start) + "\n" + str(self._great_walks_seasion_end)
 
 # def parse_walk_information():
 
@@ -97,7 +99,7 @@ class Walk:
 def main():
 
     # Manually pull walk coordinates for the start of each track from google maps
-    manual_coordinates = {"Lake Waikaremoana" : (-38.800111, 177.120654), "Tongariro Northern Circuit" : (-39.199773, 175.541724), "Whanganui Journey" : (-38.891146,175.255669), "Abel Tasman Coastal Track" : (-40.995846, 173.005098), "Heaphy Track" : (-40.850444, 172.447293), "Paparoa Track + Pike29 Memorial Track" : (-42.337356, 171.397994), "Routeburn Track" : (-44.718545, 168.278506), "Kepler Track" : (-45.492097, 167.663271), "Milford Track" : (-44.683535, 167.902511), "Rakiura Track" : (-46.863378, 168.123124)}
+    manual_coordinates = {"Lake Waikaremoana" : (-38.800111, 177.120654), "Tongariro Northern Circuit" : (-39.199773, 175.541724), "Whanganui Journey" : (-38.891146,175.255669), "Abel Tasman Coast Track" : (-40.995846, 173.005098), "Heaphy Track" : (-40.850444, 172.447293), "Paparoa Track + Pike29 Memorial Track" : (-42.337356, 171.397994), "Routeburn Track" : (-44.718545, 168.278506), "Kepler Track" : (-45.492097, 167.663271), "Milford Track" : (-44.683535, 167.902511), "Rakiura Track" : (-46.863378, 168.123124)}
 
 
     # parse_walk_information()
@@ -190,16 +192,20 @@ def main():
             if seasonal_restrictions_scope.find(seasonal_restriction):
                 seasonal_restriction.append(seasonal_restrictions_scope.find('p').text)
 
-        print(walk_name)
-        print(walk_region)
-        print(walk_country)
-        print(track_distance)
-        print(loop_walk)
-        print(doc_site_hyperlink)
-        if len(seasonal_restriction) > 0:
-            print(great_walks_season_start_date)
-            print(great_walks_season_end_date)
-        else:
+        # print(walk_name)
+        # print(walk_region)
+        # print(walk_country)
+        # print(track_distance)
+        # print(loop_walk)
+        # print(doc_site_hyperlink)
+        # if len(seasonal_restriction) > 0:
+        #     print(great_walks_season_start_date)
+        #     print(great_walks_season_end_date)
+        # else:
+        #     great_walks_season_start_date = None
+        #     great_walks_season_end_date = None
+
+        if len(seasonal_restriction) == 0:
             great_walks_season_start_date = None
             great_walks_season_end_date = None
 
@@ -207,10 +213,11 @@ def main():
                  great_walks_season_start_date, great_walks_season_end_date, walk_travel_option, walk_travel_option_time)
 
 
+        walk_to_add.set_location(manual_coordinates[walk_name][0], manual_coordinates[walk_name][1])
 
+        # print(walk_to_add)
 
-
-
+        walk_to_add.push_to_database()
 
 
 if __name__ == "__main__":

@@ -23,7 +23,7 @@ CREATE TABLE walks_set (
   background_image VARCHAR(150),
   walk_region VARCHAR(100) NOT NULL,
   walk_country VARCHAR(150) NOT NULL,
-  one_way_distance NUMERIC NOT NULL,
+  one_way_distance FLOAT NOT NULL,
   loop_track BOOLEAN,
   doc_site_hyperlink VARCHAR(500),
   nz_scale_latitude FLOAT,
