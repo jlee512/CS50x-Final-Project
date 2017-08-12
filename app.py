@@ -7,6 +7,7 @@ import redis
 from redissession import *
 from mysql_db import MySQL_Database
 from passlib.hash import bcrypt
+import datetime
 
 from helpers import *
 
@@ -201,6 +202,8 @@ def basic_walks_query():
 
     for walk in json_walks:
         walk['one_way_distance'] = float(walk['one_way_distance'])
+        walk['great_walks_season_start'] = '{:%d/%m/%Y}'.format(walk['great_walks_season_start'])
+        walk['great_walks_season_end'] = '{:%d/%m/%Y}'.format(walk['great_walks_season_end'])
 
     return Response(json.dumps(json_walks), mimetype="application/json"
                     )

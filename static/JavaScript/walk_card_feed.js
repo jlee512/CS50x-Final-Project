@@ -2,68 +2,6 @@
 /*This JavaScript file is used to display 'Great Walks' cards on the main content page, this is to be done via infinite scrollingy*/
 /*-------------------------------------------------------*/
 
-// Great Walks JSON Array
-var great_walks = [{
-    walk_id: 1,
-    walk_name: "Lake Waikaremoana",
-    class_name: "waikare-walk",
-    background_image: "/static/Media/Photographs/Walks/lakewaikaremoana.jpg"
-},
-    {
-        walk_id: 2,
-        walk_name: "Tongariro Northern Circuit",
-        class_name: "tongariro-walk",
-        background_image: "/static/Media/Photographs/Walks/tongarironortherncircuit.jpg"
-    },
-    {
-        walk_id: 3,
-        walk_name: "Whanganui River Journey",
-        class_name: "whanganui-walk",
-        background_image: "/static/Media/Photographs/Walks/whanganuijourney.jpg"
-    },
-    {
-        walk_id: 4,
-        walk_name: "Abel Tasman Coastal Track",
-        class_name: "abel-walk",
-        background_image: "/static/Media/Photographs/Walks/abeltasmancoasttrack.jpg"
-    },
-    {
-        walk_id: 5,
-        walk_name: "Heaphy Track",
-        class_name: "heaphy-walk",
-        background_image: "/static/Media/Photographs/Walks/heaphytrack.jpg"
-    },
-    {
-        walk_id: 6,
-        walk_name: "Paparoa + Pike 29 Memorial Track (2019)",
-        class_name: "paparoa-walk",
-        background_image: "/static/Media/Photographs/Walks/paparoatrackpike29memorialtrack.jpg"
-    },
-    {
-        walk_id: 7,
-        walk_name: "Milford Track",
-        class_name: "milford-walk",
-        background_image: "/static/Media/Photographs/Walks/milfordtrack.jpg"
-    },
-    {
-        walk_id: 8,
-        walk_name: "Routeburn Track",
-        class_name: "routeburn-walk",
-        background_image: "/static/Media/Photographs/Walks/keplertrack.jpg"
-    },
-    {
-        walk_id: 9,
-        walk_name: "Kepler Track",
-        class_name: "kepler-walk",
-        background_image: "/static/Media/Photographs/Walks/keplertrack.jpg"
-    },
-    {
-        walk_id: 10,
-        walk_name: "Rakiura Track",
-        class_name: "rakiura-walk",
-        background_image: "/static/Media/Photographs/Walks/routeburntrack.jpg"
-    }];
-
 //Setup global variables to store the state of walk-feed loading on the page at a given point in time (searching/sorting mechanisms to be factored in at a later stage)
 var from = 0;
 var count = 3;
@@ -95,9 +33,10 @@ $(document).ready(function () {
         window_height = $(window).height();
 
         if ((main_height - 10) <= (window_height + main_scroll) && more_walks && !scroll_registered) {
-            console.log("scroll registered");
             scroll_registered = true;
+            $('.walk-feed-loader').show();
             load_walks_increment();
+
         }
     });
 
@@ -112,7 +51,6 @@ $(document).ready(function () {
 //AJAX call to be implemented, but initially loading from JSON object
 function load_walks_increment() {
     /*When the next increment of articles is loaded, initially display the loader until the walks are loaded*/
-    $('.walk-feed-loader').show();
 
     //AJAX call to go here, temporarily access subarrray of JSON array
 
@@ -213,8 +151,6 @@ function Walk_Card(walk_id, walk_name, class_name, background_image) {
             if (walk_name.length > 26) {
                 set_background.css('font-size','14px');
                 $('h2.card-title-text', walk_card_template).css('font-size', '14px;');
-                // console.log($('.card-title-text', walk_card_template).css('font-size'));
-                console.log(set_background.css('font-size'));
 
             }
 
