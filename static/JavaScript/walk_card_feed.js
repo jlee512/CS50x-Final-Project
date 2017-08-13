@@ -3,14 +3,7 @@
 /*-------------------------------------------------------*/
 
 //Setup global variables to store the state of walk-feed loading on the page at a given point in time (searching/sorting mechanisms to be factored in at a later stage)
-var from = 0;
-var count = 3;
-var more_walks = true;
-var sort_by = "name";
-var ordering = "DESC";
-var search_term = "";
-var scroll_registered = false;
-
+var walk_num = 0;
 
 //Default page functionality
 $(document).ready(function () {
@@ -19,50 +12,20 @@ $(document).ready(function () {
 
 
 //    Loader implementation
+    /*When the next increment of articles is loaded, initially display the loader until the walks are loaded*/
+    $('.walk-feed-loader').show();
 //    Hide the 'fully-loaded' bar
     $('#loaded1, #loaded2, #loaded3, #loaded4').hide();
+    load_walks();
 
     $('#loading-mask').fadeOut(500, function () {
         $(this).remove();
     });
 
-    var main_scroll = $('main').scrollTop();
-    var main_height = $('main').height();
-    var window_height = $(window).height();
-    var map_height = $('#map').height();
-    var card_feed_height = $('.walk-card-feed').height();
-
-    //Add in infinite scrolling when the user reaches the bottom of the window
-    $('main').scroll(function () {
-
-
-        main_scroll = $('main').scrollTop();
-        main_height = $('main').height();
-        window_height = $(window).height();
-
-        console.log(main_scroll);
-        console.log(main_height);
-        console.log(window_height);
-
-        if ((main_height - 250) <= (window_height + main_scroll) && more_walks && !scroll_registered) {
-            scroll_registered = true;
-            load_walks_increment();
-
-        }
-    });
-
-    //By default, on page loading, load the first walk-cards until the page is full
-    load_walks_increment();
-    if ((main_height) > (map_height + card_feed_height - 100)) {
-        load_walks_increment();
-
-    }
 });
 
 //AJAX call to be implemented, but initially loading from JSON object
-function load_walks_increment() {
-    /*When the next increment of articles is loaded, initially display the loader until the walks are loaded*/
-    $('.walk-feed-loader').show();
+function load_walks() {
 
     //AJAX call to go here, temporarily access subarrray of JSON array
 
@@ -71,7 +34,7 @@ function load_walks_increment() {
         url: Flask.url_for("basic_walks_query"),
         async: true,
         type: 'GET',
-        data: {from: from, count: count, sort_by: sort_by, ordering: ordering, search_term: search_term},
+        data: {from: 0, count: 10},
 
         success: function (data) {
             successful_walks_load(data);
@@ -79,8 +42,6 @@ function load_walks_increment() {
 
         error: failedArticleLoad
     });
-
-    from += count;
 }
 
 /*-------------------------------------------------------*/
@@ -96,31 +57,20 @@ function failedArticleLoad(jqXHR, textStatus, errorThrown) {
 /*If a successful AJAX call is made, this function is called to process the results and populate the walk_card_template and subsequently the walk-card-feed.*/
 function successful_walks_load(data) {
 
-    if (data.length == 0) {
-        //    If the data length is zero, there are no more walks to load
-        $('.walk-feed-loader').hide();
-        $('#loaded1, #loaded2, #loaded3, #loaded4').show();
-        more_walks = false;
+    var walk_cards = [];
 
-    } else {
+    for (var i = 0; i < data.length; i++) {
+        var individual_walk = data[i];
 
-        var walk_cards = [];
+        //Transfer individual walk data to Walk_Card object instance
+        walk_cards[i] = new Walk_Card(individual_walk.walk_id, individual_walk.walk_name, individual_walk.class_name, individual_walk.background_image);
 
-        for (var i = 0; i < data.length; i++) {
-            var individual_walk = data[i];
-
-            //Transfer individual walk data to Walk_Card object instance
-            walk_cards[i] = new Walk_Card(individual_walk.walk_id, individual_walk.walk_name, individual_walk.class_name, individual_walk.background_image);
-
-        }
-
-        for (var i = 0; i < walk_cards.length; i++) {
-            walk_cards[i].load();
-
-        }
     }
-    //    Once the previous AJAX call has been completed, allow another scroll-bottom event to be registered
-    scroll_registered = false;
+
+    for (var i = 0; i < walk_cards.length; i++) {
+        walk_cards[i].load();
+
+    }
 }
 
 function Walk_Card(walk_id, walk_name, class_name, background_image) {
@@ -129,7 +79,6 @@ function Walk_Card(walk_id, walk_name, class_name, background_image) {
     this.walk_name = walk_name;
     this.class_name = class_name;
     this.background_image = background_image;
-    this.insert_location = $('#loader');
 
     //Priviate variable (class specific)
     this.walk_card_template = $('<div class="card ' + this.class_name + '">'
@@ -162,12 +111,23 @@ function Walk_Card(walk_id, walk_name, class_name, background_image) {
             //If the length of the walk_name is longer than 26 characters, reduce the font size to 14px
             if (walk_name.length > 26) {
                 set_background.css('font-size', '14px');
-                $('h2.card-title-text', walk_card_template).css('font-size', '14px;');
+                $('h2.card-title-text', walk_card_template).css('font-size', '14px');
 
             }
 
+            $('h2.card-title-text', walk_card_template).css('display', 'none');
+
             //Once the content has been loaded, append the walk card to the walk-card-feed\
             walk_card_template.insertBefore('#loader');
+            walk_num++;
+
+            //If the last walk has been loaded, show all walk cards
+            if (walk_num == 10) {
+                $('h2.card-title-text').fadeIn('slow');
+                $('.walk-feed-loader').fadeOut('slow');
+                $('#loaded1, #loaded2, #loaded3, #loaded4').show();
+
+            }
 
         });
     }

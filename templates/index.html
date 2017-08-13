@@ -18,89 +18,89 @@
 
     <!-- Simple header with fixed tabs. -->
     <div id="loading-mask"></div>
-        <div id="site-content" class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+    <div id="site-content" class="mdl-layout mdl-js-layout mdl-layout--fixed-header
                 mdl-layout--fixed-tabs" style="display: none;">
 
-            <header class="mdl-layout__header">
+        <header class="mdl-layout__header">
 
-                <div class="mdl-layout__header-row">
-                    <!-- Title -->
-                    <span class="mdl-layout-title">Great Walks Passport</span>
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Great Walks Passport</span>
+            </div>
+
+            <!-- Tabs Buttons-->
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                <a href="#home" class="mdl-layout__tab is-active">
+                    <div class="icon-nz home-icon"></div>
+                </a>
+                <a href="#my-walks" class="mdl-layout__tab">
+                    <div class="icon-hiker my-journey-icon"></div>
+                </a>
+                <a href="#my-memories" class="mdl-layout__tab">
+                    <div class="icon-memories my-memories-icon"></div>
+                </a>
+                <a href="#my-account" class="mdl-layout__tab"><i
+                        class="material-icons account-icon">account_circle</i></a>
+                <a href="#about-the-app" class="mdl-layout__tab"><i class="material-icons about-icon">perm_device_information</i></a>
+                <a href="/logout" class="mdl-layout__tab"><i class="material-icons logout-icon">exit_to_app</i></a>
+            </div>
+        </header>
+
+        {#-- App Home Page Content --#}
+        <main class="mdl-layout__content">
+
+            <section class="mdl-layout__tab-panel is-active" id="home">
+                <div class="page-content">
+                    <img id="map" class="center-block"
+                         src="{{ url_for('static', filename='Media/Photographs/nz_map_v2.png') }}"
+                         alt="New Zealand Map"/>
+
                 </div>
 
-                <!-- Tabs Buttons-->
-                <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-                    <a href="#home" class="mdl-layout__tab is-active">
-                        <div class="icon-nz home-icon"></div>
-                    </a>
-                    <a href="#my-walks" class="mdl-layout__tab">
-                        <div class="icon-hiker my-journey-icon"></div>
-                    </a>
-                    <a href="#my-memories" class="mdl-layout__tab">
-                        <div class="icon-memories my-memories-icon"></div>
-                    </a>
-                    <a href="#my-account" class="mdl-layout__tab"><i
-                            class="material-icons account-icon">account_circle</i></a>
-                    <a href="#about-the-app" class="mdl-layout__tab"><i class="material-icons about-icon">perm_device_information</i></a>
-                    <a href="/logout" class="mdl-layout__tab"><i class="material-icons logout-icon">exit_to_app</i></a>
-                </div>
-            </header>
-
-            {#-- App Home Page Content --#}
-            <main class="mdl-layout__content">
-
-                <section class="mdl-layout__tab-panel is-active" id="home">
-                    <div class="page-content">
-                        <img id="map" class="center-block"
-                             src="{{ url_for('static', filename='Media/Photographs/nz_map_v2.png') }}"
-                             alt="New Zealand Map"/>
-
-                    </div>
-
-                    {#To be populated with AJAX at a later stage#}
-                    <div class="walk-card-feed">
+                {#To be populated with AJAX at a later stage#}
+                <div class="walk-card-feed">
 
 
-                        {# Walks to be appended prior to the loader #}
-                        <div id="loader">
-                            <div class="walk-feed-loader">
-                                <img id="loader-svg" src="/static/Media/Loader/loader.svg" alt="Loader">
-                            </div>
-                            <div class="loaded-wrapper">
-                                <div id="loaded1"></div>
-                                <div id="loaded2"></div>
-                                <div id="loaded3"></div>
-                                <div id="loaded4"></div>
-                            </div>
+                    {# Walks to be appended prior to the loader #}
+                    <div id="loader">
+                        <div class="walk-feed-loader">
+                            <img id="loader-svg" src="/static/Media/Loader/loader.svg" alt="Loader">
+                        </div>
+                        <div class="loaded-wrapper">
+                            <div id="loaded1"></div>
+                            <div id="loaded2"></div>
+                            <div id="loaded3"></div>
+                            <div id="loaded4"></div>
                         </div>
                     </div>
+                </div>
 
 
-                </section>
+            </section>
 
 
-                {# ---------------My Walks Tab--------------#}
-                <section class="mdl-layout__tab-panel" id="my-walks">
-                    <div class="page-content">My Walks</div>
-                </section>
+            {# ---------------My Walks Tab--------------#}
+            <section class="mdl-layout__tab-panel" id="my-walks">
+                <div class="page-content">My Walks</div>
+            </section>
 
 
-                {# ---------------My Memories Tab--------------#}
-                <section class="mdl-layout__tab-panel" id="my-memories">
-                    <div class="page-content">My Memories</div>
-                </section>
+            {# ---------------My Memories Tab--------------#}
+            <section class="mdl-layout__tab-panel" id="my-memories">
+                <div class="page-content">My Memories</div>
+            </section>
 
-                {# ---------------My Account Tab--------------#}
-                <section class="mdl-layout__tab-panel" id="my-account">
-                    <div class="page-content">My Account</div>
-                </section>
+            {# ---------------My Account Tab--------------#}
+            <section class="mdl-layout__tab-panel" id="my-account">
+                <div class="page-content">My Account</div>
+            </section>
 
-                {# ---------------About the App--------------#}
-                <section class="mdl-layout__tab-panel" id="about-the-app">
-                    <div class="page-content">About the app</div>
-                </section>
+            {# ---------------About the App--------------#}
+            <section class="mdl-layout__tab-panel" id="about-the-app">
+                <div class="page-content">About the app</div>
+            </section>
 
-            </main>
-        </div>
+        </main>
+    </div>
 
 {% endblock %}
