@@ -35,3 +35,8 @@
     display: inline-block;
 
 }
+
+#loader-svg {
+    width: 100px;
+
+}

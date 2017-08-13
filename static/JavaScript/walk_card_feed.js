@@ -14,9 +14,17 @@ var scroll_registered = false;
 
 //Default page functionality
 $(document).ready(function () {
+    $('#loading-mask').delay(5000).fadeOut();
+    $('#site-content').delay(5050).fadeIn('slow');
+
+
 //    Loader implementation
 //    Hide the 'fully-loaded' bar
     $('#loaded1, #loaded2, #loaded3, #loaded4').hide();
+
+    $('#loading-mask').fadeOut(500, function () {
+        $(this).remove();
+    });
 
     var main_scroll = $('main').scrollTop();
     var main_height = $('main').height();
@@ -32,9 +40,12 @@ $(document).ready(function () {
         main_height = $('main').height();
         window_height = $(window).height();
 
-        if ((main_height - 10) <= (window_height + main_scroll) && more_walks && !scroll_registered) {
+        console.log(main_scroll);
+        console.log(main_height);
+        console.log(window_height);
+
+        if ((main_height - 250) <= (window_height + main_scroll) && more_walks && !scroll_registered) {
             scroll_registered = true;
-            $('.walk-feed-loader').show();
             load_walks_increment();
 
         }
@@ -42,7 +53,7 @@ $(document).ready(function () {
 
     //By default, on page loading, load the first walk-cards until the page is full
     load_walks_increment();
-    if ((main_height - 10) > (map_height + card_feed_height)) {
+    if ((main_height) > (map_height + card_feed_height - 100)) {
         load_walks_increment();
 
     }
@@ -51,6 +62,7 @@ $(document).ready(function () {
 //AJAX call to be implemented, but initially loading from JSON object
 function load_walks_increment() {
     /*When the next increment of articles is loaded, initially display the loader until the walks are loaded*/
+    $('.walk-feed-loader').show();
 
     //AJAX call to go here, temporarily access subarrray of JSON array
 
@@ -143,20 +155,19 @@ function Walk_Card(walk_id, walk_name, class_name, background_image) {
             var set_background = walk_card_template.find('h2.card-title-text');
             set_background.css('background', 'white');
             set_background.css('background', '-webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
-            set_background.css('background','-o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
-            set_background.css('background','-moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover')
-            set_background.css('background','linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
+            set_background.css('background', '-o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
+            set_background.css('background', '-moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover')
+            set_background.css('background', 'linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)), url(\'' + background_image + '\') center / cover');
 
             //If the length of the walk_name is longer than 26 characters, reduce the font size to 14px
             if (walk_name.length > 26) {
-                set_background.css('font-size','14px');
+                set_background.css('font-size', '14px');
                 $('h2.card-title-text', walk_card_template).css('font-size', '14px;');
 
             }
 
             //Once the content has been loaded, append the walk card to the walk-card-feed\
             walk_card_template.insertBefore('#loader');
-            $('.walk-feed-loader').hide();
 
         });
     }
