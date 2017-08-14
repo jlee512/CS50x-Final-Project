@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block custom_styles %}
-    <link href="{{ url_for('static', filename='CSS/welcome_styles.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='CSS/tab_content_styles.css') }}" rel="stylesheet"/>
 {% endblock %}
 
 {% block custom_javascript %}
@@ -30,11 +30,11 @@
 
             <!-- Tabs Buttons-->
             <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-                <a href="#home" class="mdl-layout__tab is-active">
-                    <div class="icon-nz home-icon"></div>
-                </a>
-                <a href="#my-walks" class="mdl-layout__tab">
+                <a href="#my-walks" class="mdl-layout__tab is-active">
                     <div class="icon-hiker my-journey-icon"></div>
+                </a>
+                <a href="#home" class="mdl-layout__tab">
+                    <div class="icon-nz home-icon"></div>
                 </a>
                 <a href="#my-memories" class="mdl-layout__tab">
                     <div class="icon-memories my-memories-icon"></div>
@@ -49,7 +49,32 @@
         {#-- App Home Page Content --#}
         <main class="mdl-layout__content">
 
-            <section class="mdl-layout__tab-panel is-active" id="home">
+            {# ---------------My Walks Tab--------------#}
+            <section class="mdl-layout__tab-panel is-active" id="my-walks">
+                <div class="page-content">
+                    <div id="walks-dashboard">
+                        <div class="headline-stat">
+                            <h2 class="headline-text"><span class="decimal-counter">0.0</span></h2>
+                            <h2 class="headline-text">km</h2>
+                        </div>
+                        <div class="secondary-stat">
+                            <h3 class="headline-text"><span class="decimal-counter">0/3</span></h3>
+                            <h4 class="secondary-text">Northern Walks Completed</h4>
+                            <h3 class="headline-text"><span class="decimal-counter">0/7</span></h3>
+                            <h4 class="secondary-text">Southern Walks Completed</h4>
+                        </div>
+                        <div class="tertiary-stat">
+                            <h4 class="secondary-text">My Badges</h4>
+                            <div style="width: 100px; height: 100px; background-color: #F9E4C5;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            {# -----NZ Map and Great Walks Locations Tab-------#}
+            <section class="mdl-layout__tab-panel" id="home">
                 <div class="page-content">
                     <img id="map" class="center-block"
                          src="{{ url_for('static', filename='Media/Photographs/nz_map_v2.png') }}"
@@ -77,13 +102,6 @@
 
 
             </section>
-
-
-            {# ---------------My Walks Tab--------------#}
-            <section class="mdl-layout__tab-panel" id="my-walks">
-                <div class="page-content">My Walks</div>
-            </section>
-
 
             {# ---------------My Memories Tab--------------#}
             <section class="mdl-layout__tab-panel" id="my-memories">

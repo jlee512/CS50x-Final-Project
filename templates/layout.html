@@ -11,6 +11,9 @@
     {#--Internet Explorer Compatibility--#}
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
+    {#-----------------------ICONS------------------------#}
+    <link href="/static/CSS/font.css" rel="stylesheet">
+
     {#--------------Bootstrap CSS Rules---------------------#}
     {#    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>#}
 
@@ -23,9 +26,6 @@
     <link href="{{ url_for('static', filename='CSS/default_styles.css') }}" rel="stylesheet"/>
 <link href="{{ url_for('static', filename='CSS/loader_styles.css') }}" rel="stylesheet"/>
     {% block custom_styles %} {% endblock %}
-
-    {#-----------------------ICONS------------------------#}
-    <link href="/static/CSS/font.css" rel="stylesheet">
 
     {#------------Bootstrap JS, jQuery and jQuery UI plugins------------#}
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>

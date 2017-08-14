@@ -205,8 +205,7 @@ def basic_walks_query():
         walk['great_walks_season_start'] = '{:%d/%m/%Y}'.format(walk['great_walks_season_start'])
         walk['great_walks_season_end'] = '{:%d/%m/%Y}'.format(walk['great_walks_season_end'])
 
-    return Response(json.dumps(json_walks), mimetype="application/json"
-                    )
+    return Response(json.dumps(json_walks), mimetype="application/json")
 
 
 @app.route('/test')

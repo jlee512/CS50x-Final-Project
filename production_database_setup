@@ -32,4 +32,24 @@ CREATE TABLE walks_set (
   great_walks_season_end TIMESTAMP
 );
 
-# INSERT INTO walks_set (walk_name, class_name, background_image, distance) VALUES("Lake Waikaremoana", "waikare-walk", "/static/Media/Photographs/Walks/lakewaikaremoana.jpg", 46), ("Tongariro Northern Circuit", "tongariro-walk", "/static/Media/Photographs/Walks/tongarironortherncircuit.jpg", 43.1), ("Whanganui River Journey", "whanganui-walk", "/static/Media/Photographs/Walks/whanganuijourney.jpg", 145), ("Abel Tasman Coastal Track", "abel-walk", "/static/Media/Photographs/Walks/abeltasmancoasttrack.jpg", 60), ("Heaphy Track", "heaphy-walk", "/static/Media/Photographs/Walks/heaphytrack.jpg", 78.4), ("Paparoa + Pike 29 Memorial Track (2019)", "paparoa-walk", "/static/Media/Photographs/Walks/paparoatrackpike29memorialtrack.jpg", 55), ("Milford Track", "milford-walk", "/static/Media/Photographs/Walks/milfordtrack.jpg", 53.5), ("Routeburn Track", "routeburn-walk", "/static/Media/Photographs/Walks/keplertrack.jpg", 32), ("Kepler Track", "kepler-walk", "/static/Media/Photographs/Walks/routeburntrack.jpg", 60), ("Rakiura Track", "rakiura-walk", "/static/Media/Photographs/Walks/rakiuratrack.jpg", 32);
+CREATE TABLE completed_trips (
+  trip_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  walk_id INT NOT NULL,
+  date_started TIMESTAMP,
+  date_completed TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES registered_users (user_id)
+  ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (walk_id) REFERENCES walks_set (walk_id)
+  ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE user_memories (
+  memory_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  trip_id INT NOT NULL,
+  headline VARCHAR(500) NOT NULL,
+  body TEXT,
+  media_path VARCHAR(500) NOT NULL,
+  public BOOLEAN,
+  FOREIGN KEY (trip_id) REFERENCES completed_trips (trip_id)
+);
