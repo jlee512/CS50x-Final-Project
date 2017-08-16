@@ -18,7 +18,7 @@ class Badge:
     def set_parameters(self):
         self._badge_name = input('Enter a name for the badge: ')
         self._badge_description = input('Enter a description for the badge: ')
-        self._badge_img_path = "/static/Media/Photographs/Badges/" + self._badge_name
+        self._badge_img_path = "/static/Media/Photographs/Badges/" + self._badge_name + ".jpg"
 
     def set_award_id(self, award_id):
         self._award_id = award_id
@@ -37,7 +37,7 @@ class Badge:
         print("Badge_IMG_Path: " + str(self._badge_img_path))
 
     def append_to_json(self):
-        if None in (self._badge_name, self._badge_description, self._badge_img_path):
+        if None not in [self._badge_name, self._badge_description, self._badge_img_path]:
             # Open JSON  file and append
             json_file_path = os.path.join("static", "JSON/Badges.json")
             with open(json_file_path) as file:
@@ -47,7 +47,8 @@ class Badge:
                     self.set_badge_id(1)
                     self.construct_json()
                     data.append(self._badge_json)
-                    json.dump(data, file)
+                    with open(json_file_path, "w") as file:
+                        json.dump(data, file)
                 else:
                     data = json.load(file)
                     # Assign badge_id according to last badge already stored in JSON file
@@ -88,6 +89,11 @@ def add_badges_to_file(number_of_badges):
 
 
 def main():
+    empty = input('Would you like to empty the badges database? (Y) or (ANY KEY)? ')
+
+    if empty.lower() == 'y':
+        f = open(os.path.join("static", "JSON/Badges.json"),"w").close()
+
     initialise_badge_file()
 
 

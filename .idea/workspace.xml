@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/blank_badge_temp.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json_development.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/JSON/Badges.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/production_database_setup" afterPath="$PROJECT_DIR$/production_database_setup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JavaScript/walk_card_feed.js" afterPath="$PROJECT_DIR$/static/JavaScript/walk_card_feed.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.html" afterPath="$PROJECT_DIR$/templates/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json_development.py" afterPath="$PROJECT_DIR$/json_development.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JSON/Badges.json" afterPath="$PROJECT_DIR$/static/JSON/Badges.json" />
     </list>
     <ignored path="Web_Information_Gathering/" />
     <ignored path="config.ini" />
@@ -25,7 +17,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$test.coverage" NAME="test Coverage Results" MODIFIED="1501978662426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$json_development.coverage" NAME="json_development Coverage Results" MODIFIED="1502852731640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$json_development.coverage" NAME="json_development Coverage Results" MODIFIED="1502853436733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Unittests_in_app_py.coverage" NAME="Unittests in app.py Coverage Results" MODIFIED="1501825196593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1502410730442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1502838271139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -121,8 +113,8 @@
       <file leaf-file-name="json_development.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/json_development.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+            <state relative-caret-position="689">
+              <caret line="96" column="27" lean-forward="true" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -242,8 +234,8 @@
         <option value="$PROJECT_DIR$/static/JavaScript/walk_card_feed.js" />
         <option value="$PROJECT_DIR$/production_database_setup" />
         <option value="$PROJECT_DIR$/static/JSON/Bades.json" />
-        <option value="$PROJECT_DIR$/static/JSON/Badges.json" />
         <option value="$PROJECT_DIR$/json_development.py" />
+        <option value="$PROJECT_DIR$/static/JSON/Badges.json" />
       </list>
     </option>
   </component>
@@ -672,13 +664,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
     </task>
-    <task id="LOCAL-00040" summary="filesystem sessions used - resolution appears to be successfully configuring the app's secret key">
-      <created>1501732166690</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1501732166690</updated>
-    </task>
     <task id="LOCAL-00041" summary="attempting to setup redis server for session storage">
       <created>1501733525330</created>
       <option name="number" value="00041" />
@@ -1015,7 +1000,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502780655860</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Populating badge JSON information">
+      <created>1502852833237</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1502852833238</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1063,7 +1055,7 @@
     <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11126374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19402473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.50721157" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24896978" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1139,7 +1131,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Progress with front-end validation" />
     <MESSAGE value="Frontend username and email validation commenced" />
     <MESSAGE value="Basic password strength checker implemented" />
     <MESSAGE value="Developing infinite scroll on walk-feed and loader fundamentals. Transitioning to walks database table structure later this afternoon" />
@@ -1164,7 +1155,8 @@
     <MESSAGE value="Tweaked walk feed to eliminate infinite scrolling. Given number of walks this feature was redundant and actually detracted from User Experience" />
     <MESSAGE value="Added loader animation" />
     <MESSAGE value="Development of Badge/Passport interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Development of Badge/Passport interface" />
+    <MESSAGE value="Populating badge JSON information" />
+    <option name="LAST_COMMIT_MESSAGE" value="Populating badge JSON information" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1173,31 +1165,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#103#0" expanded="true" />
-            <marker date="1502665138485" expanded="true" signature="2506:2554" ph="SELECT * FRO... registered_users" />
-            <marker date="1502665138485" expanded="true" signature="4439:4487" ph="SELECT * FRO... registered_users" />
-            <marker date="1502665138485" expanded="true" signature="4827:4899" ph="INSERT INTO registered_users... " />
-            <marker date="1502665138485" expanded="true" signature="5277:5325" ph="SELECT * FRO... registered_users" />
-            <marker date="1502665138485" expanded="true" signature="6114:6164" ph="SELECT * FRO... registered_users" />
-            <marker date="1502665138485" expanded="true" signature="6888:6930" ph="SELECT * FRO... walks_set" />
-            <marker date="1502665138485" expanded="true" signature="7442:7456" ph="SELECT * FRO... testtable" />
-            <marker date="1502665138485" expanded="true" signature="7442:7465" ph="SELECT * FRO... testtable" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
@@ -1501,11 +1468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/production_database_setup">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1881">
@@ -1530,23 +1492,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/JSON/Badges.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/blank_badge_temp.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/JSON/Badges.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/json_development.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+        <state relative-caret-position="689">
+          <caret line="96" column="27" lean-forward="true" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

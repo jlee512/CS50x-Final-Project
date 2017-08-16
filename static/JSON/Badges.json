@@ -1,0 +1,26 @@
+[
+  {
+    "badge_id": 1,
+    "badge_name": "badge_temp1",
+    "badge_description": "go_outdoors_badge",
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp1"
+  },
+  {
+    "badge_id": 2,
+    "badge_name": "badge_temp2",
+    "badge_description": "boot_badge",
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp2"
+  },
+  {
+    "badge_id": 3,
+    "badge_name": "badge_temp3",
+    "badge_description": "hiking_badge",
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp3.jpg"
+  },
+  {
+    "badge_id": 4,
+    "badge_name": "blank_badge_temp",
+    "badge_description": "blank placeholder badge",
+    "badge_img_path": "/static/Media/Photographs/Badges/blank_badge_temp.jpg"
+  }
+]
