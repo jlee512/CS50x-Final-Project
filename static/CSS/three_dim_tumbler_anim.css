@@ -2,7 +2,7 @@
     position: relative;
     width: 100px;
     height: 100px;
-    background-color: #efefef;
+    background-color: #CCE9D5;
 }
 
 .tumble-item {
@@ -21,12 +21,9 @@
     -webkit-transform: rotateX(360deg);
 }
 
-#tumble-1 {
-    background-color: #5BA1D2;
-}
-
-#tumble-2 {
-    background-color: #F8C826;
+.badge-img {
+    width: 90px;
+    height: 90px;
 }
 
 @keyframes Rotate_Hide {

@@ -2,67 +2,67 @@
   {
     "badge_id": 1,
     "badge_name": "badge_temp1",
-    "badge_description": "Go Outdoors badge",
+    "badge_description": "badge received for completeting blah blah blah",
     "badge_img_path": "/static/Media/Photographs/Badges/badge_temp1.jpg"
   },
   {
     "badge_id": 2,
     "badge_name": "badge_temp2",
-    "badge_description": "Boot badge",
+    "badge_description": "badge received for completing a different walk",
     "badge_img_path": "/static/Media/Photographs/Badges/badge_temp2.jpg"
   },
   {
     "badge_id": 3,
     "badge_name": "badge_temp3",
-    "badge_description": "Hiking badge",
+    "badge_description": "badge awarded for reaching x,y,z milestone",
     "badge_img_path": "/static/Media/Photographs/Badges/badge_temp3.jpg"
   },
   {
     "badge_id": 4,
     "badge_name": "badge_temp4",
-    "badge_description": "Mountain lookout",
+    "badge_description": "badge awarded for completing abc walk",
     "badge_img_path": "/static/Media/Photographs/Badges/badge_temp4.jpg"
   },
   {
     "badge_id": 5,
     "badge_name": "badge_temp5",
-    "badge_description": "Hike leader badge",
+    "badge_description": "badge awarded for completing def walk",
     "badge_img_path": "/static/Media/Photographs/Badges/badge_temp5.jpg"
   },
   {
     "badge_id": 6,
     "badge_name": "badge_temp6",
-    "badge_description": "Backpack badge",
+    "badge_description": "badge awarded for completing ghi walk",
     "badge_img_path": "/static/Media/Photographs/Badges/badge_temp6.jpg"
   },
   {
     "badge_id": 7,
     "badge_name": "badge_temp7",
-    "badge_description": "Explorer badge",
+    "badge_description": "badge awarded for completing jkl walk",
     "badge_img_path": "/static/Media/Photographs/Badges/badge_temp7.jpg"
   },
   {
     "badge_id": 8,
     "badge_name": "badge_temp8",
-    "badge_description": "Orange boot badge",
+    "badge_description": "badge awarded for completing mno walk",
     "badge_img_path": "/static/Media/Photographs/Badges/badge_temp8.jpg"
   },
   {
     "badge_id": 9,
     "badge_name": "badge_temp9",
-    "badge_description": "The Queen City Badge",
+    "badge_description": "badge awarded for completing pqr walk",
     "badge_img_path": "/static/Media/Photographs/Badges/badge_temp9.jpg"
   },
   {
     "badge_id": 10,
     "badge_name": "badge_temp10",
-    "badge_description": "Acadia Centennial Badge",
+    "badge_description": "badge awarded for completing stu",
     "badge_img_path": "/static/Media/Photographs/Badges/badge_temp10.jpg"
   },
   {
     "badge_id": 11,
     "badge_name": "blank_badge_temp",
-    "badge_description": "Temporary blank badge as a placeholder",
+    "badge_description": "blank badge to be used as a placeholder",
     "badge_img_path": "/static/Media/Photographs/Badges/blank_badge_temp.jpg"
   }
 ]

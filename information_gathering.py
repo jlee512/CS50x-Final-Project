@@ -43,7 +43,7 @@ class Walk:
         self._classname = name[:10] + "-walk"
         self._background_image_link = "/static/Media/Photographs/Walks/" + name.replace(" ", "").replace("+",
                                                                                                          "").lower() + ".jpg"
-        self._badge_image_link = "/static/Media/Photographs/Badges/" + badge_image_name + ".jpg"
+        self._badge_image_link = "/static/Media/Photographs/Badges/" + badge_image_name + ".png"
         self._region = region
         self._country = country
         self._one_way_distance = one_way_distance
