@@ -19,8 +19,50 @@
   },
   {
     "badge_id": 4,
+    "badge_name": "badge_temp4",
+    "badge_description": "Mountain lookout",
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp4.jpg"
+  },
+  {
+    "badge_id": 5,
+    "badge_name": "badge_temp5",
+    "badge_description": "Hike leader badge",
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp5.jpg"
+  },
+  {
+    "badge_id": 6,
+    "badge_name": "badge_temp6",
+    "badge_description": "Backpack badge",
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp6.jpg"
+  },
+  {
+    "badge_id": 7,
+    "badge_name": "badge_temp7",
+    "badge_description": "Explorer badge",
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp7.jpg"
+  },
+  {
+    "badge_id": 8,
+    "badge_name": "badge_temp8",
+    "badge_description": "Orange boot badge",
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp8.jpg"
+  },
+  {
+    "badge_id": 9,
+    "badge_name": "badge_temp9",
+    "badge_description": "The Queen City Badge",
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp9.jpg"
+  },
+  {
+    "badge_id": 10,
+    "badge_name": "badge_temp10",
+    "badge_description": "Acadia Centennial Badge",
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp10.jpg"
+  },
+  {
+    "badge_id": 11,
     "badge_name": "blank_badge_temp",
-    "badge_description": "Blank badge as placeholder",
+    "badge_description": "Temporary blank badge as a placeholder",
     "badge_img_path": "/static/Media/Photographs/Badges/blank_badge_temp.jpg"
   }
 ]
