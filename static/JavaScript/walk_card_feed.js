@@ -1,5 +1,5 @@
 /*-------------------------------------------------------*/
-/*This JavaScript file is used to display 'Great Walks' cards on the main content page, this is to be done via infinite scrollingy*/
+/*This JavaScript file is used to display 'Great Walks' cards on the main content page*/
 /*-------------------------------------------------------*/
 
 //Setup global variables to store the state of walk-feed loading on the page at a given point in time (searching/sorting mechanisms to be factored in at a later stage)
@@ -7,8 +7,8 @@ var walk_num = 0;
 
 //Default page functionality
 $(document).ready(function () {
-    $('#loading-mask').delay(6000).fadeOut();
-    $('#site-content').delay(6050).fadeIn('slow');
+    $('#loading-mask').delay(4000).fadeOut();
+    $('#site-content').delay(4050).fadeIn('slow');
 
 
 //    Loader implementation

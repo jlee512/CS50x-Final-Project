@@ -53,3 +53,7 @@ CREATE TABLE user_memories (
   public BOOLEAN,
   FOREIGN KEY (trip_id) REFERENCES completed_trips (trip_id)
 );
+
+CREATE TABLE user_badges (
+  badge_id
+);
