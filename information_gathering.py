@@ -37,12 +37,13 @@ class Walk:
     _seasonal_restrictions = []
 
     # Constructor
-    def __init__(self, name, region, country, highlights, one_way_distance, loop, doc_site_hyperlink,
+    def __init__(self, name, badge_image_name, region, country, highlights, one_way_distance, loop, doc_site_hyperlink,
                  great_walks_season_start, great_walks_season_end, travel_options, travel_time):
         self._name = name
         self._classname = name[:10] + "-walk"
         self._background_image_link = "/static/Media/Photographs/Walks/" + name.replace(" ", "").replace("+",
                                                                                                          "").lower() + ".jpg"
+        self._badge_image_link = "/static/Media/Photographs/Badges/" + badge_image_name + ".jpg"
         self._region = region
         self._country = country
         self._one_way_distance = one_way_distance
@@ -72,8 +73,8 @@ class Walk:
         db = MySQL_Database()
 
         db.insert(
-            "INSERT INTO walks_set(walk_name, class_name, background_image, walk_region, walk_country, one_way_distance, loop_track, doc_site_hyperlink, nz_scale_latitude, nz_scale_longitude, great_walks_season_start, great_walks_season_end) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);",
-            [self._name, self._classname, self._background_image_link, self._region, self._country,
+            "INSERT INTO walks_set(walk_name, class_name, background_image, badge_image, walk_region, walk_country, one_way_distance, loop_track, doc_site_hyperlink, nz_scale_latitude, nz_scale_longitude, great_walks_season_start, great_walks_season_end) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);",
+            [self._name, self._classname, self._background_image_link, self._badge_image_link, self._region, self._country,
              self._one_way_distance, self._loop, self._doc_site_hyperlink, self._nz_scale_latitude,
              self._nz_scale_longitude, self._great_walks_seasion_start, self._great_walks_seasion_end])
 
@@ -113,6 +114,9 @@ def main():
     for walk_card in walk_cards:
         # 1) Get walk_name
         walk_name = walk_card.find('h3').text.replace('and', '+')
+
+        # 1b) Add walk badge image path
+        walk_badge_image_path = input('Input the name of the badge file for this walk: ')
 
         # 2) Get walk region
         walk_region = walk_card.find('span', attrs={'class': 'product-region'}).text
@@ -192,24 +196,11 @@ def main():
             if seasonal_restrictions_scope.find(seasonal_restriction):
                 seasonal_restriction.append(seasonal_restrictions_scope.find('p').text)
 
-        # print(walk_name)
-        # print(walk_region)
-        # print(walk_country)
-        # print(track_distance)
-        # print(loop_walk)
-        # print(doc_site_hyperlink)
-        # if len(seasonal_restriction) > 0:
-        #     print(great_walks_season_start_date)
-        #     print(great_walks_season_end_date)
-        # else:
-        #     great_walks_season_start_date = None
-        #     great_walks_season_end_date = None
-
         if len(seasonal_restriction) == 0:
             great_walks_season_start_date = None
             great_walks_season_end_date = None
 
-        walk_to_add = Walk(walk_name, walk_region, walk_country, walk_highlights, track_distance, loop_walk, doc_site_hyperlink,
+        walk_to_add = Walk(walk_name, walk_badge_image_path, walk_region, walk_country, walk_highlights, track_distance, loop_walk, doc_site_hyperlink,
                  great_walks_season_start_date, great_walks_season_end_date, walk_travel_option, walk_travel_option_time)
 
 

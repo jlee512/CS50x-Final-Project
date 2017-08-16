@@ -1,8 +1,11 @@
 #-----------------Production Database Development---------------------
 /*DROP TABLE if it exists*/
 DROP TABLE IF EXISTS testTable;
-DROP TABLE IF EXISTS registered_users;
+DROP TABLE IF EXISTS user_badges;
+DROP TABLE IF EXISTS user_memories;
+DROP TABLE IF EXISTS completed_trips;
 DROP TABLE IF EXISTS walks_set;
+DROP TABLE IF EXISTS registered_users;
 
 # CREATE USERS TABLE
 CREATE TABLE registered_users (
@@ -21,6 +24,7 @@ CREATE TABLE walks_set (
   walk_name VARCHAR (50) NOT NULL UNIQUE,
   class_name VARCHAR(15) NOT NULL UNIQUE,
   background_image VARCHAR(150),
+  badge_image VARCHAR(150),
   walk_region VARCHAR(100) NOT NULL,
   walk_country VARCHAR(150) NOT NULL,
   one_way_distance FLOAT NOT NULL,
@@ -52,8 +56,17 @@ CREATE TABLE user_memories (
   media_path VARCHAR(500) NOT NULL,
   public BOOLEAN,
   FOREIGN KEY (trip_id) REFERENCES completed_trips (trip_id)
+  ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE user_badges (
-  badge_id
+  award_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  badge_id INT NOT NULL,
+  user_id INT NOT NULL,
+  trip_id INT NOT NULL,
+  award_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES registered_users(user_id)
+    ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (trip_id) REFERENCES completed_trips(trip_id)
+  ON DELETE CASCADE ON UPDATE CASCADE
 );
