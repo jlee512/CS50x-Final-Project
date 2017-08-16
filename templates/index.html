@@ -2,10 +2,12 @@
 
 {% block custom_styles %}
     <link href="{{ url_for('static', filename='CSS/tab_content_styles.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='CSS/three_dim_tumbler_anim.css') }}" rel="stylesheet"/>
 {% endblock %}
 
 {% block custom_javascript %}
     <script type="text/javascript" src="/static/JavaScript/walk_card_feed.js"></script>
+    <script type="text/javascript" src="/static/JavaScript/three_dim_tumbler_anim.js"></script>
 {% endblock %}
 
 {% block title %}
@@ -65,8 +67,13 @@
                         </div>
                         <div class="tertiary-stat">
                             <h4 class="secondary-text">My Badges</h4>
-                            <div id="badges-tumbler">
-                                test
+                            <div id="badges-tumbler-container">
+                                <div class="tumble-item tumble-active" id="tumble-1">
+                                    Test 1
+                                </div>
+                                <div class="tumble-item" id="tumble-2">
+                                    Test 2
+                                </div>
                             </div>
 
                         </div>

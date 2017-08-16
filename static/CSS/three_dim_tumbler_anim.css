@@ -1,0 +1,60 @@
+#badges-tumbler-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #efefef;
+}
+
+.tumble-item {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 5px;
+    left: 5px;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+
+.tumble-active {
+    transform: rotateX(360deg);
+    -webkit-transform: rotateX(360deg);
+}
+
+#tumble-1 {
+    background-color: #5BA1D2;
+}
+
+#tumble-2 {
+    background-color: #F8C826;
+}
+
+@keyframes Rotate_Hide {
+  from {
+    transform: rotateX(360deg);
+    -webkit-transform: rotateX(360deg);
+  }
+  to {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+  }
+}
+
+@keyframes Rotate_View {
+  from {
+    transform: rotateX(540deg);
+    -webkit-transform: rotateX(540deg);
+  }
+  to {
+    transform: rotateX(360deg);
+    -webkit-transform: rotateX(360deg);
+  }
+}
+
+.rotate-out {
+  animation: Rotate_Hide 1000ms linear 0ms;
+}
+
+.rotate-in {
+  animation: Rotate_View 1000ms linear 0ms;
+}
