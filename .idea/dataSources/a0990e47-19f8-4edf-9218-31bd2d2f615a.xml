@@ -279,9 +279,10 @@
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
     </column>
-    <column id="62" parent="8" name="badge_image">
+    <column id="62" parent="8" name="badge_id">
       <Position>5</Position>
-      <DataType>varchar(150)|0</DataType>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
     </column>
     <index id="63" parent="8" name="class_name">
       <ColNames>class_name</ColNames>

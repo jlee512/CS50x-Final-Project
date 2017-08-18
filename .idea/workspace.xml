@@ -2,33 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/blank_badge_temp.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp4.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp5.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp7.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/Media/Photographs/Badges/blank_badge_temp.jpg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SQL/test_data" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/production_database_setup" afterPath="$PROJECT_DIR$/SQL/production_database_setup" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test_setup.sql" afterPath="$PROJECT_DIR$/SQL/test_setup.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/a0990e47-19f8-4edf-9218-31bd2d2f615a.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/a0990e47-19f8-4edf-9218-31bd2d2f615a.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information_gathering.py" afterPath="$PROJECT_DIR$/information_gathering.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/three_dim_tumbler_anim.css" afterPath="$PROJECT_DIR$/static/CSS/three_dim_tumbler_anim.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json_development.py" afterPath="$PROJECT_DIR$/json_development.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JSON/Badges.json" afterPath="$PROJECT_DIR$/static/JSON/Badges.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <ignored path="Web_Information_Gathering/" />
     <ignored path="config.ini" />
@@ -43,8 +24,8 @@
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$test.coverage" NAME="test Coverage Results" MODIFIED="1501978662426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$json_development.coverage" NAME="json_development Coverage Results" MODIFIED="1502864774048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Unittests_in_app_py.coverage" NAME="Unittests in app.py Coverage Results" MODIFIED="1501825196593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1502864684209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1502864441532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1503029266639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1503019129706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -78,6 +59,24 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="heroku_66cf5b5014845bb@us-cdbr-iron-east-03.cleardb.net" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="heroku_66cf5b5014845bb" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="completed_trips" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -85,8 +84,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1755">
-              <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="19" />
+            <state relative-caret-position="294">
+              <caret line="140" column="29" lean-forward="true" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
               <folding>
                 <element signature="e#0#103#0" expanded="true" />
                 <marker date="1502665138485" expanded="true" signature="2506:2554" ph="SELECT * FRO... registered_users" />
@@ -102,44 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <file leaf-file-name="test_data" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SQL/test_data">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="78" column="30" lean-forward="false" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="information_gathering.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/information_gathering.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8928">
-              <caret line="45" column="94" lean-forward="false" selection-start-line="45" selection-start-column="94" selection-end-line="45" selection-end-column="94" />
-              <folding>
-                <marker date="1502864534177" expanded="true" signature="2154:2198" ph="SELECT * FRO... walks_set" />
-                <marker date="1502864534177" expanded="true" signature="2530:2831" ph="INSERT INTO walks_set... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="json_development.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/json_development.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="920">
-              <caret line="100" column="10" lean-forward="false" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="production_database_setup" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/production_database_setup">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+            <state relative-caret-position="766">
+              <caret line="18" column="102" lean-forward="false" selection-start-line="18" selection-start-column="102" selection-end-line="18" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -186,6 +152,9 @@
       <find>componen</find>
       <find>border-box</find>
       <find>session</find>
+      <find>badge</find>
+      <find>timestamp(</find>
+      <find>register</find>
     </findStrings>
     <replaceStrings>
       <replace>0.4</replace>
@@ -234,14 +203,16 @@
         <option value="$PROJECT_DIR$/static/CSS/tab_content_styles.css" />
         <option value="$PROJECT_DIR$/templates/layout.html" />
         <option value="$PROJECT_DIR$/static/JSON/Bades.json" />
-        <option value="$PROJECT_DIR$/json_development.py" />
         <option value="$PROJECT_DIR$/production_database_setup" />
         <option value="$PROJECT_DIR$/static/JavaScript/walk_card_feed.js" />
         <option value="$PROJECT_DIR$/static/JavaScript/three_dim_tumbler_anim.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/CSS/three_dim_tumbler_anim.css" />
         <option value="$PROJECT_DIR$/information_gathering.py" />
+        <option value="$PROJECT_DIR$/SQL/production_database_setup" />
+        <option value="$PROJECT_DIR$/json_development.py" />
         <option value="$PROJECT_DIR$/static/JSON/Badges.json" />
+        <option value="$PROJECT_DIR$/SQL/test_data" />
       </list>
     </option>
   </component>
@@ -272,6 +243,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -338,32 +311,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Photographs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Badges" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="JSON" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -381,10 +328,6 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -396,45 +339,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSS" />
+              <option name="myItemId" value="SQL" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/julia/Documents/CS50x/Code/Final_Project_Deployment/app.py" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.walks_set" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/config.ini" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\julia\Documents\CS50x\Code\Final_Project_Deployment\SQL" />
       <recent name="C:\Users\julia\Documents\CS50x\Code\Final_Project_Deployment\static\Media\Photographs\Backgrounds" />
       <recent name="C:\Users\julia\Documents\CS50x\Code\Final_Project_Deployment\static\Media\Photographs\Walks" />
       <recent name="C:\Users\julia\Documents\CS50x\Code\Final_Project_Deployment\static\Media\Photographs" />
@@ -452,7 +376,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.json_development">
+  <component name="RunManager" selected="Python.information_gathering">
     <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -685,8 +609,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.json_development" />
-        <item index="1" class="java.lang.String" itemvalue="Python.information_gathering" />
+        <item index="0" class="java.lang.String" itemvalue="Python.information_gathering" />
+        <item index="1" class="java.lang.String" itemvalue="Python.json_development" />
         <item index="2" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
@@ -704,13 +628,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
-    </task>
-    <task id="LOCAL-00047" summary="development of login/registration tab interface">
-      <created>1501821081677</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1501821081677</updated>
     </task>
     <task id="LOCAL-00048" summary="form toggling front-end initial completion, backend implementation to come">
       <created>1501822282370</created>
@@ -1048,7 +965,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502857636035</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Badge updated to png to preserve tranparency">
+      <created>1502864977561</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1502864977561</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1100,11 +1024,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.50721157" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.4971591" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33155712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32795697" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32741266" sideWeight="0.49278846" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918888" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268206" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4012784" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45170453" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15553977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4765625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39964157" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1172,7 +1096,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Commencing development of backend database query for walk information - close of play 08082017" />
     <MESSAGE value="Tidied up .css() assignments in JavaScript walk_card_feed.js" />
     <MESSAGE value="walk-card-feed connected (via AJAX) to the database. Plan to extract data for each of the walks" />
     <MESSAGE value="data collection crawler development as well as database flesh-out" />
@@ -1197,7 +1120,8 @@
     <MESSAGE value="Added additional temp badges ready for animation implementation and testing on dashboard" />
     <MESSAGE value="Updated badges and JSON file as well as added Badge path to walks_set database table" />
     <MESSAGE value="Basic tumbler implementation completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic tumbler implementation completed" />
+    <MESSAGE value="Badge updated to png to preserve tranparency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Badge updated to png to preserve tranparency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1206,26 +1130,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/JavaScript/button_color_selection.js" />
-    <entry file="file://$PROJECT_DIR$/templates/under_construction.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/Media/favicon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1271,7 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1315,7 +1218,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1346,7 +1248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="943">
           <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1361,7 +1262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="189" column="28" lean-forward="false" selection-start-line="189" selection-start-column="28" selection-end-line="189" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,28 +1269,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-693">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/blank_badge_temp.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/blank_badge_temp.jpeg" />
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp2.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp3.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp1.jpg" />
+    <entry file="file://$PROJECT_DIR$/SQL/test_setup.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="32" column="103" lean-forward="false" selection-start-line="32" selection-start-column="103" selection-end-line="32" selection-end-column="103" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp4.jpeg" />
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp5.jpeg" />
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp6.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp7.jpeg" />
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp8.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp9.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp10.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/JavaScript/walk_card_feed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/static/CSS/three_dim_tumbler_anim.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/JavaScript/three_dim_tumbler_anim.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1023">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2574">
+          <caret line="78" column="30" lean-forward="false" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.registered_users">
@@ -1406,10 +1339,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_setup.sql">
+    <entry file="file://$PROJECT_DIR$/SQL/production_database_setup">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        <state relative-caret-position="347">
+          <caret line="52" column="18" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="71" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json_development.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="32" column="113" lean-forward="false" selection-start-line="32" selection-start-column="113" selection-end-line="32" selection-end-column="113" />
           <folding />
         </state>
       </provider>
@@ -1427,93 +1368,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+    <entry file="file://$PROJECT_DIR$/information_gathering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="32" column="103" lean-forward="false" selection-start-line="32" selection-start-column="103" selection-end-line="32" selection-end-column="103" />
+        <state relative-caret-position="-4861">
+          <caret line="76" column="260" lean-forward="false" selection-start-line="76" selection-start-column="260" selection-end-line="76" selection-end-column="260" />
+          <folding>
+            <marker date="1503029103567" expanded="true" signature="2122:2166" ph="SELECT * FRO... walks_set" />
+            <marker date="1503029103567" expanded="true" signature="2498:2796" ph="INSERT INTO walks_set... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.user_memories">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp4.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.user_badges">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp5.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp6.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp7.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp8.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp9.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp10.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/JavaScript/walk_card_feed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/CSS/three_dim_tumbler_anim.css">
+    <entry file="file://$PROJECT_DIR$/static/JSON/Badges.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/JavaScript/three_dim_tumbler_anim.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1023">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="78" column="30" lean-forward="false" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/production_database_setup">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        <state relative-caret-position="2409">
+          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1755">
-          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="294">
+          <caret line="140" column="29" lean-forward="true" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
           <folding>
             <element signature="e#0#103#0" expanded="true" />
             <marker date="1502665138485" expanded="true" signature="2506:2554" ph="SELECT * FRO... registered_users" />
@@ -1528,29 +1431,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/information_gathering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8928">
-          <caret line="45" column="94" lean-forward="false" selection-start-line="45" selection-start-column="94" selection-end-line="45" selection-end-column="94" />
-          <folding>
-            <marker date="1502864534177" expanded="true" signature="2154:2198" ph="SELECT * FRO... walks_set" />
-            <marker date="1502864534177" expanded="true" signature="2530:2831" ph="INSERT INTO walks_set... " />
-          </folding>
+    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/JSON/Badges.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2361">
-          <caret line="3" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="1" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json_development.py">
+    <entry file="file://$PROJECT_DIR$/SQL/test_data">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="100" column="10" lean-forward="false" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+        <state relative-caret-position="766">
+          <caret line="18" column="102" lean-forward="false" selection-start-line="18" selection-start-column="102" selection-end-line="18" selection-end-column="102" />
           <folding />
         </state>
       </provider>

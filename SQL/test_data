@@ -1,0 +1,19 @@
+
+# --------------------- Add completed trips ---------------------------
+# User: Julian
+INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VALUES(2, 32, '2015-02-16', '2015-02-19'), (2, 92, '2017-02-07', '2017-02-09');
+
+# User: Chris
+INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VALUES(12, 92, '2017-02-07', '2017-02-09');
+
+# User: Maryanne
+INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VALUES(22, 2, '2008-02-01', '2008-02-03'), (22, 32, '2015-02-16', '2015-02-19'), (2, 92, '2017-02-07', '2017-02-09');
+
+# User: Adam (none)
+# User: Jono
+INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VALUES(42, 82, '2015-01-25', '2015-01-29');
+# --------------------------------------------------------------------------
+
+# ------------------- User Badges -------------------------------------------
+# User: Julian
+INSERT INTO user_badges (badge_id, user_id, trip_id, award_date) VALUES(32, 2, 2, '19-02-2015'), (10, , 7-02-2017), 9-02-2017));

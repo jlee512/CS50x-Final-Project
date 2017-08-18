@@ -6,6 +6,7 @@ import os
 class Badge:
     _award_id = None
     _badge_id = None
+    _walk_id = None
     _badge_name = None
     _badge_description = None
     _badge_img_path = None
@@ -18,6 +19,7 @@ class Badge:
     def set_parameters(self):
         self._badge_name = input('Enter a name for the badge: ')
         self._badge_description = input('Enter a description for the badge: ')
+        self._walk_id = input('Enter the walk id that this badge corresponds to (0 for none): ')
         self._badge_img_path = "/static/Media/Photographs/Badges/" + self._badge_name + ".jpg"
 
     def set_award_id(self, award_id):
@@ -28,7 +30,7 @@ class Badge:
 
     def construct_json(self):
         # Construct json object for badge if
-        self._badge_json = {"badge_id": self._badge_id, "badge_name": self._badge_name,
+        self._badge_json = {"badge_id": self._badge_id, "badge_name": self._badge_name, "walk_id": self._walk_id,
                           "badge_description": self._badge_description, "badge_img_path": self._badge_img_path}
 
     def display(self):
