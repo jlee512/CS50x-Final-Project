@@ -7,7 +7,7 @@ INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VAL
 INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VALUES(12, 92, '2017-02-07', '2017-02-09');
 
 # User: Maryanne
-INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VALUES(22, 2, '2008-02-01', '2008-02-03'), (22, 32, '2015-02-16', '2015-02-19'), (2, 92, '2017-02-07', '2017-02-09');
+INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VALUES(22, 2, '2008-02-01', '2008-02-03'), (22, 32, '2015-02-16', '2015-02-19'), (22, 92, '2017-02-07', '2017-02-09');
 
 # User: Adam (none)
 # User: Jono
@@ -16,4 +16,15 @@ INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VAL
 
 # ------------------- User Badges -------------------------------------------
 # User: Julian
-INSERT INTO user_badges (badge_id, user_id, trip_id, award_date) VALUES(32, 2, 2, '19-02-2015'), (10, , 7-02-2017), 9-02-2017));
+INSERT INTO user_badges (badge_id, user_id, trip_id, award_date) VALUES(4, 2, 2, '2015-02-19'), (10, 2, 12, '2017-02-09');
+
+# User: Chris
+INSERT INTO user_badges (badge_id, user_id, trip_id, award_date)  VALUES(10, 12, 22, '2017-02-09');
+
+# User: Maryanne
+INSERT INTO user_badges (badge_id, user_id, trip_id, award_date) VALUES (1, 22, 32, '2008-02-01'), (4, 22, 42, '2015-02-19'),(10, 22, 52, '2017-02-09');
+
+# User: Adam (none)
+# User: Jono
+INSERT INTO user_badges(badge_id, user_id, trip_id, award_date) VALUES(9, 42, 62, '2015-01-29');
+
