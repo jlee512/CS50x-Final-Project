@@ -20,3 +20,5 @@ SELECT * FROM testTable;
 # DROP TABLE IF EXISTS testTable;
 
 SELECT * FROM walks_set LIMIT 3 OFFSET 1;
+
+ALTER TABLE registered_users ADD rank VARCHAR(150) NOT NULL;

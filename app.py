@@ -136,8 +136,10 @@ def register():
         hash = bcrypt.using(rounds=13).hash(password_entry)
         hash_bin = bytes(hash, 'utf-8')
 
-        result = db.insert('INSERT INTO registered_users (username, hash, email) VALUES (%s, %s, %s)',
-                           [username_entry, hash_bin, email_entry])
+
+
+        result = db.insert('INSERT INTO registered_users (username, hash, email, rank) VALUES (%s, %s, %s, %s)',
+                           [username_entry, hash_bin, email_entry, "Tui"])
         db.check_connection()
 
         if not result:

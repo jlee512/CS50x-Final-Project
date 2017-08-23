@@ -172,12 +172,12 @@ a:focus, a:hover {
 
 }
 
-#walks-dashboard {
+.walks-rank-dashboard {
     display: flex;
     border: 2px solid #5BA1D2;
     margin: 10px;
     padding: 10px;
-    justify-content: center;
+    justify-content: space-around;
 
 }
 
@@ -239,6 +239,7 @@ h4.secondary-text {
     width: 17%;
     margin: 5px;
     padding: 5px;
+    background-color: #CCE9D5;
 }
 
 .badge {
@@ -256,4 +257,38 @@ h2.page-section-heading {
 
 h2.first-page-heading {
     margin-top: 10px;
+}
+
+.rank-headline {
+    width: 15%;
+}
+
+.rank-label {
+    font-size: 1em;
+    line-height: 12px;
+    margin: 2px auto;
+}
+
+.rank-text {
+    font-size: 2em;
+    line-height: 32px;
+    margin: 2px auto;
+}
+
+.rank-headline, .rank-text-display, #rank-img-panel {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rank-headline, .rank-text-display {
+    margin-right: 10px;
+}
+
+.secondary-rank {
+    font-size: 0.75em;
+    line-height: 12px;
+    margin: 5px auto;
+    padding-left: 5px;
 }

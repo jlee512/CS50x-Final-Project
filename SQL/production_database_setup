@@ -16,7 +16,8 @@ CREATE TABLE registered_users (
   city VARCHAR(90),
   profile_description TEXT,
   firstname VARCHAR(60),
-  lastname VARCHAR(60)
+  lastname VARCHAR(60),
+  rank VARCHAR(150) NOT NULL
 );
 
 CREATE TABLE walks_set (
