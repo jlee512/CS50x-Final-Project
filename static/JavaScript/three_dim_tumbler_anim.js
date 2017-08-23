@@ -1,12 +1,11 @@
 //Initiate tumbler animation once the document is ready
-$(document).ready(function () {
+function initiateTumbler(){
     //Developed by J. Lees, JS-Fiddle: https://jsfiddle.net/2Tokoeka/nkws2dfz/
 
     var timer = setInterval(item_transition, 4000);
     var hide_item_num = 1;
     var show_item_num = 2;
     var num_items = 2;
-
 
     function item_transition() {
         var item_id = "tumble-";
@@ -37,4 +36,8 @@ $(document).ready(function () {
         }
     }
 
+}
+
+$(document).ready(function(){
+   initiateTumbler()
 });

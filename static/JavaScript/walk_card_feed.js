@@ -6,9 +6,9 @@
 var walk_num = 0;
 
 //Default page functionality
-$(document).ready(function () {
-    $('#loading-mask').delay(5000).fadeOut();
-    $('#site-content').delay(5050).fadeIn('slow');
+$(window).on('load', function () {
+    $('#loading-mask').delay(2000).fadeOut();
+    $('#site-content').delay(2050).fadeIn('slow');
 
 
 //    Loader implementation
