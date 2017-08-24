@@ -191,7 +191,7 @@ a:focus, a:hover {
 
 .secondary-stat {
     flex-direction: column;
-
+    min-width: 45%;
 }
 
 .headline-stat {
@@ -286,9 +286,26 @@ h2.first-page-heading {
     margin-right: 10px;
 }
 
+.rank-text-display {
+    min-width: 45%;
+}
+
 .secondary-rank {
     font-size: 0.75em;
     line-height: 12px;
     margin: 5px auto;
     padding-left: 5px;
+    min-width: 45%;
+}
+
+.placeholder {
+    color: #CCE9D5;
+}
+
+.badge-img {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 5px;
+    left: 5px;
 }

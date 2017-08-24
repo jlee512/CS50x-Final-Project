@@ -1,4 +1,4 @@
-#badges-tumbler-container {
+.badges-tumbler-container {
     position: relative;
     width: 100px;
     height: 100px;
@@ -9,8 +9,8 @@
     position: absolute;
     width: 90px;
     height: 90px;
-    top: 5px;
-    left: 5px;
+    /*top: 5px;*/
+    /*left: 5px;*/
     backface-visibility: hidden;
     transform: rotateX(180deg);
     -webkit-transform: rotateX(180deg);
