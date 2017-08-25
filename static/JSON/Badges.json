@@ -4,76 +4,76 @@
     "walk_id": 2,
     "badge_name": "badge_temp1",
     "badge_description": "badge received for completeting Lake Waikaremoana",
-    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp1.jpg"
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp1.png"
   },
   {
     "badge_id": 2,
     "walk_id": 12,
     "badge_name": "badge_temp2",
     "badge_description": "badge received for completing Tongariro Northern Circuit",
-    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp2.jpg"
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp2.png"
   },
   {
     "badge_id": 3,
     "walk_id": 22,
     "badge_name": "badge_temp3",
     "badge_description": "badge awarded for completing Whanganui Journey",
-    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp3.jpg"
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp3.png"
   },
   {
     "badge_id": 4,
     "walk_id": 32,
     "badge_name": "badge_temp4",
     "badge_description": "badge awarded for completing Abel Tasman Coastal Track",
-    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp4.jpg"
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp4.png"
   },
   {
     "badge_id": 5,
     "walk_id": 42,
     "badge_name": "badge_temp5",
     "badge_description": "badge awarded for completing Heaphy Track",
-    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp5.jpg"
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp5.png"
   },
   {
     "badge_id": 6,
     "walk_id": 52,
     "badge_name": "badge_temp6",
     "badge_description": "badge awarded for completing Paparoa Track + Pike29 Memorial Track",
-    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp6.jpg"
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp6.png"
   },
   {
     "badge_id": 7,
     "walk_id": 62,
     "badge_name": "badge_temp7",
     "badge_description": "badge awarded for completing the Routeburn Track",
-    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp7.jpg"
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp7.png"
   },
   {
     "badge_id": 8,
     "walk_id": 72,
     "badge_name": "badge_temp8",
     "badge_description": "badge awarded for completing Kepler Track",
-    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp8.jpg"
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp8.png"
   },
   {
     "badge_id": 9,
     "walk_id": 82,
     "badge_name": "badge_temp9",
     "badge_description": "badge awarded for completing Milford Track",
-    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp9.jpg"
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp9.png"
   },
   {
     "badge_id": 10,
     "walk_id": 92,
     "badge_name": "badge_temp10",
     "badge_description": "badge awarded for completing Rakiura Track",
-    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp10.jpg"
+    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp10.png"
   },
   {
     "badge_id": 11,
     "walk_id": 0,
     "badge_name": "blank_badge_temp",
     "badge_description": "No badge currently awarded",
-    "badge_img_path": "/static/Media/Photographs/Badges/blank_badge_temp.jpg"
+    "badge_img_path": "/static/Media/Photographs/Badges/blank_badge_temp.png"
   }
 ]

@@ -191,8 +191,6 @@ def basic_walks_query():
     # Access URL 'GET' parameters
     from_url_param = request.args.get('from', type=int)
     count_url_param = request.args.get('count', type=int)
-    print(from_url_param)
-    print(count_url_param)
     sort_by_url_param = request.args.get('sort_by')
     ordering_url_param = request.args.get('ordering')
     search_term_url_param = request.args.get('search_term')
@@ -209,6 +207,20 @@ def basic_walks_query():
 
     return Response(json.dumps(json_walks), mimetype="application/json")
 
+@app.route('/user_badges_query', methods=['GET'])
+def user_badges_query():
+    # Access user information for query
+    user_id = session["user_id"]
+
+    # Access database and pull the corresponding records and process into a JSON array
+    db = MySQL_Database()
+
+    json_user_badges = db.query('SELECT * FROM user_badges WHERE user_id = %s;', [user_id])
+
+    for badge in json_user_badges:
+        badge['award_date'] = '{:%d/%m/%Y}'.format(badge['award_date'])
+
+    return Response(json.dumps(json_user_badges), mimetype="application/json")
 
 @app.route('/test')
 def test():

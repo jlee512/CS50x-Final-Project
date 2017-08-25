@@ -16,8 +16,6 @@
 
 {% block main %}
 
-
-
     <!-- Simple header with fixed tabs. -->
     <div id="loading-mask"></div>
     <div id="site-content" class="mdl-layout mdl-js-layout mdl-layout--fixed-header
@@ -71,7 +69,7 @@
                         <div class="tertiary-stat">
                             <h4 class="secondary-text">My Badges</h4>
                             <div class="badges-tumbler-container">
-                                <div class="tumble-item tumble-active" id="tumble-1">
+                                <div class="tumble-item tumble-active" id="tumble-temp">
                                     <img class="badge-img" src="/static/Media/Photographs/Badges/blank_badge_1_2_3_4_6_7.png">
                                 </div>
                             </div>
@@ -186,4 +184,8 @@
         </main>
     </div>
 
+{% endblock %}
+
+{% block end_scripts %}
+    <script type="text/javascript" src="/static/JavaScript/dashboard_populate.js"></script>
 {% endblock %}
