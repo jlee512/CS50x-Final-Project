@@ -38,6 +38,7 @@ function load_walks() {
 
         success: function (data) {
             successful_walks_load(data);
+            walkDataAvailable(data);
         },
 
         error: failedArticleLoad
@@ -58,7 +59,6 @@ function failedArticleLoad(jqXHR, textStatus, errorThrown) {
 function successful_walks_load(data) {
 
     var walk_cards = [];
-
     for (var i = 0; i < data.length; i++) {
         var individual_walk = data[i];
 

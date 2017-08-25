@@ -4,6 +4,9 @@ $.getJSON("/static/JSON/Badges.json", function (json) {
     });
 load_user_badges();
 
+var walks_loaded = false;
+var badges_loaded = false;
+var badges = [];
 
 function load_user_badges() {
 
@@ -24,8 +27,6 @@ function load_user_badges() {
 }
 
 function construct_tumbler(data) {
-
-    var badges = [];
     var num_badge = data.length;
 
     for(var i = 0; i < num_badge; i++){
@@ -39,9 +40,13 @@ function construct_tumbler(data) {
         } else {
             $('.badges-tumbler-container').append(badges[i].output_template());
         }
+
+        badges[i].place_in_collection();
+
     }
 
     initiateTumbler(num_badge);
+    badges_loaded = true;
 }
 
 function Badge_Card(badge_id, badge_num) {
@@ -63,6 +68,13 @@ function Badge_Card(badge_id, badge_num) {
 
     this.output_template = function() {
         return this.badge_img_template;
+    }
+
+    //Badge collection template
+    this.badge_collection_template = '<img class="badge" id="gw-badge-' + this.badge_id + '" src="' + badges_static_db_json[badge_id - 1].badge_img_path + '">';
+
+    this.place_in_collection = function() {
+        $('#gw-badge-' + this.badge_id).replaceWith(this.badge_collection_template);
     }
 }
 
@@ -110,3 +122,13 @@ function initiateTumbler(num_badge){
     }
 
 }
+
+function walkDataAvailable(data) {
+    walks_loaded = true;
+
+}
+
+function calculateTotalDistance(walk_distances) {
+
+}
+
