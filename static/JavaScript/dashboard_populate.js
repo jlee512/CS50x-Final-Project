@@ -1,8 +1,15 @@
 var badges_static_db_json;
+var rank_static_db_json;
 $.getJSON("/static/JSON/Badges.json", function (json) {
-        badges_static_db_json = json;
-    });
+    badges_static_db_json = json;
+});
+
+$.getJSON("/static/JSON/Rank.json", function (json) {
+    rank_static_db_json = json;
+});
+
 load_user_badges();
+get_user_rank();
 
 var walks_loaded = false;
 var badges_loaded = false;
@@ -29,13 +36,13 @@ function load_user_badges() {
 function construct_tumbler(data) {
     var num_badge = data.length;
 
-    for(var i = 0; i < num_badge; i++){
+    for (var i = 0; i < num_badge; i++) {
         var badge_to_add = data[i];
 
         //Create badge object and populate template
         badges[i] = new Badge_Card(badge_to_add.badge_id, i);
 
-        if(i == 0) {
+        if (i == 0) {
             $('#tumble-temp').replaceWith(badges[i].output_template());
         } else {
             $('.badges-tumbler-container').append(badges[i].output_template());
@@ -56,7 +63,7 @@ function Badge_Card(badge_id, badge_num) {
     // badges_static_db_json[badge_id - 1] returns a JSON object for a specific badge
 
     //Setup badge_img_template and badge_collection_template
-    if(badge_num == 0) {
+    if (badge_num == 0) {
         this.badge_img_template = $('<div class="tumble-item tumble-active" id="tumble-' + badge_num + '" >'
             + '<img class="badge-img" src="' + badges_static_db_json[badge_id - 1].badge_img_path + '">'
             + '</div>');
@@ -66,24 +73,26 @@ function Badge_Card(badge_id, badge_num) {
             + '</div>');
     }
 
-    this.output_template = function() {
+    this.output_template = function () {
         return this.badge_img_template;
     }
 
     //Badge collection template
     this.badge_collection_template = '<img class="badge" id="gw-badge-' + this.badge_id + '" src="' + badges_static_db_json[badge_id - 1].badge_img_path + '">';
 
-    this.place_in_collection = function() {
+    this.place_in_collection = function () {
         $('#gw-badge-' + this.badge_id).replaceWith(this.badge_collection_template);
     }
+
+    //Access rank and place corresponding rank image and information
 }
 
 //Initiate tumbler animation once the badges are ready
-function initiateTumbler(num_badge){
+function initiateTumbler(num_badge) {
     //Developed by J. Lees, JS-Fiddle: https://jsfiddle.net/2Tokoeka/nkws2dfz/
     var num_items = num_badge;
 
-    if(num_items > 1) {
+    if (num_items > 1) {
         var hide_item_num = 0;
         var show_item_num = 1;
         var timer = setInterval(item_transition, 4000);
@@ -122,6 +131,34 @@ function initiateTumbler(num_badge){
     }
 
 }
+
+function get_user_rank() {
+
+    //AJAX call to go here, temporarily access subarrray of JSON array
+
+    $.ajax({
+
+        url: Flask.url_for("get_rank"),
+        async: true,
+        type: 'GET',
+
+        success: function (data) {
+            updateRank(data);
+        },
+
+        error: failedArticleLoad
+    });
+}
+
+function updateRank(data) {
+//Update rank counter and image
+    rank = data[0].rank;
+
+    console.log(rank);
+
+    $('#rank-img-placeholder').replaceWith('<img class="badge-img" id="rank-img-final" src="/static/Media/Photographs/Rank/blank.jpg">');
+}
+
 
 function walkDataAvailable(data) {
     walks_loaded = true;

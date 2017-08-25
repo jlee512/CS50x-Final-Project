@@ -17,7 +17,7 @@ CREATE TABLE registered_users (
   profile_description TEXT,
   firstname VARCHAR(60),
   lastname VARCHAR(60),
-  rank VARCHAR(150) NOT NULL
+  rank INT NOT NULL
 );
 
 CREATE TABLE walks_set (

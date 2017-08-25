@@ -48,6 +48,7 @@ app.session_interface = RedisSessionInterface(redis=redis_instance, prefix="sess
 @app.route('/')
 @login_required
 def index():
+    rank = session["rank"]
     return render_template('index.html')
 
 
@@ -85,6 +86,7 @@ def login():
             return render_template("login.html", err_message="Your username or password was incorrect")
 
         session["user_id"] = rows[0]['user_id']
+        session["rank"] = rows[0]['rank']
 
         return redirect(url_for("index"))
     else:
@@ -139,7 +141,7 @@ def register():
 
 
         result = db.insert('INSERT INTO registered_users (username, hash, email, rank) VALUES (%s, %s, %s, %s)',
-                           [username_entry, hash_bin, email_entry, "Tui"])
+                           [username_entry, hash_bin, email_entry, 1])
         db.check_connection()
 
         if not result:
@@ -157,6 +159,7 @@ def register():
             return render_template("login.html", err_message="Your username or password was incorrect")
 
         session["user_id"] = rows[0]['user_id']
+        session["rank"] = rows[0]['rank']
 
         return redirect(url_for("index"))
 
@@ -221,6 +224,11 @@ def user_badges_query():
         badge['award_date'] = '{:%d/%m/%Y}'.format(badge['award_date'])
 
     return Response(json.dumps(json_user_badges), mimetype="application/json")
+
+@app.route('/get_rank', methods=['GET'])
+def get_rank():
+    user_rank = {'rank': session['rank']}
+    return Response(json.dumps(user_rank))
 
 @app.route('/test')
 def test():

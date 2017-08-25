@@ -29,8 +29,8 @@ INSERT INTO user_badges (badge_id, user_id, trip_id, award_date) VALUES (1, 22, 
 INSERT INTO user_badges(badge_id, user_id, trip_id, award_date) VALUES(9, 42, 62, '2015-01-29');
 
 #  ---------------Adding User Rank--------------------------------
-UPDATE registered_users SET rank="Kereru" WHERE username = "Julian";
-UPDATE registered_users SET rank="Bellbird" WHERE username = "MaryanneLees";
-UPDATE registered_users SET rank="Fantail" WHERE username = "ChrisW";
-UPDATE registered_users SET rank="Tui" WHERE username = "AdamLees";
-UPDATE registered_users SET rank="Fantail" WHERE username = "JonoSoo";
+UPDATE registered_users SET rank=3 WHERE username = "Julian";
+UPDATE registered_users SET rank=4 WHERE username = "MaryanneLees";
+UPDATE registered_users SET rank=2 WHERE username = "ChrisW";
+UPDATE registered_users SET rank=1 WHERE username = "AdamLees";
+UPDATE registered_users SET rank=2 WHERE username = "JonoSoo";
