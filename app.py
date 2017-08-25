@@ -228,7 +228,7 @@ def user_badges_query():
 @app.route('/get_rank', methods=['GET'])
 def get_rank():
     user_rank = {'rank': session['rank']}
-    return Response(json.dumps(user_rank))
+    return Response(json.dumps(user_rank), mimetype="application/json")
 
 @app.route('/test')
 def test():

@@ -152,9 +152,8 @@ function get_user_rank() {
 
 function updateRank(data) {
 //Update rank counter and image
-    rank = data[0].rank;
-
-    console.log(rank);
+    var rank = data.rank;
+     console.log(rank);
 
     $('#rank-img-placeholder').replaceWith('<img class="badge-img" id="rank-img-final" src="/static/Media/Photographs/Rank/blank.jpg">');
 }
