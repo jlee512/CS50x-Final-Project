@@ -1,67 +1,80 @@
 [
   {
     "rank_id": 1,
-    "badge_name": "Tui",
-    "badge_img_path": "/static/Media/Photographs/Rank/tui.jpg"
+    "rank_numeral": "I",
+    "rank_name": "Tui",
+    "rank_img_path": "/static/Media/Photographs/Rank/tui.jpg"
   },
   {
     "rank_id": 2,
-    "badge_name": "Fantail",
-    "badge_img_path": "/static/Media/Photographs/Rank/fantail.jpg"
+    "rank_numeral": "II",
+    "rank_name": "Fantail",
+    "rank_img_path": "/static/Media/Photographs/Rank/fantail.jpg"
   },
   {
     "rank_id": 3,
-    "badge_name": "Kereru",
-    "badge_img_path": "/static/Media/Photographs/Rank/kereru.jpg"
+    "rank_numeral": "III",
+    "rank_name": "Kereru",
+    "rank_img_path": "/static/Media/Photographs/Rank/kereru.jpg"
   },
   {
     "rank_id": 4,
-    "badge_name": "Bellbird",
-    "badge_img_path": "/static/Media/Photographs/Rank/bellbird.jpg"
+    "rank_numeral": "IV",
+    "rank_name": "Bellbird",
+    "rank_img_path": "/static/Media/Photographs/Rank/bellbird.jpg"
   },
   {
     "rank_id": 5,
-    "badge_name": "Kaka",
-    "badge_img_path": "/static/Media/Photographs/Rank/kaka.jpg"
+    "rank_numeral": "V",
+    "rank_name": "Kaka",
+    "rank_img_path": "/static/Media/Photographs/Rank/kaka.jpg"
   },
   {
     "rank_id": 6,
-    "badge_name": "Ruru",
-    "badge_img_path": "/static/Media/Photographs/Rank/ruru.jpg"
+    "rank_numeral": "VI",
+    "rank_name": "Ruru",
+    "rank_img_path": "/static/Media/Photographs/Rank/ruru.jpg"
   },
   {
     "rank_id": 7,
-    "badge_name": "Sth Is. Robin",
-    "badge_img_path": "/static/Media/Photographs/Rank/si_robin.jpg"
+    "rank_numeral": "VII",
+    "rank_name": "Sth Is. Robin",
+    "rank_img_path": "/static/Media/Photographs/Rank/si_robin.jpg"
   },
   {
     "rank_id": 8,
-    "badge_name": "Saddleback",
-    "badge_img_path": "/static/Media/Photographs/Rank/saddleback.jpg"
+    "rank_numeral": "VIII",
+    "rank_name": "Saddleback",
+    "rank_img_path": "/static/Media/Photographs/Rank/saddleback.jpg"
   },
   {
     "rank_id": 9,
-    "badge_name": "Kea",
-    "badge_img_path": "/static/Media/Photographs/Rank/kea.jpg"
+    "rank_numeral": "IX",
+    "rank_name": "Kea",
+    "rank_img_path": "/static/Media/Photographs/Rank/kea.jpg"
   },
   {
     "rank_id": 10,
-    "badge_name": "NZ Falcon",
-    "badge_img_path": "/static/Media/Photographs/Rank/nz falcon.jpg"
+    "rank_numeral": "X",
+    "rank_name": "NZ Falcon",
+    "rank_img_path": "/static/Media/Photographs/Rank/nz falcon.jpg"
   },
   {
     "rank_id": 11,
-    "badge_name": "Kokako",
-    "badge_img_path": "/static/Media/Photographs/Rank/kokako.jpg"
+    "rank_numeral": "XI",
+    "rank_name": "Kokako",
+    "rank_img_path": "/static/Media/Photographs/Rank/kokako.jpg"
   },
   {
     "rank_id": 12,
-    "badge_name": "Kiwi",
-    "badge_img_path": "/static/Media/Photographs/Rank/kiwi.jpg"
+    "rank_numeral": "XII",
+    "rank_name": "Kiwi",
+    "rank_img_path": "/static/Media/Photographs/Rank/kiwi.jpg"
   },
   {
     "rank_id": 13,
-    "badge_name": "Kakapo",
-    "badge_img_path": "/static/Media/Photographs/Rank/kakapo.jpg"
+    "rank_numeral": "XIII",
+    "rank_name": "Kakapo",
+    "rank_img_path": "/static/Media/Photographs/Rank/kakapo.jpg"
   }
 ]

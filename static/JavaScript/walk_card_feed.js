@@ -7,8 +7,8 @@ var walk_num = 0;
 
 //Default page functionality
 $(window).on('load', function () {
-    $('#loading-mask').delay(2000).fadeOut();
-    $('#site-content').delay(2050).fadeIn('slow');
+    $('#loading-mask').delay(500).fadeOut();
+    $('#site-content').delay(550).fadeIn('slow');
 
 
 //    Loader implementation
@@ -38,7 +38,6 @@ function load_walks() {
 
         success: function (data) {
             successful_walks_load(data);
-            walkDataAvailable(data);
         },
 
         error: failedArticleLoad
