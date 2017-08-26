@@ -22,3 +22,5 @@ SELECT * FROM testTable;
 SELECT * FROM walks_set LIMIT 3 OFFSET 1;
 
 ALTER TABLE registered_users ADD rank INT NOT NULL;
+
+SELECT user_badges.badge_id, user_badges.user_id, user_badges.trip_id, user_badges.award_date, walks_set.walk_id, walks_set.one_way_distance FROM user_badges INNER JOIN completed_trips ON user_badges.trip_id = completed_trips.trip_id INNER JOIN walks_set ON completed_trips.walk_id = walks_set.walk_id;

@@ -218,10 +218,12 @@ def user_badges_query():
     # Access database and pull the corresponding records and process into a JSON array
     db = MySQL_Database()
 
-    json_user_badges = db.query('SELECT * FROM user_badges WHERE user_id = %s;', [user_id])
+    json_user_badges = db.query('SELECT user_badges.badge_id, user_badges.user_id, user_badges.trip_id, user_badges.award_date, walks_set.walk_id, walks_set.one_way_distance FROM user_badges INNER JOIN completed_trips ON user_badges.trip_id = completed_trips.trip_id INNER JOIN walks_set ON completed_trips.walk_id = walks_set.walk_id WHERE user_badges.user_id = %s;', [user_id])
 
     for badge in json_user_badges:
         badge['award_date'] = '{:%d/%m/%Y}'.format(badge['award_date'])
+
+    print(json_user_badges)
 
     return Response(json.dumps(json_user_badges), mimetype="application/json")
 
