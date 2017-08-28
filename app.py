@@ -223,8 +223,6 @@ def user_badges_query():
     for badge in json_user_badges:
         badge['award_date'] = '{:%d/%m/%Y}'.format(badge['award_date'])
 
-    print(json_user_badges)
-
     return Response(json.dumps(json_user_badges), mimetype="application/json")
 
 @app.route('/get_rank', methods=['GET'])
