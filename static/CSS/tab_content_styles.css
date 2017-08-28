@@ -207,9 +207,9 @@ h2.headline-text {
 }
 
 h3.headline-text {
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 40px;
-    margin: auto;
+    margin: 2px auto;
 }
 
 h4.secondary-text {
