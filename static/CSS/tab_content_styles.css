@@ -304,8 +304,8 @@ h2.first-page-heading {
 
 .badge-img {
     position: absolute;
-    width: 90px;
-    height: 90px;
+    max-width: 90px;
+    max-height: 90px;
     top: 5px;
     left: 5px;
 }

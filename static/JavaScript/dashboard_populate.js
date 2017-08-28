@@ -73,15 +73,15 @@ function construct_tumbler(data) {
         if (i == 0) {
             var img = new Image();
             img.src = badges[i].output_template();
+            $('#tumble-temp').attr('id', 'tumble-0');
             img.onload = function () {
-                $('#tumble-temp').attr('id', 'tumble-0');
                 $('#tumble-0 .badge-img').attr("src", img.src);
             };
         } else {
             $('.badges-tumbler-container').append(badges[i].output_template());
-            badges[i].place_in_collection();
         }
 
+        badges[i].place_in_collection();
     }
 
     //Initiate the tumbler once data is available from ajax call
@@ -100,8 +100,9 @@ function construct_tumbler(data) {
 function Badge_Card(badge_id, badge_num) {
     //Private instance variables
     this.badge_id = badge_id;
-
+    //Badge collection template
     // badges_static_db_json[badge_id - 1] returns a JSON object for a specific badge
+    this.badge_collection_src = badges_static_db_json[badge_id - 1].badge_img_path;
 
     //Setup badge_img_template and badge_collection_template
     if (badge_num == 0) {
@@ -114,13 +115,17 @@ function Badge_Card(badge_id, badge_num) {
 
     this.output_template = function () {
         return this.badge_img_template;
-    }
-
-    //Badge collection template
-    this.badge_collection_template = '<img class="badge" id="gw-badge-' + this.badge_id + '" src="' + badges_static_db_json[badge_id - 1].badge_img_path + '">';
+    };
 
     this.place_in_collection = function () {
-        $('#gw-badge-' + this.badge_id).replaceWith(this.badge_collection_template);
+        $('#gw-badge-' + this.badge_id).attr('src', '/static/Media/Loader/loader.svg');
+        var img = new Image();
+        img.src = this.badge_collection_src;
+        img.onload = showBadgeImage(this.badge_id, img);
+    }
+
+    function showBadgeImage(badge_id, img) {
+        $('#gw-badge-' + badge_id).attr('src', img.src);
     }
 
     //Access rank and place corresponding rank image and information
