@@ -166,11 +166,17 @@ def register():
     else:
         return render_template("register.html")
 
+@app.route('/my_trips')
+@login_required
+def my_trips():
+    return render_template("trips_management.html")
 
+# Under construction page
 @app.route('/underconstruction')
 def under_construction():
     return render_template("under_construction.html")
 
+# JSON/Form validation application routes
 
 @app.route('/username_check', methods=['POST'])
 def username_check():

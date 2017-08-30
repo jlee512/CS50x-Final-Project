@@ -1,0 +1,16 @@
+.trips-tab-bar {
+    position: relative;
+    height: 48px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    z-index: 2;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-color: #F9E4C5;;
+}
