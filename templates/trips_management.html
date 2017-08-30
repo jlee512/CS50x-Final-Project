@@ -20,12 +20,57 @@
 
             <div class="mdl-layout__header-row">
                 <!-- Title -->
+                <a href="/" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored manage-trips-back">
+                    <i class="material-icons">home</i>
+                </a>
                 <span class="mdl-layout-title">Great Walks Passport</span>
             </div>
-
-            <!--My trips-->
-
         </header>
+
+        {#--Trip Management Page Content--#}
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <h2 class="page-section-heading first-page-heading">My Trips</h2>
+            </div>
+
+            <div class="card-container">
+                <div class="mdl-card mdl-shadow--2dp">
+                    <div class="walks-table">
+
+                        <div class="table-header-row">
+                            <div class="table-cell-checkbox">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-all">
+                                    <input type="checkbox" id="checkbox-all" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label"></span>
+                                </label>
+                            </div>
+                            <div class="table-cell">
+                                Walk Name
+                            </div>
+                            <div class="table-cell">
+                                Dates
+                            </div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell-checkbox">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+                                    <span class="mdl-checkbox__label"></span>
+                                </label>
+                            </div>
+                            <div class="table-cell walk-name-cell">
+                                Paparoa Track + Pike29 Memorial Track
+                            </div>
+                            <div class="table-cell dates-cell">
+                                25/02/2017 - 27/02/2017
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
     </div>
 
 {% endblock %}

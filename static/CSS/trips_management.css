@@ -1,16 +1,46 @@
-.trips-tab-bar {
-    position: relative;
-    height: 48px;
-    width: 100%;
-    border: none;
-    margin: 0;
-    z-index: 2;
-    -webkit-flex-grow: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    overflow: hidden;
-    background-color: #F9E4C5;;
+.manage-trips-back {
+    position: absolute;
+}
+
+/*.card-container{*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+/*}*/
+
+.mdl-card.mdl-shadow--2dp {
+    margin: auto;
+}
+
+.walks-table {
+    display: table;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.walks-table .table-header-row {
+    display: table-row;
+    margin: 5px auto;
+}
+
+.table-header-row .table-cell {
+    font-weight: 700;
+}
+
+.walks-table .table-row {
+    display: table-row;
+    border-top: thin solid #9d9383;
+}
+
+.walks-table .table-cell {
+    display: table-cell;
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.walks-table .table-cell-checkbox {
+    display: table-cell;
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: middle;
 }

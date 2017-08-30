@@ -312,11 +312,11 @@ h2.first-page-heading {
 
 .manage-trips-button {
     margin-top: 5px;
-    background-color: #CCE9D5;
-    color: #000000;
+    background-color: #5BA1D2;
+    color: #FFF;
 }
 
 .manage-trips-button.mdl-button--raised {
-    background-color: #CCE9D5;
-    color: #000000;
+    background-color: #5BA1D2;
+    color: #FFF;
 }
