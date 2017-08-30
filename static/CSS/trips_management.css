@@ -15,6 +15,8 @@
     display: table;
     margin-left: 5px;
     margin-right: 5px;
+    font-size: 0.75em;
+    line-height: 0.9em;
 }
 
 .walks-table .table-header-row {
@@ -31,6 +33,15 @@
     border-top: thin solid #9d9383;
 }
 
+.table-row:hover {
+    background-color: #CCE9D5;
+}
+
+.table-row {
+    transition: background-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease;
+}
+
 .walks-table .table-cell {
     display: table-cell;
     padding-left: 5px;
@@ -43,4 +54,8 @@
     padding-left: 5px;
     padding-right: 5px;
     vertical-align: middle;
+}
+
+.table-cell.walk-name-cell {
+
 }
