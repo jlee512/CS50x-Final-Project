@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="Progress on walks management table">
+    <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/tab_content_styles.css" afterPath="$PROJECT_DIR$/static/CSS/tab_content_styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/trips_management.css" afterPath="$PROJECT_DIR$/static/CSS/trips_management.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/trips_management.html" afterPath="$PROJECT_DIR$/templates/trips_management.html" />
     </list>
     <ignored path="Web_Information_Gathering/" />
     <ignored path="config.ini" />
@@ -19,7 +22,7 @@
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$json_development.coverage" NAME="json_development Coverage Results" MODIFIED="1502864774048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Unittests_in_app_py.coverage" NAME="Unittests in app.py Coverage Results" MODIFIED="1501825196593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1503092729550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1504134714741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1504146023920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -71,6 +74,24 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="heroku_66cf5b5014845bb@us-cdbr-iron-east-03.cleardb.net" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="heroku_66cf5b5014845bb" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="completed_trips" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -78,19 +99,20 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="157" column="32" lean-forward="false" selection-start-line="157" selection-start-column="32" selection-end-line="157" selection-end-column="32" />
+            <state relative-caret-position="-706">
+              <caret line="186" column="47" lean-forward="false" selection-start-line="186" selection-start-column="47" selection-end-line="186" selection-end-column="47" />
               <folding>
                 <element signature="e#0#103#0" expanded="true" />
-                <marker date="1504053350926" expanded="true" signature="2533:2581" ph="SELECT * FRO... registered_users" />
-                <marker date="1504053350926" expanded="true" signature="4508:4556" ph="SELECT * FRO... registered_users" />
-                <marker date="1504053350926" expanded="true" signature="4898:4980" ph="INSERT INTO registered_users... " />
-                <marker date="1504053350926" expanded="true" signature="5361:5409" ph="SELECT * FRO... registered_users" />
-                <marker date="1504053350926" expanded="true" signature="6416:6466" ph="SELECT * FRO... registered_users" />
-                <marker date="1504053350926" expanded="true" signature="7137:7179" ph="SELECT * FRO... walks_set" />
-                <marker date="1504053350926" expanded="true" signature="7877:8209" ph="SELECT * FRO... user_badges" />
-                <marker date="1504053350926" expanded="true" signature="8694:8708" ph="SELECT * FRO... testtable" />
-                <marker date="1504053350926" expanded="true" signature="8694:8717" ph="SELECT * FRO... testtable" />
+                <marker date="1504146563464" expanded="true" signature="2533:2581" ph="SELECT * FRO... registered_users" />
+                <marker date="1504146563464" expanded="true" signature="4508:4556" ph="SELECT * FRO... registered_users" />
+                <marker date="1504146563464" expanded="true" signature="4898:4980" ph="INSERT INTO registered_users... " />
+                <marker date="1504146563464" expanded="true" signature="5361:5409" ph="SELECT * FRO... registered_users" />
+                <marker date="1504146563464" expanded="true" signature="6094:6140" ph="SELECT * FRO... completed_trips" />
+                <marker date="1504146563464" expanded="true" signature="6788:6838" ph="SELECT * FRO... registered_users" />
+                <marker date="1504146563464" expanded="true" signature="7509:7551" ph="SELECT * FRO... walks_set" />
+                <marker date="1504146563464" expanded="true" signature="8249:8581" ph="SELECT * FRO... user_badges" />
+                <marker date="1504146563464" expanded="true" signature="9066:9080" ph="SELECT * FRO... testtable" />
+                <marker date="1504146563464" expanded="true" signature="9066:9089" ph="SELECT * FRO... testtable" />
               </folding>
             </state>
           </provider>
@@ -99,8 +121,8 @@
       <file leaf-file-name="trips_management.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/trips_management.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-244">
-              <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+            <state relative-caret-position="11966">
+              <caret line="66" column="12" lean-forward="false" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -109,8 +131,23 @@
       <file leaf-file-name="trips_management.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/CSS/trips_management.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="325">
+              <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="heroku_66cf5b5014845bb.completed_trips" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -130,7 +167,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>register</find>
       <find>#walk</find>
       <find>headline</find>
       <find>t</find>
@@ -160,6 +196,7 @@
       <find>headline-text</find>
       <find>h3.</find>
       <find>panel</find>
+      <find>border</find>
     </findStrings>
     <replaceStrings>
       <replace>0.4</replace>
@@ -220,11 +257,11 @@
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/register.html" />
         <option value="$PROJECT_DIR$/templates/under_construction.html" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/CSS/tab_content_styles.css" />
-        <option value="$PROJECT_DIR$/templates/trips_management.html" />
         <option value="$PROJECT_DIR$/static/CSS/trips_management.css" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/trips_management.html" />
       </list>
     </option>
   </component>
@@ -235,10 +272,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-13" />
-    <option name="y" value="-13" />
-    <option name="width" value="3026" />
-    <option name="height" value="1946" />
+    <option name="x" value="-11" />
+    <option name="width" value="1522" />
+    <option name="height" value="1931" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -718,13 +754,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
     </task>
-    <task id="LOCAL-00065" summary="Infinite scrolling partially implemented, next is to implement background image assignment and only have elements show once the background image is loaded.">
-      <created>1502152015396</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1502152015396</updated>
-    </task>
     <task id="LOCAL-00066" summary="walk_card_feed loading tweaked and progressed">
       <created>1502166138894</created>
       <option name="number" value="00066" />
@@ -1061,7 +1090,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504073871197</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Progress on walks management table AM 31082017">
+      <created>1504134912379</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1504134912379</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1106,15 +1142,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
+    <frame x="-11" y="0" width="1522" height="1931" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18475275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38210228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3321386" sideWeight="0.5099432" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2372159" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4900568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.4971591" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3315412" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33096507" sideWeight="0.4900568" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3339307" sideWeight="0.4900568" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918888" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1185,7 +1222,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Development of preloading screen" />
     <MESSAGE value="Tweaked walk feed to eliminate infinite scrolling. Given number of walks this feature was redundant and actually detracted from User Experience" />
     <MESSAGE value="Added loader animation" />
     <MESSAGE value="Development of Badge/Passport interface" />
@@ -1210,7 +1246,8 @@
     <MESSAGE value="Dashboard basic functionality completed. Abel Tasman badge design added" />
     <MESSAGE value="Adding in trip management functionality" />
     <MESSAGE value="Progress on walks management table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Progress on walks management table" />
+    <MESSAGE value="Progress on walks management table AM 31082017" />
+    <option name="LAST_COMMIT_MESSAGE" value="Progress on walks management table AM 31082017" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1243,18 +1280,6 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.user_memories">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1560,14 +1585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/CSS/tab_content_styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="320" column="16" lean-forward="false" selection-start-line="320" selection-start-column="16" selection-end-line="320" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4521">
@@ -1589,37 +1606,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/CSS/trips_management.css">
+    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/CSS/tab_content_styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        <state relative-caret-position="482">
+          <caret line="310" column="1" lean-forward="true" selection-start-line="310" selection-start-column="1" selection-end-line="310" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="157" column="32" lean-forward="false" selection-start-line="157" selection-start-column="32" selection-end-line="157" selection-end-column="32" />
+        <state relative-caret-position="-706">
+          <caret line="186" column="47" lean-forward="false" selection-start-line="186" selection-start-column="47" selection-end-line="186" selection-end-column="47" />
           <folding>
             <element signature="e#0#103#0" expanded="true" />
-            <marker date="1504053350926" expanded="true" signature="2533:2581" ph="SELECT * FRO... registered_users" />
-            <marker date="1504053350926" expanded="true" signature="4508:4556" ph="SELECT * FRO... registered_users" />
-            <marker date="1504053350926" expanded="true" signature="4898:4980" ph="INSERT INTO registered_users... " />
-            <marker date="1504053350926" expanded="true" signature="5361:5409" ph="SELECT * FRO... registered_users" />
-            <marker date="1504053350926" expanded="true" signature="6416:6466" ph="SELECT * FRO... registered_users" />
-            <marker date="1504053350926" expanded="true" signature="7137:7179" ph="SELECT * FRO... walks_set" />
-            <marker date="1504053350926" expanded="true" signature="7877:8209" ph="SELECT * FRO... user_badges" />
-            <marker date="1504053350926" expanded="true" signature="8694:8708" ph="SELECT * FRO... testtable" />
-            <marker date="1504053350926" expanded="true" signature="8694:8717" ph="SELECT * FRO... testtable" />
+            <marker date="1504146563464" expanded="true" signature="2533:2581" ph="SELECT * FRO... registered_users" />
+            <marker date="1504146563464" expanded="true" signature="4508:4556" ph="SELECT * FRO... registered_users" />
+            <marker date="1504146563464" expanded="true" signature="4898:4980" ph="INSERT INTO registered_users... " />
+            <marker date="1504146563464" expanded="true" signature="5361:5409" ph="SELECT * FRO... registered_users" />
+            <marker date="1504146563464" expanded="true" signature="6094:6140" ph="SELECT * FRO... completed_trips" />
+            <marker date="1504146563464" expanded="true" signature="6788:6838" ph="SELECT * FRO... registered_users" />
+            <marker date="1504146563464" expanded="true" signature="7509:7551" ph="SELECT * FRO... walks_set" />
+            <marker date="1504146563464" expanded="true" signature="8249:8581" ph="SELECT * FRO... user_badges" />
+            <marker date="1504146563464" expanded="true" signature="9066:9080" ph="SELECT * FRO... testtable" />
+            <marker date="1504146563464" expanded="true" signature="9066:9089" ph="SELECT * FRO... testtable" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/CSS/trips_management.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/trips_management.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+        <state relative-caret-position="11966">
+          <caret line="66" column="12" lean-forward="false" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
           <folding />
         </state>
       </provider>

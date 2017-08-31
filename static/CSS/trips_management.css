@@ -15,22 +15,29 @@
     display: table;
     margin-left: 5px;
     margin-right: 5px;
-    font-size: 0.75em;
-    line-height: 0.9em;
+    font-size: 12px;
+    line-height: 18px;
+    width: 320px;
 }
 
-.walks-table .table-header-row {
+.table-header-row {
     display: table-row;
     margin: 5px auto;
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .table-header-row .table-cell {
     font-weight: 700;
+    font-size: 16px;
 }
 
 .walks-table .table-row {
     display: table-row;
-    border-top: thin solid #9d9383;
+    border-top: 2px solid #9d9383;
+    width: 100%;
 }
 
 .table-row:hover {
@@ -56,6 +63,11 @@
     vertical-align: middle;
 }
 
-.table-cell.walk-name-cell {
+span {
+    display: block;
+}
 
+span.walk-name-span {
+    font-size: 14px;
+    margin-bottom: 3px;
 }

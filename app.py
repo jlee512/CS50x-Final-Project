@@ -169,7 +169,17 @@ def register():
 @app.route('/my_trips')
 @login_required
 def my_trips():
-    return render_template("trips_management.html")
+
+    # query database for user trips
+    db = MySQL_Database()
+    trips = db.query('SELECT * FROM completed_trips WHERE user_id=%s', [session["user_id"]])
+    db.check_connection()
+
+    for trip in trips:
+        trip['date_started'] = '{:%d/%m/%Y}'.format(trip['date_started'])
+        trip['date_completed'] = '{:%d/%m/%Y}'.format(trip['date_completed'])
+
+    return render_template("trips_management.html", trips=trips)
 
 # Under construction page
 @app.route('/underconstruction')

@@ -312,8 +312,9 @@ h2.first-page-heading {
 
 .manage-trips-button {
     margin-top: 5px;
+    margin-bottom: 5px;
     background-color: #5BA1D2;
-    color: #FFF;
+    color: #FFF
 }
 
 .manage-trips-button.mdl-button--raised {
