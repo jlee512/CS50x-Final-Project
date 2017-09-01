@@ -172,12 +172,14 @@ def my_trips():
 
     # query database for user trips
     db = MySQL_Database()
-    trips = db.query('SELECT * FROM completed_trips WHERE user_id=%s', [session["user_id"]])
+    trips = db.query('SELECT trip_id, date_started, date_completed, walk_name FROM completed_trips INNER JOIN walks_set ON completed_trips.walk_id = walks_set.walk_id WHERE user_id=%s', [session["user_id"]])
     db.check_connection()
 
     for trip in trips:
         trip['date_started'] = '{:%d/%m/%Y}'.format(trip['date_started'])
         trip['date_completed'] = '{:%d/%m/%Y}'.format(trip['date_completed'])
+
+    print(trips)
 
     return render_template("trips_management.html", trips=trips)
 

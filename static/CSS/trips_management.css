@@ -2,11 +2,6 @@
     position: absolute;
 }
 
-/*.card-container{*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-/*}*/
-
 .mdl-card.mdl-shadow--2dp {
     margin: auto;
 }
@@ -27,16 +22,16 @@
     height: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
+    background-color: #F9E4C5;
 }
 
-.table-header-row .table-cell {
+.table-header-row .table-cell-header {
     font-weight: 700;
     font-size: 16px;
 }
 
-.walks-table .table-row {
+.table-row, .table-header-row {
     display: table-row;
-    border-top: 2px solid #9d9383;
     width: 100%;
 }
 
@@ -49,18 +44,23 @@
     -webkit-transition: background-color 0.2s ease;
 }
 
-.walks-table .table-cell {
+.table-cell, .table-cell-checkbox, .table-cell-checkbox-header, .table-cell-header {
     display: table-cell;
     padding-left: 5px;
     padding-right: 5px;
     vertical-align: middle;
 }
 
-.walks-table .table-cell-checkbox {
+.walks-table .table-cell, .walks-table .table-cell-checkbox {
+    border-top: solid 1px gray;
+}
+
+.walks-table .table-cell-checkbox, .walks-table .table-cell-checkbox-header {
     display: table-cell;
     padding-left: 5px;
     padding-right: 5px;
     vertical-align: middle;
+    width: 28px;
 }
 
 span {
@@ -70,4 +70,8 @@ span {
 span.walk-name-span {
     font-size: 14px;
     margin-bottom: 3px;
+}
+
+#add-walk-button {
+    width: 100%;
 }

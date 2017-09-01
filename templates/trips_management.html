@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block custom_javascript %}
+    <script type="text/javascript" src="/static/JavaScript/new_trip_form.js"></script>
 {% endblock %}
 
 {% block title %}
@@ -38,31 +39,37 @@
                     <div class="walks-table">
 
                         <div class="table-header-row">
-                            <div class="table-cell-checkbox">
+                            <div class="table-cell-checkbox-header">
                                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-all">
                                     <input type="checkbox" id="checkbox-all" class="mdl-checkbox__input">
                                     <span class="mdl-checkbox__label"></span>
                                 </label>
                             </div>
-                            <div class="table-cell">
+                            <div class="table-cell-header">
                                 Trip Description
                             </div>
                         </div>
-                        <div class="table-row">
-                            <div class="table-cell-checkbox">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-                                    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-                                    <span class="mdl-checkbox__label"></span>
-                                </label>
+                        {% for trip in trips %}
+                            <div class="table-row">
+                                <div class="table-cell-checkbox">
+                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                                           for="checkbox-{{ loop.index }}">
+                                        <input type="checkbox" id="checkbox-{{ loop.index }}"
+                                               class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label"></span>
+                                    </label>
+                                </div>
+                                <div class="table-cell">
+                                    <span class="walk-name-span">{{ trip.walk_name }}</span>
+                                    <span class="walk-dates-span">{{ trip.date_started }} - {{ trip.date_completed }}</span>
+                                </div>
                             </div>
-                            <div class="table-cell">
-                                <span class="walk-name-span">Paparoa Track + Pike29 Memorial Track</span>
-                                <span class="walk-dates-span">25/02/2017 - 27/02/2017</span>
-                            </div>
-                        </div>
-
+                        {% endfor %}
                     </div>
                 </div>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect manage-trips-button"
+                        id="add-walk-button">
+                </button>
             </div>
 
 
