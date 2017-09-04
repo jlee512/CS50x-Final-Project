@@ -42,43 +42,13 @@
 
                     {% for trip in trips %}
                             <span class="trip-chip" id="checkbox-{{ loop.index }}">
-                                <span class="trip-chip-walk-name">{{ trip.walk_name }}</span>
-                                <span class="trip-chip-walk-dates"> {{ trip.date_completed }}</span>
+                                <span class="trip-chip-walk-name">{{ trip.walk_name }}&nbsp</span>
+                                <span class="trip-chip-walk-dates"><strong class="trip-start-date">{{ trip.date_started }} -</strong><strong class="trip-end-date">{{ trip.date_completed }}</strong></span>
                                 <button class="mdl-button mdl-js-button mdl-button--icon delete-trip-button">
                                   <i class="material-icons delete-icon">cancel</i>
                                 </button>
                             </span>
                     {% endfor %}
-                    {#                    <div class="walks-table">#}
-                    {##}
-                    {#                        <div class="table-header-row">#}
-                    {#                            <div class="table-cell-checkbox-header">#}
-                    {#                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-all">#}
-                    {#                                    <input type="checkbox" id="checkbox-all" class="mdl-checkbox__input">#}
-                    {#                                    <span class="mdl-checkbox__label"></span>#}
-                    {#                                </label>#}
-                    {#                            </div>#}
-                    {#                            <div class="table-cell-header">#}
-                    {#                                Trip Description#}
-                    {#                            </div>#}
-                    {#                        </div>#}
-                    {#                        {% for trip in trips %}#}
-                    {#                            <div class="table-row">#}
-                    {#                                <div class="table-cell-checkbox">#}
-                    {#                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"#}
-                    {#                                           for="checkbox-{{ loop.index }}">#}
-                    {#                                        <input type="checkbox" id="checkbox-{{ loop.index }}"#}
-                    {#                                               class="mdl-checkbox__input">#}
-                    {#                                        <span class="mdl-checkbox__label"></span>#}
-                    {#                                    </label>#}
-                    {#                                </div>#}
-                    {#                                <div class="table-cell">#}
-                    {#                                    <span class="walk-name-span">{{ trip.walk_name }}</span>#}
-                    {#                                    <span class="walk-dates-span">{{ trip.date_started }} - {{ trip.date_completed }}</span>#}
-                    {#                                </div>#}
-                    {#                            </div>#}
-                    {#                        {% endfor %}#}
-                    {#                    </div>#}
 
                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect manage-trips-button"
                             id="add-walk-button">

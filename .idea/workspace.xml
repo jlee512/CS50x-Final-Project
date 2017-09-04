@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/Greatwalksapp_Badge_LakeWaikaremoana.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/Greatwalksapp_Badge_Rakiura.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/blank_LakeWaikaremoana.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/Media/Photographs/Badges/blank_Rakiura.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/trips_management.css" afterPath="$PROJECT_DIR$/static/CSS/trips_management.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JSON/Badges.json" afterPath="$PROJECT_DIR$/static/JSON/Badges.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JavaScript/dashboard_populate.js" afterPath="$PROJECT_DIR$/static/JavaScript/dashboard_populate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/trips_management.html" afterPath="$PROJECT_DIR$/templates/trips_management.html" />
     </list>
     <ignored path="Web_Information_Gathering/" />
@@ -27,7 +20,7 @@
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$json_development.coverage" NAME="json_development Coverage Results" MODIFIED="1502864774048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Unittests_in_app_py.coverage" NAME="Unittests in app.py Coverage Results" MODIFIED="1501825196593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1503092729550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1504482049570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1504488527209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -87,21 +80,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trips_management.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="trips_management.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/trips_management.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="708">
-              <caret line="47" column="70" lean-forward="false" selection-start-line="47" selection-start-column="70" selection-end-line="47" selection-end-column="70" />
+            <state relative-caret-position="231">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trips_management.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="trips_management.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/CSS/trips_management.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="939">
-              <caret line="106" column="21" lean-forward="false" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
+            <state relative-caret-position="198">
+              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -161,7 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>index</find>
       <find>.badge</find>
       <find>secondary-r</find>
       <find>rank-text-display</find>
@@ -191,6 +183,7 @@
       <find>label</find>
       <find>rank</find>
       <find>button</find>
+      <find>mdl-card</find>
     </findStrings>
     <replaceStrings>
       <replace>0.4</replace>
@@ -255,8 +248,8 @@
         <option value="$PROJECT_DIR$/static/JavaScript/dashboard_populate.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/JSON/Badges.json" />
-        <option value="$PROJECT_DIR$/templates/trips_management.html" />
         <option value="$PROJECT_DIR$/static/CSS/trips_management.css" />
+        <option value="$PROJECT_DIR$/templates/trips_management.html" />
       </list>
     </option>
   </component>
@@ -750,13 +743,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
     </task>
-    <task id="LOCAL-00069" summary="Tidied up .css() assignments in JavaScript walk_card_feed.js">
-      <created>1502226509874</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1502226509875</updated>
-    </task>
     <task id="LOCAL-00070" summary="walk-card-feed connected (via AJAX) to the database. Plan to extract data for each of the walks">
       <created>1502235894149</created>
       <option name="number" value="00070" />
@@ -1093,7 +1079,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504237131334</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="Progress on walks management table AM 04092017">
+      <created>1504483564772</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1504483564774</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1218,7 +1211,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added loader animation" />
     <MESSAGE value="Development of Badge/Passport interface" />
     <MESSAGE value="Populating badge JSON information" />
     <MESSAGE value="testing JSON setup" />
@@ -1243,7 +1235,8 @@
     <MESSAGE value="Progress on walks management table" />
     <MESSAGE value="Progress on walks management table AM 31082017" />
     <MESSAGE value="Progress on walks management table PM 01092017" />
-    <option name="LAST_COMMIT_MESSAGE" value="Progress on walks management table PM 01092017" />
+    <MESSAGE value="Progress on walks management table AM 04092017" />
+    <option name="LAST_COMMIT_MESSAGE" value="Progress on walks management table AM 04092017" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1579,6 +1572,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="636">
           <caret line="211" column="36" lean-forward="false" selection-start-line="211" selection-start-column="36" selection-end-line="211" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1644,18 +1638,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/trips_management.html">
+    <entry file="file://$PROJECT_DIR$/static/CSS/trips_management.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="47" column="70" lean-forward="false" selection-start-line="47" selection-start-column="70" selection-end-line="47" selection-end-column="70" />
+        <state relative-caret-position="198">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/CSS/trips_management.css">
+    <entry file="file://$PROJECT_DIR$/templates/trips_management.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="939">
-          <caret line="106" column="21" lean-forward="false" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
+        <state relative-caret-position="231">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -4,6 +4,7 @@
 
 .mdl-card.mdl-shadow--2dp {
     margin: auto;
+    padding-top: 10px;
 }
 
 .walks-table {
@@ -94,15 +95,37 @@ form {
     width: 100%;
 }
 
-.delete-trip-button {
-    display: inline;
-}
-
 .trip-chip {
     display: flex;
+    flex-direction: row;
     background-color: #CCE9D5;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 15px;
+    margin: 3px;
+}
+
+.trip-chip-walk-name {
+    margin-right: auto;
 }
 
 .delete-icon {
-    color: lightgray;
+    color: white;
+}
+
+.trip-chip-walk-name {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.trip-chip-walk-dates {
+    color: #8EB199;
+    padding: 2px;
+    font-size: 0.5em;
+    line-height: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #8EB199;
+    border-radius: 3px;
+    margin-right: 15px;
 }
