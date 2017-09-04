@@ -4,7 +4,7 @@
     "walk_id": 2,
     "badge_name": "badge_temp1",
     "badge_description": "badge received for completeting Lake Waikaremoana",
-    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp1.png"
+    "badge_img_path": "/static/Media/Photographs/Badges/Greatwalksapp_Badge_LakeWaikaremoana.png"
   },
   {
     "badge_id": 2,
@@ -67,7 +67,7 @@
     "walk_id": 92,
     "badge_name": "badge_temp10",
     "badge_description": "badge awarded for completing Rakiura Track",
-    "badge_img_path": "/static/Media/Photographs/Badges/badge_temp10.png"
+    "badge_img_path": "/static/Media/Photographs/Badges/Greatwalksapp_Badge_Rakiura.png"
   },
   {
     "badge_id": 11,

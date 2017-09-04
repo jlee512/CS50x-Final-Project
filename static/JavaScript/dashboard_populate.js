@@ -205,8 +205,12 @@ function updateRank(data) {
     };
 
     $('.rank-text.placeholder').text(" " + rank_static_db_json[rank - 1].rank_name).css('color', '#273B76');
-    $('.next-rank.placeholder').text(" " + rank_static_db_json[rank].rank_name).css('color', '#5BA1D2');
     $('.headline-text.rank-numeral.placeholder').text(rank_static_db_json[rank - 1].rank_numeral).css('color', '#273B76');
+    if (rank < 13) {
+        $('.next-rank.placeholder').text(" " + rank_static_db_json[rank].rank_name).css('color', '#5BA1D2');
+    } else {
+        $('.secondary-rank').hide();
+    }
 
 }
 

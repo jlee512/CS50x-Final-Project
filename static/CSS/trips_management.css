@@ -72,6 +72,37 @@ span.walk-name-span {
     margin-bottom: 3px;
 }
 
-#add-walk-button {
+.mdl-button__ripple-container, .manage-trips-button.mdl-button--raised {
+    width: 90%;
+    margin: 10px auto;
+}
+
+form {
+    padding: 0px 20px 5px 20px;
+}
+
+.mdl-radio__label {
+    font-size: 12px;
+}
+
+.mdl-button.mdl-js-button.mdl-button--icon.mdl-button--colored.manage-trips-back {
+    margin-left: 15px;
+    color: white;
+}
+
+#confirm-walk-button {
     width: 100%;
+}
+
+.delete-trip-button {
+    display: inline;
+}
+
+.trip-chip {
+    display: flex;
+    background-color: #CCE9D5;
+}
+
+.delete-icon {
+    color: lightgray;
 }
