@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/JavaScript/datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/CSS/datepicker.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/trips_management.css" afterPath="$PROJECT_DIR$/static/CSS/trips_management.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JavaScript/datepicker.js" afterPath="$PROJECT_DIR$/static/JavaScript/datepicker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/trips_management.html" afterPath="$PROJECT_DIR$/templates/trips_management.html" />
     </list>
     <ignored path="Web_Information_Gathering/" />
@@ -20,7 +22,7 @@
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$json_development.coverage" NAME="json_development Coverage Results" MODIFIED="1502864774048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Unittests_in_app_py.coverage" NAME="Unittests in app.py Coverage Results" MODIFIED="1501825196593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1503092729550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1504577130079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1505177812815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -61,7 +63,7 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1825">
+            <state relative-caret-position="-2401">
               <caret line="174" column="68" lean-forward="false" selection-start-line="174" selection-start-column="68" selection-end-line="174" selection-end-column="68" />
               <folding>
                 <element signature="e#0#103#0" expanded="true" />
@@ -80,24 +82,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trips_management.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="trips_management.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/trips_management.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="143" column="98" lean-forward="false" selection-start-line="143" selection-start-column="98" selection-end-line="143" selection-end-column="98" />
+            <state relative-caret-position="627">
+              <caret line="208" column="91" lean-forward="false" selection-start-line="208" selection-start-column="91" selection-end-line="208" selection-end-column="91" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datepicker.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/JavaScript/datepicker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +95,38 @@
       <file leaf-file-name="trips_management.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/CSS/trips_management.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4422">
-              <caret line="134" column="11" lean-forward="false" selection-start-line="134" selection-start-column="11" selection-end-line="134" selection-end-column="11" />
+            <state relative-caret-position="959">
+              <caret line="139" column="21" lean-forward="false" selection-start-line="139" selection-start-column="21" selection-end-line="139" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datepicker.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/JavaScript/datepicker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8910">
+              <caret line="247" column="3" lean-forward="false" selection-start-line="247" selection-start-column="3" selection-end-line="247" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="walk_card_feed.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/JavaScript/walk_card_feed.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2838">
+              <caret line="86" column="122" lean-forward="false" selection-start-line="86" selection-start-column="117" selection-end-line="86" selection-end-column="122" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard_populate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/JavaScript/dashboard_populate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2706">
+              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -159,15 +179,13 @@
       <list>
         <option value="Python Script" />
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rank-text-display</find>
-      <find>secondary</find>
       <find>#tumb</find>
       <find>badge-tumb</find>
       <find>active</find>
@@ -196,6 +214,8 @@
       <find>css</find>
       <find>color</find>
       <find>button</find>
+      <find>place_in</find>
+      <find>date st</find>
     </findStrings>
     <replaceStrings>
       <replace>0.4</replace>
@@ -260,9 +280,10 @@
         <option value="$PROJECT_DIR$/static/JavaScript/dashboard_populate.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/JSON/Badges.json" />
+        <option value="$PROJECT_DIR$/static/JavaScript/datepicker.js" />
+        <option value="$PROJECT_DIR$/static/CSS/datepicker.css" />
         <option value="$PROJECT_DIR$/static/CSS/trips_management.css" />
         <option value="$PROJECT_DIR$/templates/trips_management.html" />
-        <option value="$PROJECT_DIR$/static/JavaScript/datepicker.js" />
       </list>
     </option>
   </component>
@@ -273,10 +294,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="2998" />
-    <option name="height" value="1918" />
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
+    <option name="width" value="3026" />
+    <option name="height" value="1946" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -295,7 +316,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -424,6 +444,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -707,13 +728,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
-    </task>
-    <task id="LOCAL-00072" summary="data collection crawler development as well as database flesh-out - addition commit">
-      <created>1502255264029</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1502255264029</updated>
     </task>
     <task id="LOCAL-00073" summary="data collection crawler development as well as database flesh-out - addition commit">
       <created>1502255985533</created>
@@ -1051,7 +1065,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504522542377</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="Progress on walks management table PM 05092017">
+      <created>1504607046489</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1504607046490</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1096,16 +1117,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="2998" height="1918" extended-state="0" />
+    <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19764216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1040522" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3321386" sideWeight="0.5099432" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4900412" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915172" sideWeight="0.4971591" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3315412" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3395545" sideWeight="0.4900568" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33274126" sideWeight="0.4900568" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918888" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1176,7 +1197,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Populating badge JSON information" />
     <MESSAGE value="testing JSON setup" />
     <MESSAGE value="Updated temp badge backgrounds to be transparent" />
     <MESSAGE value="Temporary badge JSON file updated for working purposes" />
@@ -1201,7 +1221,8 @@
     <MESSAGE value="Progress on walks management table PM 01092017" />
     <MESSAGE value="Progress on walks management table AM 04092017" />
     <MESSAGE value="Progress on walks management table PM 04092017" />
-    <option name="LAST_COMMIT_MESSAGE" value="Progress on walks management table PM 04092017" />
+    <MESSAGE value="Progress on walks management table PM 05092017" />
+    <option name="LAST_COMMIT_MESSAGE" value="Progress on walks management table PM 05092017" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1210,7 +1231,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp4.jpeg" />
     <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp5.jpeg" />
     <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp6.jpg" />
     <entry file="file://$PROJECT_DIR$/static/Media/Photographs/Badges/badge_temp7.jpeg" />
@@ -1446,13 +1466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/JavaScript/three_dim_tumbler_anim.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="944">
@@ -1493,13 +1506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
           <caret line="25" column="179" lean-forward="false" selection-start-line="25" selection-start-column="179" selection-end-line="25" selection-end-column="179" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1566,29 +1572,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/JavaScript/walk_card_feed.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
+        <state relative-caret-position="2838">
           <caret line="86" column="122" lean-forward="false" selection-start-line="86" selection-start-column="117" selection-end-line="86" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/JavaScript/three_dim_tumbler_anim.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/JavaScript/dashboard_populate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="91" column="84" lean-forward="true" selection-start-line="91" selection-start-column="77" selection-end-line="91" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/CSS/trips_management.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4422">
-          <caret line="134" column="11" lean-forward="false" selection-start-line="134" selection-start-column="11" selection-end-line="134" selection-end-column="11" />
+        <state relative-caret-position="2706">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1825">
+        <state relative-caret-position="-2401">
           <caret line="174" column="68" lean-forward="false" selection-start-line="174" selection-start-column="68" selection-end-line="174" selection-end-column="68" />
           <folding>
             <element signature="e#0#103#0" expanded="true" />
@@ -1606,21 +1620,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/trips_management.html">
+    <entry file="file://$PROJECT_DIR$/static/CSS/datepicker.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="143" column="98" lean-forward="false" selection-start-line="143" selection-start-column="98" selection-end-line="143" selection-end-column="98" />
+        <state relative-caret-position="1386">
+          <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/JavaScript/datepicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="8910">
+          <caret line="247" column="3" lean-forward="false" selection-start-line="247" selection-start-column="3" selection-end-line="247" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/CSS/trips_management.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="959">
+          <caret line="139" column="21" lean-forward="false" selection-start-line="139" selection-start-column="21" selection-end-line="139" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/trips_management.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="208" column="91" lean-forward="false" selection-start-line="208" selection-start-column="91" selection-end-line="208" selection-end-column="91" />
+          <folding />
         </state>
       </provider>
     </entry>

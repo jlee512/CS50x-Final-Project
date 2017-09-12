@@ -3,10 +3,12 @@
 {% block custom_styles %}
     <link href="{{ url_for('static', filename='CSS/tab_content_styles.css') }}" rel="stylesheet"/>
     <link href="{{ url_for('static', filename='CSS/trips_management.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='CSS/datepicker.css') }}" rel="stylesheet"/>
 {% endblock %}
 
 {% block custom_javascript %}
     <script type="text/javascript" src="/static/JavaScript/new_trip_form.js"></script>
+    <script type="text/javascript" src="/static/JavaScript/datepicker.js"></script>
 {% endblock %}
 
 {% block title %}
@@ -41,9 +43,11 @@
                 <div class="mdl-card mdl-shadow--2dp">
 
                     {% for trip in trips %}
-                            <span class="trip-chip" id="checkbox-{{ loop.index }}">
+                        <span class="trip-chip" id="checkbox-{{ loop.index }}">
                                 <span class="trip-chip-walk-name"><strong>{{ trip.walk_name }}&nbsp</strong></span>
-                                <span class="trip-chip-walk-dates"><strong class="trip-start-date">{{ trip.date_started }} -</strong><strong class="trip-end-date">{{ trip.date_completed }}</strong></span>
+                                <span class="trip-chip-walk-dates"><strong
+                                        class="trip-start-date">{{ trip.date_started }} -</strong><strong
+                                        class="trip-end-date">{{ trip.date_completed }}</strong></span>
                                 <button class="mdl-button mdl-js-button mdl-button--icon delete-trip-button">
                                   <i class="material-icons delete-icon">cancel</i>
                                 </button>
@@ -141,9 +145,68 @@
                                 </label>
                             </div>
 
-                            <span class="trip-island-heading"><strong>Date Started</strong></span>
+                            {# -------------------------Date Started datepicker ------------------------#}
 
-                            <span class="trip-island-heading"><strong>Date Completed</strong></span>
+                            <span class="trip-island-heading date-started"><strong>Date Started</strong></span>
+
+                            <div class="datepicker-container date-started">
+                                <div class="datepicker col-1">
+                                    <div class="datepicker row-1">
+                                        <button type="button" id="increase-day"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">add</i></button>
+                                    </div>
+                                    <div class="datepicker row-2">
+                                        <input type="number" name="day" id="day" min="1" value="1" maxlength="9">
+                                    </div>
+                                    <div class="datepicker row-3">
+                                        <button type="button" id="reduce-day"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">remove</i></button>
+                                    </div>
+                                </div>
+
+                                <div class="datepicker col-2">
+                                    <div class="datepicker row-1">
+                                        <button type="button" id="increase-month"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">add</i></button>
+                                    </div>
+                                    <div class="datepicker row-2">
+                                        <input type="text" name="month" id="month" value="January">
+                                    </div>
+                                    <div class="datepicker row-3">
+                                        <button type="button" id="reduce-month"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">remove</i></button>
+                                    </div>
+                                </div>
+
+                                <div class="datepicker col-3">
+                                    <div class="datepicker row-1">
+                                        <button type="button" id="increase-year"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">add</i></button>
+                                    </div>
+                                    <div class="datepicker row-2">
+                                        <input type="number" name="year" id="year" max="2500" min="1900" value="2017">
+                                    </div>
+                                    <div class="datepicker row-3">
+                                        <button type="button" id="reduce-year"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">remove</i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="text" name="leap-year" id="leap-year" hidden>
+
+                            {# -------------------------Date Completed datepicker ------------------------#}
+
+                            <span class="trip-island-heading date-completed"><strong>Date Completed</strong></span>
+
+
+
+                            {# ----------------------------- Add Trip Button ----------------------------- #}
 
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect manage-trips-button"
                                     id="confirm-walk-button">

@@ -134,3 +134,8 @@ form {
 .trip-island-heading {
     color: #273B76;
 }
+
+.datepicker-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

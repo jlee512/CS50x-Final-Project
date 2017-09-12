@@ -1,0 +1,43 @@
+form {
+    width: 290px;
+    padding: 0px 20px 5px 20px;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.datepicker-container, .datepicker {
+    display: flex;
+}
+
+.datepicker-container {
+    flex-direction: row;
+}
+
+.datepicker {
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+}
+
+input {
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+    transform-style: preserve-3D;
+    backface-visibility: hidden;
+}
+
+input.rotate {
+    transform: rotateX(180deg);
+}
+
+input.reverse-rotate {
+    transform: rotateX(-180deg);
+}
