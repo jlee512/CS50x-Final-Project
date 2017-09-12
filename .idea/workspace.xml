@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JavaScript/dashboard_populate.js" afterPath="$PROJECT_DIR$/static/JavaScript/dashboard_populate.js" />
     </list>
     <ignored path="Web_Information_Gathering/" />
     <ignored path="config.ini" />
@@ -774,13 +773,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
     </task>
-    <task id="LOCAL-00076" summary="Next step is to pull google maps coordinates using Google Maps Geocoding API">
-      <created>1502342480349</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1502342480349</updated>
-    </task>
     <task id="LOCAL-00077" summary="Verified all information (bar geocoding) is available for addition to class and database.">
       <created>1502343238778</created>
       <option name="number" value="00077" />
@@ -1117,7 +1109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505208207567</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="Attempting to fix intermittent javascript 'uncaught typeerror'">
+      <created>1505208579930</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1505208579930</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TestHistory">
