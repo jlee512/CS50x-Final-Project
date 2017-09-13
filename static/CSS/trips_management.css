@@ -135,7 +135,23 @@ form {
     color: #273B76;
 }
 
-.datepicker-container {
+.datepicker-container  {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+span.date-started {
+    margin-top: 10px;
+}
+
+span.date-completed {
+    margin-top: 10px;
+}
+
+.date-started .mdl-button--fab.mdl-button--colored, .date-started .mdl-button--fab.mdl-button--colored:hover {
+    background-color: #CCE9D5;
+}
+
+.date-completed .mdl-button--fab.mdl-button--colored, .date-completed .mdl-button--fab.mdl-button--colored:hover {
+    background-color: #F5CD90;
 }

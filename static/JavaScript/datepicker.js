@@ -2,7 +2,7 @@
  * Created by julian on 5/09/2017.
  */
 
-function DatePicker() {
+function DatePicker(name) {
     //When constructed, create a new current datetime object and populate as default 'selected' variables
     var d = new Date();
 
@@ -24,10 +24,10 @@ function DatePicker() {
     this.selected_year = d.getFullYear();
 
     //Setup input field variables and set initial values in the HTML document
-    this.day_input = $('#day');
-    this.month_input = $('#month');
-    this.year_input = $('#year');
-    this.leap_year_input = $('#leap-year');
+    this.day_input = $("." + name + ' #day');
+    this.month_input = $("." + name + ' #month');
+    this.year_input = $("." + name + ' #year');
+    this.leap_year_input = $("." + name + ' #leap-year');
 
     //Method for updating all displayed input fields
     this.update_input_attr_val = function () {
@@ -194,55 +194,109 @@ function DatePicker() {
 
 $(document).ready(function () {
     //Initialize datepicker instance
-    var datepicker = new DatePicker();
+    var started_datepicker = new DatePicker('date-started');
+    var completed_datepicker = new DatePicker('date-completed');
 
+
+    //--------------------------Date started Button Logic------------------------------
     //Implement core function of datepicker front-end (clicking, holding or changing with keypress)
-    $('#increase-day').on('click', function () {
-        datepicker.day_rotate_animation();
-        datepicker.increment_day();
+    $('div.date-started #increase-day').on('click', function () {
+        started_datepicker.day_rotate_animation();
+        started_datepicker.increment_day();
     });
 
-    $('#reduce-day').on('click', function () {
-        datepicker.day_reverse_rotate_animation();
-        datepicker.decrement_day();
+    $('.date-started #reduce-day').on('click', function () {
+        started_datepicker.day_reverse_rotate_animation();
+        started_datepicker.decrement_day();
     });
 
     //Additional event handler for changing day to account for keypress
-    $('#day').on('change', function () {
-        datepicker.check_input_values();
+    $('div.date-started #day').on('change', function () {
+        started_datepicker.check_input_values();
     });
 
-    $('#increase-month').on('click', function () {
-        datepicker.month_rotate_animation();
-        datepicker.increment_month();
+    $('div.date-started #increase-month').on('click', function () {
+        started_datepicker.month_rotate_animation();
+        started_datepicker.increment_month();
     });
 
-    $('#reduce-month').on('click', function () {
-        datepicker.month_reverse_rotate_animation();
-        datepicker.decrement_month();
+    $('div.date-started #reduce-month').on('click', function () {
+        started_datepicker.month_reverse_rotate_animation();
+        started_datepicker.decrement_month();
     });
 
     //Add in custom up/down keypress actions to months (text input)
-    $('#month').keydown(function (event) {
+    $('div.date-started #month').keydown(function (event) {
         if (event.keyCode == 38) {
-            datepicker.increment_month();
+            started_datepicker.increment_month();
         } else if (event.keyCode == 40) {
-            datepicker.decrement_month();
+            started_datepicker.decrement_month();
         }
     });
 
-    $('#increase-year').on('click', function () {
-        datepicker.year_rotate_animation();
-        datepicker.increment_year();
+    $('div.date-started #increase-year').on('click', function () {
+        started_datepicker.year_rotate_animation();
+        started_datepicker.increment_year();
     });
 
-    $('#reduce-year').on('click', function () {
-        datepicker.year_reverse_rotate_animation();
-        datepicker.decrement_year();
+    $('div.date-started #reduce-year').on('click', function () {
+        started_datepicker.year_reverse_rotate_animation();
+        started_datepicker.decrement_year();
     });
 
     //Additional event handler for changing year to account for keypress
-    $('#year').on('change', function () {
-        datepicker.check_input_values();
+    $('div.date-started #year').on('change', function () {
+        started_datepicker.check_input_values();
+    });
+
+    //----------------------Date completed Button Logic------------------------------
+    //Implement core function of datepicker front-end (clicking, holding or changing with keypress)
+    $('div.date-completed #increase-day').on('click', function () {
+        completed_datepicker.day_rotate_animation();
+        completed_datepicker.increment_day();
+    });
+
+    $('div.date-completed #reduce-day').on('click', function () {
+        completed_datepicker.day_reverse_rotate_animation();
+        completed_datepicker.decrement_day();
+    });
+
+    //Additional event handler for changing day to account for keypress
+    $('div.date-completed #day').on('change', function () {
+        completed_datepicker.check_input_values();
+    });
+
+    $('div.date-completed #increase-month').on('click', function () {
+        completed_datepicker.month_rotate_animation();
+        completed_datepicker.increment_month();
+    });
+
+    $('div.date-completed #reduce-month').on('click', function () {
+        completed_datepicker.month_reverse_rotate_animation();
+        completed_datepicker.decrement_month();
+    });
+
+    //Add in custom up/down keypress actions to months (text input)
+    $('div.date-completed #month').keydown(function (event) {
+        if (event.keyCode == 38) {
+            completed_datepicker.increment_month();
+        } else if (event.keyCode == 40) {
+            completed_datepicker.decrement_month();
+        }
+    });
+
+    $('div.date-completed #increase-year').on('click', function () {
+        completed_datepicker.year_rotate_animation();
+        completed_datepicker.increment_year();
+    });
+
+    $('div.date-completed #reduce-year').on('click', function () {
+        completed_datepicker.year_reverse_rotate_animation();
+        completed_datepicker.decrement_year();
+    });
+
+    //Additional event handler for changing year to account for keypress
+    $('div.date-completed #year').on('change', function () {
+        completed_datepicker.check_input_values();
     });
 });

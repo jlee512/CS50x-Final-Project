@@ -204,7 +204,56 @@
 
                             <span class="trip-island-heading date-completed"><strong>Date Completed</strong></span>
 
+                            <div class="datepicker-container date-completed">
+                                <div class="datepicker col-1">
+                                    <div class="datepicker row-1">
+                                        <button type="button" id="increase-day"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">add</i></button>
+                                    </div>
+                                    <div class="datepicker row-2">
+                                        <input type="number" name="day" id="day" min="1" value="1" maxlength="9">
+                                    </div>
+                                    <div class="datepicker row-3">
+                                        <button type="button" id="reduce-day"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">remove</i></button>
+                                    </div>
+                                </div>
 
+                                <div class="datepicker col-2">
+                                    <div class="datepicker row-1">
+                                        <button type="button" id="increase-month"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">add</i></button>
+                                    </div>
+                                    <div class="datepicker row-2">
+                                        <input type="text" name="month" id="month" value="January">
+                                    </div>
+                                    <div class="datepicker row-3">
+                                        <button type="button" id="reduce-month"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">remove</i></button>
+                                    </div>
+                                </div>
+
+                                <div class="datepicker col-3">
+                                    <div class="datepicker row-1">
+                                        <button type="button" id="increase-year"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">add</i></button>
+                                    </div>
+                                    <div class="datepicker row-2">
+                                        <input type="number" name="year" id="year" max="2500" min="1900" value="2017">
+                                    </div>
+                                    <div class="datepicker row-3">
+                                        <button type="button" id="reduce-year"
+                                                class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                            <i class="material-icons">remove</i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="text" name="leap-year" id="leap-year" hidden>
 
                             {# ----------------------------- Add Trip Button ----------------------------- #}
 
