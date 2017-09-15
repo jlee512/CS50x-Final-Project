@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/JavaScript/toggle_walk_addition.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/datepicker.css" afterPath="$PROJECT_DIR$/static/CSS/datepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/trips_management.css" afterPath="$PROJECT_DIR$/static/CSS/trips_management.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JavaScript/datepicker.js" afterPath="$PROJECT_DIR$/static/JavaScript/datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/trips_management.html" afterPath="$PROJECT_DIR$/templates/trips_management.html" />
     </list>
     <ignored path="Web_Information_Gathering/" />
     <ignored path="config.ini" />
@@ -701,13 +696,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
     </task>
-    <task id="LOCAL-00080" summary="Manually added coordinates to each great walk">
-      <created>1502406342545</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1502406342546</updated>
-    </task>
     <task id="LOCAL-00081" summary="Information gathering for basic walk completed. Progressing to database population and confirmation of display">
       <created>1502410964405</created>
       <option name="number" value="00081" />
@@ -1044,7 +1032,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505362862535</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="Made the add-walk-form toggle-able">
+      <created>1505450213925</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1505450213926</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1169,7 +1164,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Basic tumbler implementation completed" />
     <MESSAGE value="Badge updated to png to preserve tranparency" />
     <MESSAGE value="Updated test database for completed_trips and user_badges" />
     <MESSAGE value="Progress on badge panel 23082017" />
@@ -1194,7 +1188,8 @@
     <MESSAGE value="Bug-fix asynchronous access of JSON objects occasionally failed as in some instances the loaded after attempted access" />
     <MESSAGE value="Datepicker implementation updated - included class name in constructor to allow for more than 1 datepicker instance" />
     <MESSAGE value="Separating add walk from current walks card" />
-    <option name="LAST_COMMIT_MESSAGE" value="Separating add walk from current walks card" />
+    <MESSAGE value="Made the add-walk-form toggle-able" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made the add-walk-form toggle-able" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
