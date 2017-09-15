@@ -192,7 +192,7 @@ function DatePicker(name) {
     };
 }
 
-$(document).ready(function () {
+function InitialiizeDatepicker() {
     //Initialize datepicker instance
     var started_datepicker = new DatePicker('date-started');
     var completed_datepicker = new DatePicker('date-completed');
@@ -299,4 +299,4 @@ $(document).ready(function () {
     $('div.date-completed #year').on('change', function () {
         completed_datepicker.check_input_values();
     });
-});
+}

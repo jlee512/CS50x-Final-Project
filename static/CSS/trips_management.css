@@ -64,10 +64,6 @@
     width: 28px;
 }
 
-span {
-    display: block;
-}
-
 span.walk-name-span {
     font-size: 14px;
     margin-bottom: 3px;
@@ -76,6 +72,10 @@ span.walk-name-span {
 .manage-trips-button.mdl-button--raised {
     width: 90%;
     margin: 10px auto;
+}
+
+div.trip-southisland-heading {
+    margin-top: 5px;
 }
 
 form {
@@ -131,21 +131,22 @@ form {
     margin-right: 15px;
 }
 
-.trip-island-heading {
+.trip-southisland-heading, .trip-northisland-heading {
     color: #273B76;
+}
+
+.trip-island-heading.date-started, .date-started input {
+    color: #3e685b;
+}
+
+.trip-island-heading.date-completed, .date-completed input {
+    color: #B8935C;
 }
 
 .datepicker-container  {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-span.date-started {
-    margin-top: 10px;
-}
-
-span.date-completed {
-    margin-top: 10px;
+    justify-content: center;
 }
 
 .date-started .mdl-button--fab.mdl-button--colored, .date-started .mdl-button--fab.mdl-button--colored:hover {
@@ -154,4 +155,49 @@ span.date-completed {
 
 .date-completed .mdl-button--fab.mdl-button--colored, .date-completed .mdl-button--fab.mdl-button--colored:hover {
     background-color: #F5CD90;
+}
+
+.mdl-card.mdl-shadow--2dp {
+    margin-bottom: 15px;
+    min-height: 80px;
+}
+
+input {
+    font-family: Lato, Open-Sans, Serif;
+}
+
+.date-started input {
+    background-color: #E6F4EB;
+    font-size: 1.01em;
+}
+
+.date-completed input {
+    background-color: #F2E9DB;
+    font-size: 1.01em
+}
+
+.datepicker-section {
+    margin-top: 15px;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.datepicker-section.date-started {
+    border-color: #3e685b;
+    background-color: #E6F4EB;
+}
+
+.datepicker-section.date-completed {
+    border-color: #B8935C;
+    background-color: #F2E9DB;
+}
+
+input#month {
+    max-width: 150px;
+}
+
+span.date-started, span.date-completed {
+    margin-top: 5px;
+    margin-left: 5px;
 }
