@@ -7,7 +7,7 @@ import redis
 from redissession import *
 from mysql_db import MySQL_Database
 from passlib.hash import bcrypt
-import datetime
+from datetime import datetime
 
 from helpers import *
 
@@ -179,8 +179,6 @@ def my_trips():
             trip['date_started'] = '{:%d/%m/%Y}'.format(trip['date_started'])
             trip['date_completed'] = '{:%d/%m/%Y}'.format(trip['date_completed'])
 
-        print(trips)
-
         return render_template("trips_management.html", trips=trips)
     else:
         return redirect(url_for("index"))
@@ -195,13 +193,25 @@ def add_walk():
         start_day = request.form.get("day")
         start_month = request.form.get("month")
         start_year = request.form.get("year")
+        start_date_string = start_day + " " + start_month + " " + start_year
         duration = request.form.get("duration")
 
-        print(selected_walk)
-        print(start_day)
-        print(start_month)
-        print(start_year)
-        print(duration)
+        # Convert start date and end date into datetime objects
+        start_date = datetime.strptime(start_date_string, '%d %B %Y')
+        start_date_formatted = start_date.strftime('%Y-%m-%d %H:%M:%S')
+        finish_date = start_date + timedelta(days=int(duration))
+        finish_date_formatted = finish_date.strftime('%Y-%m-%d %H:%M:%S')
+
+        # Push results to the database
+        db = MySQL_Database()
+        result = db.insert('INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VALUES (%s, (SELECT walk_id FROM walks_set WHERE walk_name=%s), %s, %s)', [session["user_id"], selected_walk, start_date_formatted, finish_date_formatted])
+        db.check_connection()
+
+        # Logic required to update badges as a result (if a new walk is completed)
+
+        if not result:
+            print("Walk could not be added")
+
         return redirect(url_for("my_trips"))
 
     else:

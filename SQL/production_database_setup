@@ -70,4 +70,5 @@ CREATE TABLE user_badges (
     ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (trip_id) REFERENCES completed_trips(trip_id)
   ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT user_badge UNIQUE (badge_id, user_id)
 );
