@@ -18,10 +18,18 @@ function DatePicker(name) {
         "max_days": 30
     }, {"name": "October", "max_days": 31}, {"name": "November", "max_days": 30}, {"name": "December", "max_days": 31}];
 
-    //Setup user selection variables
-    this.selected_day = d.getDate();
-    this.selected_month = d.getMonth();
-    this.selected_year = d.getFullYear();
+    //If this is for the walk durationpicker - use the max-month-day = 20 days (i.e. maximum duration of 20 days)
+    if (name === 'date-completed') {
+        this.max_month_day = 20;
+        this.selected_day = 1;
+        this.selected_month = 1;
+        this.selected_year = 2017;
+    } else {
+        //Setup user selection variables
+        this.selected_day = d.getDate();
+        this.selected_month = d.getMonth();
+        this.selected_year = d.getFullYear();
+    }
 
     //Setup input field variables and set initial values in the HTML document
     this.day_input = $("." + name + ' #day');
@@ -52,6 +60,8 @@ function DatePicker(name) {
         //Function to calculate maximum allowable day within the month (adapting February for leap years)
         if (this.leap_year && this.selected_month === 1) {
             this.max_month_day = 29;
+        } else if (name === 'date-completed') {
+            this.max_month_day = 20;
         } else {
             this.max_month_day = months[this.selected_month].max_days;
         }
@@ -197,7 +207,6 @@ function InitialiizeDatepicker() {
     var started_datepicker = new DatePicker('date-started');
     var completed_datepicker = new DatePicker('date-completed');
 
-
     //--------------------------Date started Button Logic------------------------------
     //Implement core function of datepicker front-end (clicking, holding or changing with keypress)
     $('div.date-started #increase-day').on('click', function () {
@@ -229,8 +238,10 @@ function InitialiizeDatepicker() {
     $('div.date-started #month').keydown(function (event) {
         if (event.keyCode == 38) {
             started_datepicker.increment_month();
+            started_datepicker.update_input_attr_val();
         } else if (event.keyCode == 40) {
             started_datepicker.decrement_month();
+            started_datepicker.update_input_attr_val()
         }
     });
 
@@ -300,3 +311,7 @@ function InitialiizeDatepicker() {
         completed_datepicker.check_input_values();
     });
 }
+
+$(document).ready(function() {
+   InitialiizeDatepicker();
+});

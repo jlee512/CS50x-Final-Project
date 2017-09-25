@@ -5,7 +5,7 @@
 $(document).ready(function () {
 
     //Add Walk Button Clicked - Reveal Form and Present Cancel Button
-    $('.toggle-add-walk-button').on('click', function () {
+    $('.manage-trips-button.mdl-button--raised.toggle-add-walk-button').on('click', function () {
         if ($('.toggle-add-walk-button').attr('id') === 'add-walk-button') {
             $('#add-walk-form').append(form_template);
             $('#add-walk-button').text('CANCEL');
@@ -28,7 +28,7 @@ $(document).ready(function () {
 var form_template = '<div class="card-container">'
     + '<div class="mdl-card mdl-shadow--2dp">'
     + '<div id="new-walk-form-container">'
-    + '<form>'
+    + '<form action="/add_walk" method="POST">'
     + '<div class="trip-northisland-heading"><strong>North Island Walks</strong></div>'
     + '<div>'
     + '<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="add-lake-waikaremoana">'
@@ -148,55 +148,29 @@ var form_template = '<div class="card-container">'
     + '<div class="datepicker-section date-completed">'
     + '<span class="trip-island-heading date-completed"><strong>Date Completed</strong></span>'
 
-    + '<div class="datepicker-container date-completed">'
-    + '<div class="datepicker col-1">'
-    + '<div class="datepicker row-1">'
-    + '<button type="button" id="increase-day" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">'
-    + '<i class="material-icons">add</i></button>'
-    + '</div>'
-    + '<div class="datepicker row-2">'
-    + '<input type="number" name="day" id="day" min="1" value="1" maxlength="9">'
-    + '</div>'
-    + '<div class="datepicker row-3">'
+    + '<div class="durationpicker-container date-completed">'
+    + '<div class="durationpicker col-1">'
+    + '<div class="durationpicker row-3">'
     + '<button type="button" id="reduce-day" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">'
     + '<i class="material-icons">remove</i></button>'
     + '</div>'
+    + '<div class="durationpicker row-2">'
+    + '<input type="number" name="duration" id="day" min="1" value="1" maxlength="9">'
     + '</div>'
 
-    + '<div class="datepicker col-2">'
-    + '<div class="datepicker row-1">'
-    + '<button type="button" id="increase-month" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">'
+    + '<div class="durationpicker row-1">'
+    + '<button type="button" id="increase-day" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">'
     + '<i class="material-icons">add</i></button>'
-    + '</div>'
-    + '<div class="datepicker row-2">'
-    + '<input type="text" name="month" id="month" value="January">'
-    + '</div>'
-    + '<div class="datepicker row-3">'
-    + '<button type="button" id="reduce-month" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">'
-    + '<i class="material-icons">remove</i></button>'
+
     + '</div>'
     + '</div>'
 
-    + '<div class="datepicker col-3">'
-    + '<div class="datepicker row-1">'
-    + '<button type="button" id="increase-year" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">'
-    + '<i class="material-icons">add</i></button>'
     + '</div>'
-    + '<div class="datepicker row-2">'
-    + '<input type="number" name="year" id="year" max="2500" min="1900" value="2017">'
-    + '</div>'
-    + '<div class="datepicker row-3">'
-    + '<button type="button" id="reduce-year" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">'
-    + '<i class="material-icons">remove</i></button>'
-    + '</div>'
-    + '</div>'
-    + '</div>'
-    + '<input type="text" name="leap-year" id="leap-year" hidden>'
     + '</div>'
 
     // ----------------------------- Add Trip Button -----------------------------
 
-    + '<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect manage-trips-button" id="confirm-walk-button">Add New Trip</button>'
+    + '<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect manage-trips-button" id="confirm-walk-button">Confirm New Trip</button>'
     + '</form>'
     + '</div>'
 

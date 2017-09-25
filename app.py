@@ -169,19 +169,45 @@ def register():
 @app.route('/my_trips')
 @login_required
 def my_trips():
+    if request.method == "GET":
+        # query database for user trips
+        db = MySQL_Database()
+        trips = db.query('SELECT trip_id, date_started, date_completed, walk_name FROM completed_trips INNER JOIN walks_set ON completed_trips.walk_id = walks_set.walk_id WHERE user_id=%s', [session["user_id"]])
+        db.check_connection()
 
-    # query database for user trips
-    db = MySQL_Database()
-    trips = db.query('SELECT trip_id, date_started, date_completed, walk_name FROM completed_trips INNER JOIN walks_set ON completed_trips.walk_id = walks_set.walk_id WHERE user_id=%s', [session["user_id"]])
-    db.check_connection()
+        for trip in trips:
+            trip['date_started'] = '{:%d/%m/%Y}'.format(trip['date_started'])
+            trip['date_completed'] = '{:%d/%m/%Y}'.format(trip['date_completed'])
 
-    for trip in trips:
-        trip['date_started'] = '{:%d/%m/%Y}'.format(trip['date_started'])
-        trip['date_completed'] = '{:%d/%m/%Y}'.format(trip['date_completed'])
+        print(trips)
 
-    print(trips)
+        return render_template("trips_management.html", trips=trips)
+    else:
+        return redirect(url_for("index"))
 
-    return render_template("trips_management.html", trips=trips)
+
+@app.route('/add_walk')
+@login_required
+def add_walk():
+    if request.method("POST"):
+        # Process new walk post. Calculate date and push to database
+        selected_walk = request.form.get("walks-set")
+        start_day = request.form.get("day")
+        start_month = request.form.get("month")
+        start_year = request.form.get("year")
+        duration = request.form.get("duration")
+
+        print(selected_walk)
+        print(start_day)
+        print(start_month)
+        print(start_year)
+        print(duration)
+        return redirect(url_for("my_trips"))
+
+    else:
+        # Redirect to my_trips
+        return redirect(url_for("index"))
+
 
 # Under construction page
 @app.route('/underconstruction')
