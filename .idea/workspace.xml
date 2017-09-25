@@ -4,8 +4,6 @@
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/CSS/datepicker.css" afterPath="$PROJECT_DIR$/static/CSS/datepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JavaScript/datepicker.js" afterPath="$PROJECT_DIR$/static/JavaScript/datepicker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JavaScript/toggle_walk_addition.js" afterPath="$PROJECT_DIR$/static/JavaScript/toggle_walk_addition.js" />
     </list>
     <ignored path="Web_Information_Gathering/" />
@@ -22,7 +20,7 @@
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$json_development.coverage" NAME="json_development Coverage Results" MODIFIED="1502864774048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Unittests_in_app_py.coverage" NAME="Unittests in app.py Coverage Results" MODIFIED="1501825196593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1503092729550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1506327996319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1506329375285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -63,54 +61,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="710">
-              <caret line="208" column="15" lean-forward="false" selection-start-line="208" selection-start-column="15" selection-end-line="208" selection-end-column="15" />
+            <state relative-caret-position="677">
+              <caret line="191" column="31" lean-forward="false" selection-start-line="191" selection-start-column="31" selection-end-line="191" selection-end-column="31" />
               <folding>
                 <element signature="e#0#103#0" expanded="true" />
-                <marker date="1506326963169" expanded="true" signature="2533:2581" ph="SELECT * FRO... registered_users" />
-                <marker date="1506326963169" expanded="true" signature="4508:4556" ph="SELECT * FRO... registered_users" />
-                <marker date="1506326963169" expanded="true" signature="4898:4980" ph="INSERT INTO registered_users... " />
-                <marker date="1506326963169" expanded="true" signature="5361:5409" ph="SELECT * FRO... registered_users" />
-                <marker date="1506326963169" expanded="true" signature="6137:6298" ph="SELECT * FRO... completed_trips" />
-                <marker date="1506326963169" expanded="true" signature="7700:7750" ph="SELECT * FRO... registered_users" />
-                <marker date="1506326963169" expanded="true" signature="8421:8463" ph="SELECT * FRO... walks_set" />
-                <marker date="1506326963169" expanded="true" signature="9161:9493" ph="SELECT * FRO... user_badges" />
-                <marker date="1506326963169" expanded="true" signature="9978:9992" ph="SELECT * FRO... testtable" />
-                <marker date="1506326963169" expanded="true" signature="9978:10001" ph="SELECT * FRO... testtable" />
+                <marker date="1506329375266" expanded="true" signature="2533:2581" ph="SELECT * FRO... registered_users" />
+                <marker date="1506329375266" expanded="true" signature="4508:4556" ph="SELECT * FRO... registered_users" />
+                <marker date="1506329375266" expanded="true" signature="4898:4980" ph="INSERT INTO registered_users... " />
+                <marker date="1506329375266" expanded="true" signature="5361:5409" ph="SELECT * FRO... registered_users" />
+                <marker date="1506329375266" expanded="true" signature="6137:6298" ph="SELECT * FRO... completed_trips" />
+                <marker date="1506329375266" expanded="true" signature="7727:7777" ph="SELECT * FRO... registered_users" />
+                <marker date="1506329375266" expanded="true" signature="8448:8490" ph="SELECT * FRO... walks_set" />
+                <marker date="1506329375266" expanded="true" signature="9188:9520" ph="SELECT * FRO... user_badges" />
+                <marker date="1506329375266" expanded="true" signature="10005:10019" ph="SELECT * FRO... testtable" />
+                <marker date="1506329375266" expanded="true" signature="10005:10028" ph="SELECT * FRO... testtable" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trips_management.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/trips_management.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="57" column="139" lean-forward="false" selection-start-line="57" selection-start-column="120" selection-end-line="57" selection-end-column="139" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trips_management.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/CSS/trips_management.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4521">
-              <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datepicker.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/CSS/datepicker.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -118,21 +86,11 @@
       <file leaf-file-name="toggle_walk_addition.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/JavaScript/toggle_walk_addition.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+            <state relative-caret-position="198">
+              <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datepicker.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/JavaScript/datepicker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1812">
-              <caret line="241" column="38" lean-forward="false" selection-start-line="241" selection-start-column="38" selection-end-line="241" selection-end-column="38" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -178,9 +136,9 @@
       <find>trip</find>
       <find>#add-walk</find>
       <find>initialize</find>
-      <find>redirect</find>
       <find>rotate</find>
       <find>class</find>
+      <find>redirect</find>
     </findStrings>
     <replaceStrings>
       <replace>0.4</replace>
@@ -253,9 +211,9 @@
         <option value="$PROJECT_DIR$/static/CSS/trips_management.css" />
         <option value="$PROJECT_DIR$/templates/trips_management.html" />
         <option value="$PROJECT_DIR$/static/CSS/datepicker.css" />
+        <option value="$PROJECT_DIR$/static/JavaScript/datepicker.js" />
         <option value="$PROJECT_DIR$/static/JavaScript/toggle_walk_addition.js" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/static/JavaScript/datepicker.js" />
       </list>
     </option>
   </component>
@@ -722,13 +680,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
     </task>
-    <task id="LOCAL-00082" summary="Information gathering database update configured for presentation - heavy design/architectural development focus over the next few days">
-      <created>1502581199509</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1502581199509</updated>
-    </task>
     <task id="LOCAL-00083" summary="Development of preloading screen">
       <created>1502591360748</created>
       <option name="number" value="00083" />
@@ -1065,7 +1016,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505450260474</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="Tweaks to datepicker (removed date completed and replaced with duration picker)">
+      <created>1506328877828</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1506328877829</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1190,7 +1148,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Badge updated to png to preserve tranparency" />
     <MESSAGE value="Updated test database for completed_trips and user_badges" />
     <MESSAGE value="Progress on badge panel 23082017" />
     <MESSAGE value="Addition of rank html/css as well as tweaking display settings" />
@@ -1215,7 +1172,8 @@
     <MESSAGE value="Datepicker implementation updated - included class name in constructor to allow for more than 1 datepicker instance" />
     <MESSAGE value="Separating add walk from current walks card" />
     <MESSAGE value="Made the add-walk-form toggle-able" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made the add-walk-form toggle-able" />
+    <MESSAGE value="Tweaks to datepicker (removed date completed and replaced with duration picker)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tweaks to datepicker (removed date completed and replaced with duration picker)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1595,31 +1553,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/trips_management.html">
+    <entry file="file://$PROJECT_DIR$/static/JavaScript/datepicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="57" column="139" lean-forward="false" selection-start-line="57" selection-start-column="120" selection-end-line="57" selection-end-column="139" />
+        <state relative-caret-position="1713">
+          <caret line="241" column="38" lean-forward="false" selection-start-line="241" selection-start-column="38" selection-end-line="241" selection-end-column="38" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="208" column="15" lean-forward="false" selection-start-line="208" selection-start-column="15" selection-end-line="208" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#103#0" expanded="true" />
-            <marker date="1506326963169" expanded="true" signature="2533:2581" ph="SELECT * FRO... registered_users" />
-            <marker date="1506326963169" expanded="true" signature="4508:4556" ph="SELECT * FRO... registered_users" />
-            <marker date="1506326963169" expanded="true" signature="4898:4980" ph="INSERT INTO registered_users... " />
-            <marker date="1506326963169" expanded="true" signature="5361:5409" ph="SELECT * FRO... registered_users" />
-            <marker date="1506326963169" expanded="true" signature="6137:6298" ph="SELECT * FRO... completed_trips" />
-            <marker date="1506326963169" expanded="true" signature="7700:7750" ph="SELECT * FRO... registered_users" />
-            <marker date="1506326963169" expanded="true" signature="8421:8463" ph="SELECT * FRO... walks_set" />
-            <marker date="1506326963169" expanded="true" signature="9161:9493" ph="SELECT * FRO... user_badges" />
-            <marker date="1506326963169" expanded="true" signature="9978:9992" ph="SELECT * FRO... testtable" />
-            <marker date="1506326963169" expanded="true" signature="9978:10001" ph="SELECT * FRO... testtable" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1631,21 +1569,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/trips_management.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="57" column="139" lean-forward="false" selection-start-line="57" selection-start-column="120" selection-end-line="57" selection-end-column="139" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/JavaScript/toggle_walk_addition.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        <state relative-caret-position="198">
+          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/JavaScript/datepicker.js">
+    <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1812">
-          <caret line="241" column="38" lean-forward="false" selection-start-line="241" selection-start-column="38" selection-end-line="241" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="677">
+          <caret line="191" column="31" lean-forward="false" selection-start-line="191" selection-start-column="31" selection-end-line="191" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#103#0" expanded="true" />
+            <marker date="1506329375266" expanded="true" signature="2533:2581" ph="SELECT * FRO... registered_users" />
+            <marker date="1506329375266" expanded="true" signature="4508:4556" ph="SELECT * FRO... registered_users" />
+            <marker date="1506329375266" expanded="true" signature="4898:4980" ph="INSERT INTO registered_users... " />
+            <marker date="1506329375266" expanded="true" signature="5361:5409" ph="SELECT * FRO... registered_users" />
+            <marker date="1506329375266" expanded="true" signature="6137:6298" ph="SELECT * FRO... completed_trips" />
+            <marker date="1506329375266" expanded="true" signature="7727:7777" ph="SELECT * FRO... registered_users" />
+            <marker date="1506329375266" expanded="true" signature="8448:8490" ph="SELECT * FRO... walks_set" />
+            <marker date="1506329375266" expanded="true" signature="9188:9520" ph="SELECT * FRO... user_badges" />
+            <marker date="1506329375266" expanded="true" signature="10005:10019" ph="SELECT * FRO... testtable" />
+            <marker date="1506329375266" expanded="true" signature="10005:10028" ph="SELECT * FRO... testtable" />
+          </folding>
         </state>
       </provider>
     </entry>

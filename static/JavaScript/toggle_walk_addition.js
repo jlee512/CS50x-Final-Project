@@ -143,10 +143,10 @@ var form_template = '<div class="card-container">'
     + '<input type="text" name="leap-year" id="leap-year" hidden>'
     + '</div>'
 
-    // -------------------------Date Completed datepicker ------------------------
+    // -------------------------Walk duration Selection ------------------------
 
     + '<div class="datepicker-section date-completed">'
-    + '<span class="trip-island-heading date-completed"><strong>Date Completed</strong></span>'
+    + '<span class="trip-island-heading date-completed"><strong>Walk Duration (Days)</strong></span>'
 
     + '<div class="durationpicker-container date-completed">'
     + '<div class="durationpicker col-1">'

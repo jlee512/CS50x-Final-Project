@@ -186,10 +186,10 @@ def my_trips():
         return redirect(url_for("index"))
 
 
-@app.route('/add_walk')
+@app.route('/add_walk', methods=['GET', 'POST'])
 @login_required
 def add_walk():
-    if request.method("POST"):
+    if request.method == "POST":
         # Process new walk post. Calculate date and push to database
         selected_walk = request.form.get("walks-set")
         start_day = request.form.get("day")
