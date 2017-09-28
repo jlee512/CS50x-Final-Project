@@ -30,7 +30,10 @@ INSERT INTO user_badges(badge_id, user_id, trip_id, award_date) VALUES(9, 42, 62
 
 #  ---------------Adding User Rank--------------------------------
 UPDATE registered_users SET rank=3 WHERE username = "Julian";
-UPDATE registered_users SET rank=4 WHERE username = "MaryanneLees";
 UPDATE registered_users SET rank=2 WHERE username = "ChrisW";
+UPDATE registered_users SET rank=4 WHERE username = "Maryanne";
 UPDATE registered_users SET rank=1 WHERE username = "AdamLees";
 UPDATE registered_users SET rank=2 WHERE username = "JonoSoo";
+
+UPDATE registered_users SET email="maryanneting@gmail.com" WHERE username="Maryanne";
+UPDATE registered_users SET email="jingdao24@hotmail.com" WHERE username="ChrisW";
