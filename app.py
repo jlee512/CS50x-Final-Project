@@ -205,12 +205,14 @@ def add_walk():
         # Push results to the database
         db = MySQL_Database()
         result = db.insert('INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VALUES (%s, (SELECT walk_id FROM walks_set WHERE walk_name=%s), %s, %s)', [session["user_id"], selected_walk, start_date_formatted, finish_date_formatted])
-        db.check_connection()
 
         # Logic required to update badges as a result (if a new walk is completed)
+        result2 = db.insert('INSERT INTO user_badges (badge_id, user_id, trip_id, award_date) VALUES ((SELECT badge_id FROM walks_set WHERE walk_name=%s), %s, %s)', [session["user_id"], selected_walk, start_date_formatted, finish_date_formatted])
 
         if not result:
             print("Walk could not be added")
+        if not result2:
+            print("Badge was not added")
 
         return redirect(url_for("my_trips"))
 
