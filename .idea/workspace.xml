@@ -739,13 +739,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
     </task>
-    <task id="LOCAL-00087" summary="Development of Badge/Passport interface">
-      <created>1502690894526</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1502690894527</updated>
-    </task>
     <task id="LOCAL-00088" summary="Development of Badge/Passport interface">
       <created>1502780655858</created>
       <option name="number" value="00088" />
@@ -1082,7 +1075,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507975744036</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="Working on badge addition logic (still work to do) as well as badge image addition from graphic design progress">
+      <created>1507975878889</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1507975878889</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TestHistory">
