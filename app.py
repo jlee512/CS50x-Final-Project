@@ -172,7 +172,7 @@ def my_trips():
     if request.method == "GET":
         # query database for user trips
         db = MySQL_Database()
-        trips = db.query('SELECT trip_id, date_started, date_completed, walk_name FROM completed_trips INNER JOIN walks_set ON completed_trips.walk_id = walks_set.walk_id WHERE user_id=%s', [session["user_id"]])
+        trips = db.query('SELECT t.trip_id, t.date_started, t.date_completed, w.walk_name, w.walk_id FROM completed_trips AS t, walks_set AS w WHERE t.walk_id = w.walk_id AND user_id=%s ORDER BY w.walk_id', [session["user_id"]])
         db.check_connection()
 
         for trip in trips:
@@ -206,13 +206,17 @@ def add_walk():
         db = MySQL_Database()
         result = db.insert('INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VALUES (%s, (SELECT walk_id FROM walks_set WHERE walk_name=%s), %s, %s)', [session["user_id"], selected_walk, start_date_formatted, finish_date_formatted])
 
+        db = MySQL_Database()
+
         # Logic required to update badges as a result (if a new walk is completed)
-        result2 = db.insert('INSERT INTO user_badges (badge_id, user_id, trip_id, award_date) VALUES ((SELECT badge_id FROM walks_set WHERE walk_name=%s), %s, %s)', [session["user_id"], selected_walk, start_date_formatted, finish_date_formatted])
+        result2 = db.insert('INSERT INTO user_badges (badge_id, user_id, trip_id, award_date) VALUES ((SELECT badge_id FROM walks_set WHERE walk_name=%s), %s, (SELECT t.trip_id FROM completed_trips AS t, walks_set AS w WHERE t.user_id=%s AND w.walk_name=%s AND t.walk_id = w.walk_id), %s)', [selected_walk, session["user_id"], session["user_id"], selected_walk, finish_date_formatted]);
+
+        db.check_connection()
 
         if not result:
             print("Walk could not be added")
         if not result2:
-            print("Badge was not added")
+            print("No badges were added")
 
         return redirect(url_for("my_trips"))
 
@@ -274,12 +278,23 @@ def user_badges_query():
     # Access database and pull the corresponding records and process into a JSON array
     db = MySQL_Database()
 
-    json_user_badges = db.query('SELECT user_badges.badge_id, user_badges.user_id, user_badges.trip_id, user_badges.award_date, walks_set.walk_id, walks_set.one_way_distance FROM user_badges INNER JOIN completed_trips ON user_badges.trip_id = completed_trips.trip_id INNER JOIN walks_set ON completed_trips.walk_id = walks_set.walk_id WHERE user_badges.user_id = %s;', [user_id])
+    json_user_badges = db.query('SELECT b.badge_id, b.user_id, b.trip_id, b.award_date, w.walk_id, w.one_way_distance FROM user_badges AS b, completed_trips AS t, walks_set AS w WHERE b.trip_id = t.trip_id AND t.walk_id = w.walk_id AND b.user_id = %s ORDER BY w.walk_id;', [user_id])
 
     for badge in json_user_badges:
         badge['award_date'] = '{:%d/%m/%Y}'.format(badge['award_date'])
 
     return Response(json.dumps(json_user_badges), mimetype="application/json")
+
+@app.route('/total_distance_query', methods=['GET'])
+def total_distance_query():
+    # Access user information for query
+    user_id = session["user_id"]
+
+    # Access database and pull sum of all walk one-way-distances for the specific user_id
+    db = MySQL_Database()
+
+    #  TO WORK ON...!
+    json_user_total_distance = db.query('SELECT SUM(w.one_way_distance) FROM completed_trips AS t, walks_set AS w WHERE t.walk_id=w.walk_id AND t.user_id=%s')
 
 @app.route('/get_rank', methods=['GET'])
 def get_rank():
