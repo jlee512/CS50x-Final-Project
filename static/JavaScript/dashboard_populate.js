@@ -34,6 +34,24 @@ $(window).on('load', function () {
     }
 });
 
+function load_user_total_distance() {
+
+    //AJAX call to go here, temporarily access subarrray of JSON array
+
+        $.ajax({
+
+            url: Flask.url_for("total_distance_query"),
+            async: true,
+            type: 'GET',
+
+            success: function (data) {
+                console.log(data);
+            },
+
+            error: failedArticleLoad
+        });
+}
+
 //Based on data received from AJAX call, populate badge tumbler and badge collection
 function construct_tumbler(data) {
     var num_badge = data.length;
@@ -58,6 +76,7 @@ function construct_tumbler(data) {
 
                 //Check whether North or South Island Walk and add one-way-distance to sum for countup animation
                 distance_sum += badge_to_add.one_way_distance;
+                load_user_total_distance();
 
                 switch (badge_to_add.walk_id) {
                     case 2:
