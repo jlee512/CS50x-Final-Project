@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQL/test_setup.sql" afterPath="$PROJECT_DIR$/SQL/test_setup.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
     </list>
     <ignored path="Web_Information_Gathering/" />
@@ -136,34 +135,34 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="226" column="49" lean-forward="false" selection-start-line="226" selection-start-column="49" selection-end-line="226" selection-end-column="49" />
+            <state relative-caret-position="572">
+              <caret line="223" column="49" lean-forward="false" selection-start-line="223" selection-start-column="49" selection-end-line="223" selection-end-column="49" />
               <folding>
-                <marker date="1508152472546" expanded="true" signature="2547:2595" ph="SELECT * FRO... registered_users" />
-                <marker date="1508152472546" expanded="true" signature="4522:4570" ph="SELECT * FRO... registered_users" />
-                <marker date="1508152472546" expanded="true" signature="4912:4994" ph="INSERT INTO registered_users... " />
-                <marker date="1508152472546" expanded="true" signature="5375:5423" ph="SELECT * FRO... registered_users" />
-                <marker date="1508152472546" expanded="true" signature="6151:6310" ph="SELECT * FRO... completed_trips" />
-                <marker date="1508152472546" expanded="true" signature="6151:6320" ph="SELECT trip_... completed_trips" />
-                <marker date="1508152472546" expanded="true" signature="6151:6336" ph="SELECT t.tri... completed_trips" />
-                <marker date="1508152472546" expanded="true" signature="7647:7795" ph="INSERT INTO completed_trips... " />
-                <marker date="1508152472546" expanded="true" signature="7737:7785" ph="SELECT walk_... walks_set" />
-                <marker date="1508152472546" expanded="true" signature="8024:8278" ph="INSERT INTO completed_trips... " />
-                <marker date="1508152472546" expanded="true" signature="8024:8282" ph="INSERT INTO user_badges... " />
-                <marker date="1508152472546" expanded="true" signature="8024:8283" ph="INSERT INTO user_badges... " />
-                <marker date="1508152472546" expanded="true" signature="8024:8284" ph="INSERT INTO user_badges... " />
-                <marker date="1508152472546" expanded="true" signature="8098:8147" ph="SELECT walk_... walks_set" />
-                <marker date="1508152472546" expanded="true" signature="8155:8277" ph="SELECT trip_... completed_trips" />
-                <marker date="1508152472546" expanded="true" signature="8786:8838" ph="UPDATE regis... " />
-                <marker date="1508152472546" expanded="true" signature="9500:9550" ph="SELECT * FRO... registered_users" />
-                <marker date="1508152472546" expanded="true" signature="10221:10263" ph="SELECT * FRO... walks_set" />
-                <marker date="1508152472546" expanded="true" signature="10961:11178" ph="SELECT * FRO... user_badges" />
-                <marker date="1508152472546" expanded="true" signature="10961:11197" ph="SELECT b.bad... user_badges" />
-                <marker date="1508152472546" expanded="true" signature="11769:11859" ph="SELECT SUM(w... completed_trips" />
-                <marker date="1508152472546" expanded="true" signature="11769:11902" ph="SELECT SUM(w... completed_trips" />
-                <marker date="1508152472546" expanded="true" signature="12275:12325" ph="SELECT rank registered_users" />
-                <marker date="1508152472546" expanded="true" signature="12751:12765" ph="SELECT * FRO... testtable" />
-                <marker date="1508152472546" expanded="true" signature="12751:12774" ph="SELECT * FRO... testtable" />
+                <marker date="1508152592285" expanded="true" signature="2547:2595" ph="SELECT * FRO... registered_users" />
+                <marker date="1508152592285" expanded="true" signature="4522:4570" ph="SELECT * FRO... registered_users" />
+                <marker date="1508152592285" expanded="true" signature="4912:4994" ph="INSERT INTO registered_users... " />
+                <marker date="1508152592285" expanded="true" signature="5375:5423" ph="SELECT * FRO... registered_users" />
+                <marker date="1508152592285" expanded="true" signature="6151:6310" ph="SELECT * FRO... completed_trips" />
+                <marker date="1508152592285" expanded="true" signature="6151:6320" ph="SELECT trip_... completed_trips" />
+                <marker date="1508152592285" expanded="true" signature="6151:6336" ph="SELECT t.tri... completed_trips" />
+                <marker date="1508152592285" expanded="true" signature="7647:7795" ph="INSERT INTO completed_trips... " />
+                <marker date="1508152592285" expanded="true" signature="7737:7785" ph="SELECT walk_... walks_set" />
+                <marker date="1508152592285" expanded="true" signature="8024:8278" ph="INSERT INTO completed_trips... " />
+                <marker date="1508152592285" expanded="true" signature="8024:8282" ph="INSERT INTO user_badges... " />
+                <marker date="1508152592285" expanded="true" signature="8024:8283" ph="INSERT INTO user_badges... " />
+                <marker date="1508152592285" expanded="true" signature="8024:8284" ph="INSERT INTO user_badges... " />
+                <marker date="1508152592285" expanded="true" signature="8098:8147" ph="SELECT walk_... walks_set" />
+                <marker date="1508152592285" expanded="true" signature="8155:8277" ph="SELECT trip_... completed_trips" />
+                <marker date="1508152592285" expanded="true" signature="8907:8959" ph="UPDATE regis... " />
+                <marker date="1508152592285" expanded="true" signature="9567:9617" ph="SELECT * FRO... registered_users" />
+                <marker date="1508152592285" expanded="true" signature="10288:10330" ph="SELECT * FRO... walks_set" />
+                <marker date="1508152592285" expanded="true" signature="11028:11245" ph="SELECT * FRO... user_badges" />
+                <marker date="1508152592285" expanded="true" signature="11028:11264" ph="SELECT b.bad... user_badges" />
+                <marker date="1508152592285" expanded="true" signature="11836:11926" ph="SELECT SUM(w... completed_trips" />
+                <marker date="1508152592285" expanded="true" signature="11836:11969" ph="SELECT SUM(w... completed_trips" />
+                <marker date="1508152592285" expanded="true" signature="12342:12392" ph="SELECT rank registered_users" />
+                <marker date="1508152592285" expanded="true" signature="12818:12832" ph="SELECT * FRO... testtable" />
+                <marker date="1508152592285" expanded="true" signature="12818:12841" ph="SELECT * FRO... testtable" />
               </folding>
             </state>
           </provider>
@@ -750,13 +749,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
     </task>
-    <task id="LOCAL-00095" summary="Basic tumbler implementation completed">
-      <created>1502857636035</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1502857636035</updated>
-    </task>
     <task id="LOCAL-00096" summary="Badge updated to png to preserve tranparency">
       <created>1502864977561</created>
       <option name="number" value="00096" />
@@ -1093,7 +1085,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508151206190</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="Update to rank if a new walk has been completed - minor bugfixes for Tuesday demonstration for the Department of Conservation">
+      <created>1508152476903</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1508152476903</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1681,34 +1680,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="226" column="49" lean-forward="false" selection-start-line="226" selection-start-column="49" selection-end-line="226" selection-end-column="49" />
+        <state relative-caret-position="572">
+          <caret line="223" column="49" lean-forward="false" selection-start-line="223" selection-start-column="49" selection-end-line="223" selection-end-column="49" />
           <folding>
-            <marker date="1508152472546" expanded="true" signature="2547:2595" ph="SELECT * FRO... registered_users" />
-            <marker date="1508152472546" expanded="true" signature="4522:4570" ph="SELECT * FRO... registered_users" />
-            <marker date="1508152472546" expanded="true" signature="4912:4994" ph="INSERT INTO registered_users... " />
-            <marker date="1508152472546" expanded="true" signature="5375:5423" ph="SELECT * FRO... registered_users" />
-            <marker date="1508152472546" expanded="true" signature="6151:6310" ph="SELECT * FRO... completed_trips" />
-            <marker date="1508152472546" expanded="true" signature="6151:6320" ph="SELECT trip_... completed_trips" />
-            <marker date="1508152472546" expanded="true" signature="6151:6336" ph="SELECT t.tri... completed_trips" />
-            <marker date="1508152472546" expanded="true" signature="7647:7795" ph="INSERT INTO completed_trips... " />
-            <marker date="1508152472546" expanded="true" signature="7737:7785" ph="SELECT walk_... walks_set" />
-            <marker date="1508152472546" expanded="true" signature="8024:8278" ph="INSERT INTO completed_trips... " />
-            <marker date="1508152472546" expanded="true" signature="8024:8282" ph="INSERT INTO user_badges... " />
-            <marker date="1508152472546" expanded="true" signature="8024:8283" ph="INSERT INTO user_badges... " />
-            <marker date="1508152472546" expanded="true" signature="8024:8284" ph="INSERT INTO user_badges... " />
-            <marker date="1508152472546" expanded="true" signature="8098:8147" ph="SELECT walk_... walks_set" />
-            <marker date="1508152472546" expanded="true" signature="8155:8277" ph="SELECT trip_... completed_trips" />
-            <marker date="1508152472546" expanded="true" signature="8786:8838" ph="UPDATE regis... " />
-            <marker date="1508152472546" expanded="true" signature="9500:9550" ph="SELECT * FRO... registered_users" />
-            <marker date="1508152472546" expanded="true" signature="10221:10263" ph="SELECT * FRO... walks_set" />
-            <marker date="1508152472546" expanded="true" signature="10961:11178" ph="SELECT * FRO... user_badges" />
-            <marker date="1508152472546" expanded="true" signature="10961:11197" ph="SELECT b.bad... user_badges" />
-            <marker date="1508152472546" expanded="true" signature="11769:11859" ph="SELECT SUM(w... completed_trips" />
-            <marker date="1508152472546" expanded="true" signature="11769:11902" ph="SELECT SUM(w... completed_trips" />
-            <marker date="1508152472546" expanded="true" signature="12275:12325" ph="SELECT rank registered_users" />
-            <marker date="1508152472546" expanded="true" signature="12751:12765" ph="SELECT * FRO... testtable" />
-            <marker date="1508152472546" expanded="true" signature="12751:12774" ph="SELECT * FRO... testtable" />
+            <marker date="1508152592285" expanded="true" signature="2547:2595" ph="SELECT * FRO... registered_users" />
+            <marker date="1508152592285" expanded="true" signature="4522:4570" ph="SELECT * FRO... registered_users" />
+            <marker date="1508152592285" expanded="true" signature="4912:4994" ph="INSERT INTO registered_users... " />
+            <marker date="1508152592285" expanded="true" signature="5375:5423" ph="SELECT * FRO... registered_users" />
+            <marker date="1508152592285" expanded="true" signature="6151:6310" ph="SELECT * FRO... completed_trips" />
+            <marker date="1508152592285" expanded="true" signature="6151:6320" ph="SELECT trip_... completed_trips" />
+            <marker date="1508152592285" expanded="true" signature="6151:6336" ph="SELECT t.tri... completed_trips" />
+            <marker date="1508152592285" expanded="true" signature="7647:7795" ph="INSERT INTO completed_trips... " />
+            <marker date="1508152592285" expanded="true" signature="7737:7785" ph="SELECT walk_... walks_set" />
+            <marker date="1508152592285" expanded="true" signature="8024:8278" ph="INSERT INTO completed_trips... " />
+            <marker date="1508152592285" expanded="true" signature="8024:8282" ph="INSERT INTO user_badges... " />
+            <marker date="1508152592285" expanded="true" signature="8024:8283" ph="INSERT INTO user_badges... " />
+            <marker date="1508152592285" expanded="true" signature="8024:8284" ph="INSERT INTO user_badges... " />
+            <marker date="1508152592285" expanded="true" signature="8098:8147" ph="SELECT walk_... walks_set" />
+            <marker date="1508152592285" expanded="true" signature="8155:8277" ph="SELECT trip_... completed_trips" />
+            <marker date="1508152592285" expanded="true" signature="8907:8959" ph="UPDATE regis... " />
+            <marker date="1508152592285" expanded="true" signature="9567:9617" ph="SELECT * FRO... registered_users" />
+            <marker date="1508152592285" expanded="true" signature="10288:10330" ph="SELECT * FRO... walks_set" />
+            <marker date="1508152592285" expanded="true" signature="11028:11245" ph="SELECT * FRO... user_badges" />
+            <marker date="1508152592285" expanded="true" signature="11028:11264" ph="SELECT b.bad... user_badges" />
+            <marker date="1508152592285" expanded="true" signature="11836:11926" ph="SELECT SUM(w... completed_trips" />
+            <marker date="1508152592285" expanded="true" signature="11836:11969" ph="SELECT SUM(w... completed_trips" />
+            <marker date="1508152592285" expanded="true" signature="12342:12392" ph="SELECT rank registered_users" />
+            <marker date="1508152592285" expanded="true" signature="12818:12832" ph="SELECT * FRO... testtable" />
+            <marker date="1508152592285" expanded="true" signature="12818:12841" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>

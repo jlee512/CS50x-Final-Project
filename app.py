@@ -220,11 +220,12 @@ def add_walk():
         if not result2:
             print("No badges were added")
         else:
+            # Update the session rank and database rank for given user
+            session["rank"] = session["rank"] + 1
             db = MySQL_Database()
             print(session["user_id"])
             print(session["rank"])
-            result3 = db.update('UPDATE registered_users SET rank=%s WHERE user_id=%s;', [session["rank"] + 1, session["user_id"]])
-            session["rank"] = session["rank"] + 1
+            result3 = db.update('UPDATE registered_users SET rank=%s WHERE user_id=%s;', [session["rank"], session["user_id"]])
             if not result3:
                 print("Rank could not be updated")
 
