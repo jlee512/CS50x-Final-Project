@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
+    <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="Update to rank if a new walk has been completed - minor bugfixes for Tuesday demonstration for the Department of Conservation">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQL/test_setup.sql" afterPath="$PROJECT_DIR$/SQL/test_setup.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
     </list>
     <ignored path="Web_Information_Gathering/" />
     <ignored path="config.ini" />
@@ -136,7 +135,7 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
+            <state relative-caret-position="3311">
               <caret line="327" column="30" lean-forward="false" selection-start-line="327" selection-start-column="30" selection-end-line="327" selection-end-column="30" />
               <folding>
                 <marker date="1508149865507" expanded="true" signature="2547:2595" ph="SELECT * FRO... registered_users" />
@@ -169,6 +168,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="heroku_66cf5b5014845bb.registered_users" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.registered_users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="dashboard_populate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/JavaScript/dashboard_populate.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -183,17 +197,22 @@
         <entry file="file://$PROJECT_DIR$/SQL/test_setup.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1064">
-              <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+              <caret line="31" column="47" lean-forward="false" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_data" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SQL/test_data">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+      <file leaf-file-name="heroku_66cf5b5014845bb.completed_trips" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -745,13 +764,6 @@
       <option name="presentableId" value="Default" />
       <updated>1501127601560</updated>
     </task>
-    <task id="LOCAL-00093" summary="Added additional temp badges ready for animation implementation and testing on dashboard">
-      <created>1502855497515</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1502855497515</updated>
-    </task>
     <task id="LOCAL-00094" summary="Updated badges and JSON file as well as added Badge path to walks_set database table">
       <created>1502856067343</created>
       <option name="number" value="00094" />
@@ -1088,7 +1100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508149195468</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Update to rank if a new walk has been completed - minor bugfixes for Tuesday demonstration for the Department of Conservation">
+      <created>1508150492417</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1508150492417</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1213,7 +1232,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Additions to ease calculation of total distance" />
     <MESSAGE value="Dashboard functionality nearly completed" />
     <MESSAGE value="Dashboard basic functionality completed. Abel Tasman badge design added" />
     <MESSAGE value="Adding in trip management functionality" />
@@ -1238,7 +1256,8 @@
     <MESSAGE value="Added and tested query for total user distance, may be double overflow issue with display, pending testing to confirm" />
     <MESSAGE value="Total distance sum updated and corrected to be counted for all walks (not just unique walks)" />
     <MESSAGE value="Update to rank if a new walk has been completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update to rank if a new walk has been completed" />
+    <MESSAGE value="Update to rank if a new walk has been completed - minor bugfixes for Tuesday demonstration for the Department of Conservation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update to rank if a new walk has been completed - minor bugfixes for Tuesday demonstration for the Department of Conservation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1624,19 +1643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.registered_users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysql_db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="717">
@@ -1653,22 +1659,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
+        <state relative-caret-position="3311">
           <caret line="327" column="30" lean-forward="false" selection-start-line="327" selection-start-column="30" selection-end-line="327" selection-end-column="30" />
           <folding>
             <marker date="1508149865507" expanded="true" signature="2547:2595" ph="SELECT * FRO... registered_users" />
@@ -1700,10 +1693,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.registered_users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SQL/test_setup.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1064">
-          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <caret line="31" column="47" lean-forward="false" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
           <folding />
         </state>
       </provider>
