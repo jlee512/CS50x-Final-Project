@@ -302,8 +302,13 @@ def total_distance_query():
     # Access database and pull sum of all walk one-way-distances for the specific user_id
     db = MySQL_Database()
 
-    #  TO WORK ON...!
+    #  Query to extract a user's total travel distance
     json_user_total_distance = db.query('SELECT SUM(w.one_way_distance) AS total_distance FROM completed_trips AS t, walks_set AS w WHERE t.walk_id=w.walk_id AND t.user_id=%s', [user_id])
+
+    if json_user_total_distance[0]['total_distance'] is None:
+        json_user_total_distance[0]['total_distance'] = 0
+
+    print(json_user_total_distance)
 
     return Response(json.dumps(json_user_total_distance), mimetype="application/json")
 
@@ -319,8 +324,9 @@ def get_rank():
         rank = {'rank': -1}
     else:
         rank = rank_query[0]
-        session["rank"] = rank
-        
+        session["rank"] = rank["rank"]
+        print(session["rank"])
+
     return Response(json.dumps(rank), mimetype="application/json")
 
 @app.route('/test')
