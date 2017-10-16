@@ -224,6 +224,7 @@ def add_walk():
             print(session["user_id"])
             print(session["rank"])
             result3 = db.update('UPDATE registered_users SET rank=%s WHERE user_id=%s;', [session["rank"] + 1, session["user_id"]])
+            session["rank"] = session["rank"] + 1
             if not result3:
                 print("Rank could not be updated")
 
