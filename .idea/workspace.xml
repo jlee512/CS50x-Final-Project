@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5e4bfd1b-02db-4692-ba1c-575f85086bc0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQL/test_setup.sql" afterPath="$PROJECT_DIR$/SQL/test_setup.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/JavaScript/dashboard_populate.js" afterPath="$PROJECT_DIR$/static/JavaScript/dashboard_populate.js" />
     </list>
     <ignored path="Web_Information_Gathering/" />
     <ignored path="config.ini" />
@@ -18,7 +21,7 @@
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$json_development.coverage" NAME="json_development Coverage Results" MODIFIED="1502864774048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$Unittests_in_app_py.coverage" NAME="Unittests in app.py Coverage Results" MODIFIED="1501825196593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Final_Project_Deployment$information_gathering.coverage" NAME="information_gathering Coverage Results" MODIFIED="1506587882004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1508042421847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Final_Project_Deployment$Final_Project_Deployment.coverage" NAME="Final_Project_Deployment Coverage Results" MODIFIED="1508142627936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -134,31 +137,32 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="286" column="0" lean-forward="true" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+            <state relative-caret-position="-3777">
+              <caret line="174" column="211" lean-forward="false" selection-start-line="174" selection-start-column="211" selection-end-line="174" selection-end-column="211" />
               <folding>
-                <marker date="1508042034001" expanded="true" signature="2547:2595" ph="SELECT * FRO... registered_users" />
-                <marker date="1508042034001" expanded="true" signature="4522:4570" ph="SELECT * FRO... registered_users" />
-                <marker date="1508042034001" expanded="true" signature="4912:4994" ph="INSERT INTO registered_users... " />
-                <marker date="1508042034001" expanded="true" signature="5375:5423" ph="SELECT * FRO... registered_users" />
-                <marker date="1508042034001" expanded="true" signature="6151:6310" ph="SELECT * FRO... completed_trips" />
-                <marker date="1508042034001" expanded="true" signature="6151:6329" ph="SELECT trip_... completed_trips" />
-                <marker date="1508042034001" expanded="true" signature="7640:7788" ph="INSERT INTO completed_trips... " />
-                <marker date="1508042034001" expanded="true" signature="7730:7778" ph="SELECT walk_... walks_set" />
-                <marker date="1508042034001" expanded="true" signature="8017:8271" ph="INSERT INTO completed_trips... " />
-                <marker date="1508042034001" expanded="true" signature="8017:8275" ph="INSERT INTO user_badges... " />
-                <marker date="1508042034001" expanded="true" signature="8017:8276" ph="INSERT INTO user_badges... " />
-                <marker date="1508042034001" expanded="true" signature="8017:8277" ph="INSERT INTO user_badges... " />
-                <marker date="1508042034001" expanded="true" signature="8091:8140" ph="SELECT walk_... walks_set" />
-                <marker date="1508042034001" expanded="true" signature="8148:8270" ph="SELECT trip_... completed_trips" />
-                <marker date="1508042034001" expanded="true" signature="9027:9077" ph="SELECT * FRO... registered_users" />
-                <marker date="1508042034001" expanded="true" signature="9748:9790" ph="SELECT * FRO... walks_set" />
-                <marker date="1508042034001" expanded="true" signature="10488:10705" ph="SELECT * FRO... user_badges" />
-                <marker date="1508042034001" expanded="true" signature="10488:10724" ph="SELECT b.bad... user_badges" />
-                <marker date="1508042034001" expanded="true" signature="11263:11335" ph="SELECT SUM(w... completed_trips" />
-                <marker date="1508042034001" expanded="true" signature="11263:11378" ph="SELECT SUM(w... completed_trips" />
-                <marker date="1508042034001" expanded="true" signature="11762:11776" ph="SELECT * FRO... testtable" />
-                <marker date="1508042034001" expanded="true" signature="11762:11785" ph="SELECT * FRO... testtable" />
+                <marker date="1508142617272" expanded="true" signature="2547:2595" ph="SELECT * FRO... registered_users" />
+                <marker date="1508142617272" expanded="true" signature="4522:4570" ph="SELECT * FRO... registered_users" />
+                <marker date="1508142617272" expanded="true" signature="4912:4994" ph="INSERT INTO registered_users... " />
+                <marker date="1508142617272" expanded="true" signature="5375:5423" ph="SELECT * FRO... registered_users" />
+                <marker date="1508142617272" expanded="true" signature="6151:6310" ph="SELECT * FRO... completed_trips" />
+                <marker date="1508142617272" expanded="true" signature="6151:6320" ph="SELECT trip_... completed_trips" />
+                <marker date="1508142617272" expanded="true" signature="6151:6336" ph="SELECT t.tri... completed_trips" />
+                <marker date="1508142617272" expanded="true" signature="7647:7795" ph="INSERT INTO completed_trips... " />
+                <marker date="1508142617272" expanded="true" signature="7737:7785" ph="SELECT walk_... walks_set" />
+                <marker date="1508142617272" expanded="true" signature="8024:8278" ph="INSERT INTO completed_trips... " />
+                <marker date="1508142617272" expanded="true" signature="8024:8282" ph="INSERT INTO user_badges... " />
+                <marker date="1508142617272" expanded="true" signature="8024:8283" ph="INSERT INTO user_badges... " />
+                <marker date="1508142617272" expanded="true" signature="8024:8284" ph="INSERT INTO user_badges... " />
+                <marker date="1508142617272" expanded="true" signature="8098:8147" ph="SELECT walk_... walks_set" />
+                <marker date="1508142617272" expanded="true" signature="8155:8277" ph="SELECT trip_... completed_trips" />
+                <marker date="1508142617272" expanded="true" signature="9034:9084" ph="SELECT * FRO... registered_users" />
+                <marker date="1508142617272" expanded="true" signature="9755:9797" ph="SELECT * FRO... walks_set" />
+                <marker date="1508142617272" expanded="true" signature="10495:10712" ph="SELECT * FRO... user_badges" />
+                <marker date="1508142617272" expanded="true" signature="10495:10731" ph="SELECT b.bad... user_badges" />
+                <marker date="1508142617272" expanded="true" signature="11270:11360" ph="SELECT SUM(w... completed_trips" />
+                <marker date="1508142617272" expanded="true" signature="11270:11403" ph="SELECT SUM(w... completed_trips" />
+                <marker date="1508142617272" expanded="true" signature="11787:11801" ph="SELECT * FRO... testtable" />
+                <marker date="1508142617272" expanded="true" signature="11787:11810" ph="SELECT * FRO... testtable" />
               </folding>
             </state>
           </provider>
@@ -167,18 +171,8 @@
       <file leaf-file-name="dashboard_populate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/JavaScript/dashboard_populate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="961">
-              <caret line="78" column="43" lean-forward="false" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trips_management.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/trips_management.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="790">
-              <caret line="57" column="139" lean-forward="false" selection-start-line="57" selection-start-column="120" selection-end-line="57" selection-end-column="139" />
+            <state relative-caret-position="-1980">
+              <caret line="36" column="70" lean-forward="false" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -187,28 +181,38 @@
       <file leaf-file-name="test_setup.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SQL/test_setup.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="33" column="99" lean-forward="false" selection-start-line="33" selection-start-column="99" selection-end-line="33" selection-end-column="99" />
+            <state relative-caret-position="792">
+              <caret line="28" column="11" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="29" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Badges.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/JSON/Badges.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+      <file leaf-file-name="heroku_66cf5b5014845bb.completed_trips" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="721">
-              <caret line="114" column="34" lean-forward="false" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
+      <file leaf-file-name="heroku_66cf5b5014845bb.walks_set" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.walks_set">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -228,7 +232,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rank</find>
       <find>mdl-card</find>
       <find>css</find>
       <find>place_in</find>
@@ -258,6 +261,7 @@
       <find>badge_num</find>
       <find>ajax</find>
       <find>total</find>
+      <find>distance_sum</find>
     </findStrings>
     <replaceStrings>
       <replace>0.4</replace>
@@ -330,9 +334,9 @@
         <option value="$PROJECT_DIR$/static/JSON/Badges.json" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/SQL/production_database_setup" />
+        <option value="$PROJECT_DIR$/static/JavaScript/dashboard_populate.js" />
         <option value="$PROJECT_DIR$/SQL/test_setup.sql" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/static/JavaScript/dashboard_populate.js" />
       </list>
     </option>
   </component>
@@ -365,6 +369,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -406,54 +411,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Photographs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Final_Project_Deployment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Photographs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Badges" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -541,7 +498,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1215,15 +1171,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33155712" sideWeight="0.5099432" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.4971591" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3315412" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2812315" sideWeight="0.4900568" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2812315" sideWeight="0.4900568" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918888" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12740384" sideWeight="0.8052102" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12912089" sideWeight="0.8052102" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1720467" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11710165" sideWeight="0.19478981" order="2" side_tool="true" content_ui="tabs" />
@@ -1337,146 +1294,146 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.user_memories">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1614,7 +1571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="70" column="8" lean-forward="false" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1622,13 +1578,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
+        <state relative-caret-position="3762">
           <caret line="114" column="34" lean-forward="false" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
           <folding />
         </state>
@@ -1642,42 +1597,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.walks_set">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.registered_users">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.user_badges">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1685,34 +1613,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="919">
           <caret line="73" column="2" lean-forward="false" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="63" column="34" lean-forward="false" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/trips_management.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
+        <state relative-caret-position="1881">
           <caret line="57" column="139" lean-forward="false" selection-start-line="57" selection-start-column="120" selection-end-line="57" selection-end-column="139" />
           <folding />
         </state>
@@ -1722,7 +1628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1730,7 +1635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2937">
           <caret line="89" column="108" lean-forward="true" selection-start-line="89" selection-start-column="108" selection-end-line="89" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1742,49 +1646,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SQL/test_setup.sql">
+    <entry file="file://$PROJECT_DIR$/mysql_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="33" column="99" lean-forward="false" selection-start-line="33" selection-start-column="99" selection-end-line="33" selection-end-column="99" />
+        <state relative-caret-position="1074">
+          <caret line="63" column="34" lean-forward="false" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/JavaScript/dashboard_populate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="961">
-          <caret line="78" column="43" lean-forward="false" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
+        <state relative-caret-position="-1980">
+          <caret line="36" column="70" lean-forward="false" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQL/test_setup.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="28" column="11" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="29" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.walks_set">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.completed_trips">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/74255fd4/a0990e47-19f8-4edf-9218-31bd2d2f615a/heroku_66cf5b5014845bb.registered_users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="286" column="0" lean-forward="true" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+        <state relative-caret-position="-3777">
+          <caret line="174" column="211" lean-forward="false" selection-start-line="174" selection-start-column="211" selection-end-line="174" selection-end-column="211" />
           <folding>
-            <marker date="1508042034001" expanded="true" signature="2547:2595" ph="SELECT * FRO... registered_users" />
-            <marker date="1508042034001" expanded="true" signature="4522:4570" ph="SELECT * FRO... registered_users" />
-            <marker date="1508042034001" expanded="true" signature="4912:4994" ph="INSERT INTO registered_users... " />
-            <marker date="1508042034001" expanded="true" signature="5375:5423" ph="SELECT * FRO... registered_users" />
-            <marker date="1508042034001" expanded="true" signature="6151:6310" ph="SELECT * FRO... completed_trips" />
-            <marker date="1508042034001" expanded="true" signature="6151:6329" ph="SELECT trip_... completed_trips" />
-            <marker date="1508042034001" expanded="true" signature="7640:7788" ph="INSERT INTO completed_trips... " />
-            <marker date="1508042034001" expanded="true" signature="7730:7778" ph="SELECT walk_... walks_set" />
-            <marker date="1508042034001" expanded="true" signature="8017:8271" ph="INSERT INTO completed_trips... " />
-            <marker date="1508042034001" expanded="true" signature="8017:8275" ph="INSERT INTO user_badges... " />
-            <marker date="1508042034001" expanded="true" signature="8017:8276" ph="INSERT INTO user_badges... " />
-            <marker date="1508042034001" expanded="true" signature="8017:8277" ph="INSERT INTO user_badges... " />
-            <marker date="1508042034001" expanded="true" signature="8091:8140" ph="SELECT walk_... walks_set" />
-            <marker date="1508042034001" expanded="true" signature="8148:8270" ph="SELECT trip_... completed_trips" />
-            <marker date="1508042034001" expanded="true" signature="9027:9077" ph="SELECT * FRO... registered_users" />
-            <marker date="1508042034001" expanded="true" signature="9748:9790" ph="SELECT * FRO... walks_set" />
-            <marker date="1508042034001" expanded="true" signature="10488:10705" ph="SELECT * FRO... user_badges" />
-            <marker date="1508042034001" expanded="true" signature="10488:10724" ph="SELECT b.bad... user_badges" />
-            <marker date="1508042034001" expanded="true" signature="11263:11335" ph="SELECT SUM(w... completed_trips" />
-            <marker date="1508042034001" expanded="true" signature="11263:11378" ph="SELECT SUM(w... completed_trips" />
-            <marker date="1508042034001" expanded="true" signature="11762:11776" ph="SELECT * FRO... testtable" />
-            <marker date="1508042034001" expanded="true" signature="11762:11785" ph="SELECT * FRO... testtable" />
+            <marker date="1508142617272" expanded="true" signature="2547:2595" ph="SELECT * FRO... registered_users" />
+            <marker date="1508142617272" expanded="true" signature="4522:4570" ph="SELECT * FRO... registered_users" />
+            <marker date="1508142617272" expanded="true" signature="4912:4994" ph="INSERT INTO registered_users... " />
+            <marker date="1508142617272" expanded="true" signature="5375:5423" ph="SELECT * FRO... registered_users" />
+            <marker date="1508142617272" expanded="true" signature="6151:6310" ph="SELECT * FRO... completed_trips" />
+            <marker date="1508142617272" expanded="true" signature="6151:6320" ph="SELECT trip_... completed_trips" />
+            <marker date="1508142617272" expanded="true" signature="6151:6336" ph="SELECT t.tri... completed_trips" />
+            <marker date="1508142617272" expanded="true" signature="7647:7795" ph="INSERT INTO completed_trips... " />
+            <marker date="1508142617272" expanded="true" signature="7737:7785" ph="SELECT walk_... walks_set" />
+            <marker date="1508142617272" expanded="true" signature="8024:8278" ph="INSERT INTO completed_trips... " />
+            <marker date="1508142617272" expanded="true" signature="8024:8282" ph="INSERT INTO user_badges... " />
+            <marker date="1508142617272" expanded="true" signature="8024:8283" ph="INSERT INTO user_badges... " />
+            <marker date="1508142617272" expanded="true" signature="8024:8284" ph="INSERT INTO user_badges... " />
+            <marker date="1508142617272" expanded="true" signature="8098:8147" ph="SELECT walk_... walks_set" />
+            <marker date="1508142617272" expanded="true" signature="8155:8277" ph="SELECT trip_... completed_trips" />
+            <marker date="1508142617272" expanded="true" signature="9034:9084" ph="SELECT * FRO... registered_users" />
+            <marker date="1508142617272" expanded="true" signature="9755:9797" ph="SELECT * FRO... walks_set" />
+            <marker date="1508142617272" expanded="true" signature="10495:10712" ph="SELECT * FRO... user_badges" />
+            <marker date="1508142617272" expanded="true" signature="10495:10731" ph="SELECT b.bad... user_badges" />
+            <marker date="1508142617272" expanded="true" signature="11270:11360" ph="SELECT SUM(w... completed_trips" />
+            <marker date="1508142617272" expanded="true" signature="11270:11403" ph="SELECT SUM(w... completed_trips" />
+            <marker date="1508142617272" expanded="true" signature="11787:11801" ph="SELECT * FRO... testtable" />
+            <marker date="1508142617272" expanded="true" signature="11787:11810" ph="SELECT * FRO... testtable" />
           </folding>
         </state>
       </provider>

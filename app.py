@@ -172,7 +172,7 @@ def my_trips():
     if request.method == "GET":
         # query database for user trips
         db = MySQL_Database()
-        trips = db.query('SELECT t.trip_id, t.date_started, t.date_completed, w.walk_name, w.walk_id FROM completed_trips AS t, walks_set AS w WHERE t.walk_id = w.walk_id AND user_id=%s ORDER BY w.walk_id', [session["user_id"]])
+        trips = db.query('SELECT t.trip_id, t.date_started, t.date_completed, w.walk_name, w.walk_id FROM completed_trips AS t, walks_set AS w WHERE t.walk_id = w.walk_id AND user_id=%s ORDER BY t.date_completed', [session["user_id"]])
         db.check_connection()
 
         for trip in trips:
@@ -294,7 +294,7 @@ def total_distance_query():
     db = MySQL_Database()
 
     #  TO WORK ON...!
-    json_user_total_distance = db.query('SELECT SUM(w.one_way_distance) FROM completed_trips AS t, walks_set AS w WHERE t.walk_id=w.walk_id AND t.user_id=%s', [user_id])
+    json_user_total_distance = db.query('SELECT SUM(w.one_way_distance) AS total_distance FROM completed_trips AS t, walks_set AS w WHERE t.walk_id=w.walk_id AND t.user_id=%s', [user_id])
 
     return Response(json.dumps(json_user_total_distance), mimetype="application/json")
 
