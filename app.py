@@ -215,8 +215,17 @@ def add_walk():
 
         if not result:
             print("Walk could not be added")
+
+        # If no badges are added, do not increment rank, otherwise, increment rank
         if not result2:
             print("No badges were added")
+        else:
+            db = MySQL_Database()
+            print(session["user_id"])
+            print(session["rank"])
+            result3 = db.update('UPDATE registered_users SET rank=%s WHERE user_id=%s;', [session["rank"] + 1, session["user_id"]])
+            if not result3:
+                print("Rank could not be updated")
 
         return redirect(url_for("my_trips"))
 
@@ -300,8 +309,19 @@ def total_distance_query():
 
 @app.route('/get_rank', methods=['GET'])
 def get_rank():
-    user_rank = {'rank': session['rank']}
-    return Response(json.dumps(user_rank), mimetype="application/json")
+
+    db = MySQL_Database()
+
+    rank_query = db.query('SELECT rank FROM registered_users WHERE user_id=%s', [session["user_id"]])
+
+    if not rank_query:
+        print("Rank could not be accessed from the database")
+        rank = {'rank': -1}
+    else:
+        rank = rank_query[0]
+        session["rank"] = rank
+        
+    return Response(json.dumps(rank), mimetype="application/json")
 
 @app.route('/test')
 def test():

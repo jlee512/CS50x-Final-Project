@@ -69,6 +69,22 @@ class MySQL_Database:
             self._db_conn.close()
             print("Connection closed")
 
+    # Insertion method with parameters
+    def update(self, sql, parameters):
+        try:
+            result = self._db_cursor.execute(sql, parameters)
+            self._db_conn.commit()
+            print("Update completed")
+            return result;
+        except (MySQLdb.Error, MySQLdb.Warning) as e:
+            print("Update error")
+            print(e)
+            self._db_conn.rollback()
+            return None
+        finally:
+            self._db_conn.close()
+            print("Connection closed")
+
     # Method to check DB connection status
     def check_connection(self):
         print(self._db_conn)
