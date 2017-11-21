@@ -29,7 +29,7 @@ DELETE FROM completed_trips WHERE trip_id = 192 AND user_id = 22;
 DELETE FROM completed_trips WHERE walk_id = 92 AND user_id = 22;
 DELETE FROM completed_trips WHERE walk_id = 22 AND user_id = 22;
 DELETE FROM completed_trips WHERE walk_id = 92 AND user_id = 72;
-DELETE FROM registered_users WHERE user_id = 92;
+DELETE FROM registered_users WHERE user_id = 112;
 DELETE FROM completed_trips WHERE user_id = 62;
 
 INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VALUES (22, (SELECT walk_id FROM walks_set WHERE walk_name="Tongariro Northern Circuit"), "2017-10-14 00:00:00", "2017-10-16 00:00:00");

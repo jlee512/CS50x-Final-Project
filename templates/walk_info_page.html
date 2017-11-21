@@ -3,17 +3,14 @@
 {% block custom_styles %}
     <link href="{{ url_for('static', filename='CSS/tab_content_styles.css') }}" rel="stylesheet"/>
     <link href="{{ url_for('static', filename='CSS/trips_management.css') }}" rel="stylesheet"/>
-    <link href="{{ url_for('static', filename='CSS/datepicker.css') }}" rel="stylesheet"/>
 {% endblock %}
 
 {% block custom_javascript %}
-    <script type="text/javascript" src="/static/JavaScript/new_trip_form.js"></script>
-    <script type="text/javascript" src="/static/JavaScript/datepicker.js"></script>
-    <script type="text/javascript" src="/static/JavaScript/toggle_walk_addition.js"></script>
+
 {% endblock %}
 
 {% block title %}
-    Manage My Trips
+
 {% endblock %}
 
 {% block main %}
@@ -43,10 +40,8 @@
             <div class="card-container">
                 <div class="mdl-card mdl-shadow--2dp">
 
-                    {% if trips %}
-
-                        {% for trip in trips %}
-                            <span class="trip-chip" id="checkbox-{{ loop.index }}">
+                    {% for trip in trips %}
+                        <span class="trip-chip" id="checkbox-{{ loop.index }}">
                                 <span class="trip-chip-walk-name"><strong>{{ trip.walk_name }}&nbsp</strong></span>
                                 <span class="trip-chip-walk-dates"><strong
                                         class="trip-start-date">{{ trip.date_started }} -</strong><strong
@@ -56,25 +51,9 @@
                                   <i class="material-icons delete-icon">cancel</i>
                                 </button>
                             </span>
-                        {% endfor %}
-
-                    {% else %}
-
-                        <span class="trip-chip" id="checkbox-z">
-                                <span id="no-trips" class="trip-chip-walk-name"><strong>Doesn't look like you've logged any trips yet</strong></span>
-                        </span>
-
-                    {% endif %}
-
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect manage-trips-button toggle-add-walk-button"
-                            id="add-walk-button">
-                        New Trip
-                    </button>
+                    {% endfor %}
 
                 </div>
-            </div>
-
-            <div id="add-walk-form">
             </div>
         </main>
     </div>

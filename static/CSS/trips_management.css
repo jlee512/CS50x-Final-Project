@@ -105,8 +105,38 @@ form {
     margin: 3px;
 }
 
+.trip-chip {
+    display: flex;
+    flex-direction: row;
+    background-color: #CCE9D5;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 15px;
+    margin: 3px;
+}
+
+.trip-chip#checkbox-z {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #f99aa9;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 3px;
+}
+
 .trip-chip-walk-name {
     margin-right: auto;
+}
+
+#no-trips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
 }
 
 .delete-icon {
