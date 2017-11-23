@@ -2,7 +2,7 @@
 
 {% block custom_styles %}
     <link href="{{ url_for('static', filename='CSS/tab_content_styles.css') }}" rel="stylesheet"/>
-    <link href="{{ url_for('static', filename='CSS/trips_management.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='CSS/walk_info_page.css') }}" rel="stylesheet"/>
 {% endblock %}
 
 {% block custom_javascript %}
@@ -21,7 +21,7 @@
 
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <a href="/" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored manage-trips-back">
+                <a href="/#home" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored manage-trips-back">
                     <i class="material-icons" id="home-icon">home</i>
                     <div class="mdl-tooltip" data-mdl-for="home-icon">
                         Home
@@ -34,25 +34,39 @@
         {#--Trip Management Page Content--#}
         <main class="mdl-layout__content">
             <div class="page-content">
-                <h2 class="page-section-heading first-page-heading">My Trips</h2>
-            </div>
+                <div id="walk_info_card" class="walk-card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title" style="background: url('{{ walk.background_image }}') center center / cover;">
+                        <h2 class="page-section-heading first-page-heading"><strong>{{ walk.walk_name }}</strong></h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
 
-            <div class="card-container">
-                <div class="mdl-card mdl-shadow--2dp">
+                        <p><strong>Region:</strong> {{ walk.walk_region }}, {{ walk.walk_country }}</p>
+                        <p><strong>Length:</strong> {{ walk.one_way_distance }} km
+                            {% if walk.loop_track == 0 %}
+                                circuit
+                            {% endif %}
+                        </p>
 
-                    {% for trip in trips %}
-                        <span class="trip-chip" id="checkbox-{{ loop.index }}">
-                                <span class="trip-chip-walk-name"><strong>{{ trip.walk_name }}&nbsp</strong></span>
-                                <span class="trip-chip-walk-dates"><strong
-                                        class="trip-start-date">{{ trip.date_started }} -</strong><strong
-                                        class="trip-end-date">{{ trip.date_completed }}</strong></span>
-                                <button class="mdl-button mdl-js-button mdl-button--icon delete-trip-button"
-                                        id="{{ trip.trip_id }}">
-                                  <i class="material-icons delete-icon">cancel</i>
-                                </button>
-                            </span>
-                    {% endfor %}
+                        {# If great walk has a season, display accordingly #}
+                        {% if walk.great_walks_season_start != walk.great_walks_season_end %}
+                            <p><strong>Great Walks Season</strong>
+                                {{ walk.great_walks_season_start }} to {{ walk.great_walks_season_end }}
+                            </p>
+                        {% endif %}
 
+
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                           href="{{ walk.doc_site_hyperlink }}" style="text-align: center; color: black;">
+                            Find Out More
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <a href="{{ walk.doc_site_hyperlink }}"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">info</i>
+                        </button></a>
+                    </div>
                 </div>
             </div>
         </main>

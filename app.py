@@ -235,6 +235,20 @@ def add_walk():
         # Redirect to my_trips
         return redirect(url_for("index"))
 
+@app.route('/walk/<walk_name>', methods=["GET"])
+def walk_info(walk_name):
+
+    db = MySQL_Database()
+
+    walks = db.query('SELECT * FROM walks_set WHERE walk_name = %s', [walk_name])
+
+    walk = walks[0]
+
+    walk['great_walks_season_start'] = '{:%d/%m/%Y}'.format(walk['great_walks_season_start'])
+    walk['great_walks_season_end'] = '{:%d/%m/%Y}'.format(walk['great_walks_season_end'])
+
+    return render_template("walk_info_page.html", walk=walk)
+
 
 # Under construction page
 @app.route('/underconstruction')
@@ -331,6 +345,7 @@ def get_rank():
 
     return Response(json.dumps(rank), mimetype="application/json")
 
+
 @app.route('/test')
 def test():
     print("test app route")
@@ -345,6 +360,11 @@ def test():
         return "Sorry no results"
 
     return render_template("test.html", rows=rows, test=test)
+
+@app.route('/setupDB')
+def setupDB():
+    print("Re-initializing DB...")
+    #TODO
 
 
 if __name__ == '__main__':

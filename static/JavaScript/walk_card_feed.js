@@ -81,14 +81,14 @@ function Walk_Card(walk_id, walk_name, class_name, background_image) {
 
     //Priviate variable (class specific)
     this.walk_card_template = $('<div class="card ' + this.class_name + '">'
-        + '<h2 class="card-title-text">'
+        + '<a href="/walk/' + walk_name + '"><h2 class="card-title-text">'
         + this.walk_name
         + '<span class="card-icon">'
         + '<button class="mdl-button mdl-button--icon mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">'
         + '<i class="material-icons walk-card-icon">directions_walk</i>'
         + '</button>'
         + '</span>'
-        + '</h2>'
+        + '</h2></a>'
         + '</div>');
 
     this.load = function () {

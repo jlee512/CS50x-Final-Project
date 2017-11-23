@@ -2,7 +2,59 @@
     position: absolute;
 }
 
-.mdl-card.mdl-shadow--2dp {
-    margin: auto;
-    padding-top: 10px;
+#walk_info_card {
+  width: 80%;
+}
+.walk-card-wide > .mdl-card__title {
+  color: #fff;
+}
+.walk-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.mdl-button.mdl-js-button.mdl-button--icon.mdl-button--colored.manage-trips-back {
+    margin-left: 15px;
+    color: #5BA1D2;
+    background-color: white;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image-header {
+    height: 40%;
+}
+
+.mdl-card__title {
+    height: 280px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+h2.first-page-heading {
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+main {
+    margin-top: 15px;
+}
+
+div.page-content {
+    text-align: left;
+}
+
+.mdl-button--icon {
+    color: white;
+}
+
+.mdl-card__actions.mdl-card--border {
+    text-align: center;
 }
