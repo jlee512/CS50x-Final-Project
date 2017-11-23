@@ -21,7 +21,7 @@
 
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <a href="/#home" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored manage-trips-back">
+                <a href="/" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored manage-trips-back">
                     <i class="material-icons" id="home-icon">home</i>
                     <div class="mdl-tooltip" data-mdl-for="home-icon">
                         Home
@@ -39,6 +39,8 @@
                         <h2 class="page-section-heading first-page-heading"><strong>{{ walk.walk_name }}</strong></h2>
                     </div>
                     <div class="mdl-card__supporting-text">
+
+                        <h6>{{ walk.walk_description }}</h6>
 
                         <p><strong>Region:</strong> {{ walk.walk_region }}, {{ walk.walk_country }}</p>
                         <p><strong>Length:</strong> {{ walk.one_way_distance }} km

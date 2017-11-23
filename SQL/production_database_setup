@@ -26,6 +26,7 @@ CREATE TABLE walks_set (
   class_name VARCHAR(15) NOT NULL UNIQUE,
   background_image VARCHAR(150),
   badge_id INT NOT NULL,
+  walk_description TEXT NOT NULL,
   walk_region VARCHAR(100) NOT NULL,
   walk_country VARCHAR(150) NOT NULL,
   one_way_distance FLOAT NOT NULL,

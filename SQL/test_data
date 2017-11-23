@@ -37,3 +37,21 @@ UPDATE registered_users SET rank=2 WHERE username = "JonoSoo";
 
 UPDATE registered_users SET email="maryanneting@gmail.com" WHERE username="Maryanne";
 UPDATE registered_users SET email="jingdao24@hotmail.com" WHERE username="ChrisW";
+
+# Add walk description column and populate
+ALTER TABLE walks_set ADD walk_description TEXT NOT NULL;
+
+UPDATE walks_set SET walk_description = "Trace the shoreline of Lake Waikaremoana, the 'sea of rippling waters.' Pass giant podocarp trees and remote beaches, and enjoy breathtaking views from Panekire Bluff." WHERE walk_name = "Lake Waikaremoana";
+UPDATE walks_set SET walk_description = "Explore the volcanic heart of Tongariro National Park, a landscape of stark glacial contrasts and alpine views." WHERE walk_name = "Tongariro Northern Circuit";
+UPDATE walks_set SET walk_description = "Explore the scenic beauty paddling up the Whanganui River, a landscape of remote hills and bush clad valleys." WHERE walk_name = "Whanganui Journey";
+UPDATE walks_set SET walk_description = "Blessed with a mild climate, golden beaches and lush coastal native bush, the Abel Tasman Coast Track has it all." WHERE walk_name = "Abel Tasman Coast Track";
+UPDATE walks_set SET walk_description = "Travel through expansive tussock downs, lush forests and nīkau palms to the roaring seas of the West Coast."
+ WHERE walk_name = "Heaphy Track";
+UPDATE walks_set SET walk_description = "Opening in 2019, this Great Walk crosses the Paparoa Range. It takes you through alpine tops, limestone karst landscapes and thriving rainforests, and provides breath-taking views." WHERE walk_name = "Paparoa Track + Pike29 Memorial Track";
+UPDATE walks_set SET walk_description = "This is the ultimate alpine adventure, weaving through meadows, reflective tarns and alpine gardens. You'll be rewarded with spectacular vistas over vast mountain ranges and valleys.
+" WHERE walk_name = "Routeburn Track";
+UPDATE walks_set SET walk_description = "Vast tussock-covered ridgelines and spectacular alpine vistas contrast with peaceful lakeside and valley beech forest in this wilderness adventure.
+" WHERE walk_name = "Kepler Track";
+UPDATE walks_set SET walk_description = "Experience 'the finest walk in the world' as you retrace the steps of early explorers on the world-renowed Milford Track. Take a journey along valleys carved by glaciers, wander through ancient rainforests and admire cascading waterfalls." WHERE walk_name = "Milford Track";
+UPDATE walks_set SET walk_description = "Escape on an island adventure - relax and unwind in the peaceful surroundings with the bush, birds and beach at your side.
+" WHERE walk_name = "Rakiura Track";

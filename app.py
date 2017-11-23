@@ -244,6 +244,8 @@ def walk_info(walk_name):
 
     walk = walks[0]
 
+    print(walk)
+
     walk['great_walks_season_start'] = '{:%d/%m/%Y}'.format(walk['great_walks_season_start'])
     walk['great_walks_season_end'] = '{:%d/%m/%Y}'.format(walk['great_walks_season_end'])
 

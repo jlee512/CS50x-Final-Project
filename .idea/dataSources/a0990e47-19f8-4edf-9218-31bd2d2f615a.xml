@@ -299,24 +299,29 @@ user_id</ColNames>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
     </column>
-    <index id="66" parent="8" name="class_name">
+    <column id="66" parent="8" name="walk_description">
+      <Position>15</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="67" parent="8" name="class_name">
       <ColNames>class_name</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="67" parent="8" name="walk_name">
+    <index id="68" parent="8" name="walk_name">
       <ColNames>walk_name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="68" parent="8" name="PRIMARY">
+    <key id="69" parent="8" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>walk_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="69" parent="8" name="walk_name">
+    <key id="70" parent="8" name="walk_name">
       <ColNames>walk_name</ColNames>
       <UnderlyingIndexName>walk_name</UnderlyingIndexName>
     </key>
-    <key id="70" parent="8" name="class_name">
+    <key id="71" parent="8" name="class_name">
       <ColNames>class_name</ColNames>
       <UnderlyingIndexName>class_name</UnderlyingIndexName>
     </key>
