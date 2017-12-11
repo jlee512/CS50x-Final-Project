@@ -37,3 +37,7 @@ INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VAL
 INSERT IGNORE INTO user_badges (badge_id, user_id, trip_id, award_date) VALUES ((SELECT badge_id FROM walks_set WHERE walk_name="Lake Waikaremoana"), 22, (SELECT t.trip_id FROM completed_trips AS t, walks_set AS w WHERE t.user_id=22 AND w.walk_name="Lake Waikaremoana" AND t.walk_id = w.walk_id), "2017-10-16 00:00:00");
 
 SELECT SUM(w.one_way_distance) FROM completed_trips AS t, walks_set AS w WHERE t.walk_id=w.walk_id AND t.user_id=22;
+
+SELECT COUNT(DISTINCT walk_id) FROM completed_trips WHERE user_id = 2
+
+UPDATE registered_users AS u SET rank=(SELECT COUNT(DISTINCT ct.walk_id) FROM completed_trips AS ct WHERE ct.user_id = 2) WHERE u.user_id = 2;

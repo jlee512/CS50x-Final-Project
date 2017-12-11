@@ -265,7 +265,9 @@ def delete_walk(trip_id):
     deletion = db.update('DELETE FROM completed_trips WHERE trip_id = %s;', [trip_id])
 
     if deletion:
-        print("Trip successfully deleted")
+        user_id = session["user_id"]
+        rank_update(user_id)
+        print("Trip successfully deleted and rank updated")
 
     return redirect(url_for("my_trips"))
 
