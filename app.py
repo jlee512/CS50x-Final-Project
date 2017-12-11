@@ -138,8 +138,6 @@ def register():
         hash = bcrypt.using(rounds=13).hash(password_entry)
         hash_bin = bytes(hash, 'utf-8')
 
-
-
         result = db.insert('INSERT INTO registered_users (username, hash, email, rank) VALUES (%s, %s, %s, %s)',
                            [username_entry, hash_bin, email_entry, 1])
         db.check_connection()
@@ -166,13 +164,16 @@ def register():
     else:
         return render_template("register.html")
 
+
 @app.route('/my_trips')
 @login_required
 def my_trips():
     if request.method == "GET":
         # query database for user trips
         db = MySQL_Database()
-        trips = db.query('SELECT t.trip_id, t.date_started, t.date_completed, w.walk_name, w.walk_id FROM completed_trips AS t, walks_set AS w WHERE t.walk_id = w.walk_id AND user_id=%s ORDER BY t.date_completed', [session["user_id"]])
+        trips = db.query(
+            'SELECT t.trip_id, t.date_started, t.date_completed, w.walk_name, w.walk_id FROM completed_trips AS t, walks_set AS w WHERE t.walk_id = w.walk_id AND user_id=%s ORDER BY t.date_completed',
+            [session["user_id"]])
         db.check_connection()
 
         for trip in trips:
@@ -204,12 +205,16 @@ def add_walk():
 
         # Push results to the database
         db = MySQL_Database()
-        result = db.insert('INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VALUES (%s, (SELECT walk_id FROM walks_set WHERE walk_name=%s), %s, %s)', [session["user_id"], selected_walk, start_date_formatted, finish_date_formatted])
+        result = db.insert(
+            'INSERT INTO completed_trips (user_id, walk_id, date_started, date_completed) VALUES (%s, (SELECT walk_id FROM walks_set WHERE walk_name=%s), %s, %s)',
+            [session["user_id"], selected_walk, start_date_formatted, finish_date_formatted])
 
         db = MySQL_Database()
 
         # Logic required to update badges as a result (if a new walk is completed)
-        result2 = db.insert('INSERT INTO user_badges (badge_id, user_id, trip_id, award_date) VALUES ((SELECT badge_id FROM walks_set WHERE walk_name=%s), %s, (SELECT t.trip_id FROM completed_trips AS t, walks_set AS w WHERE t.user_id=%s AND w.walk_name=%s AND t.walk_id = w.walk_id), %s)', [selected_walk, session["user_id"], session["user_id"], selected_walk, finish_date_formatted]);
+        result2 = db.insert(
+            'INSERT INTO user_badges (badge_id, user_id, trip_id, award_date) VALUES ((SELECT badge_id FROM walks_set WHERE walk_name=%s), %s, (SELECT t.trip_id FROM completed_trips AS t, walks_set AS w WHERE t.user_id=%s AND w.walk_name=%s AND t.walk_id = w.walk_id), %s)',
+            [selected_walk, session["user_id"], session["user_id"], selected_walk, finish_date_formatted]);
 
         db.check_connection()
 
@@ -225,7 +230,8 @@ def add_walk():
             db = MySQL_Database()
             print(session["user_id"])
             print(session["rank"])
-            result3 = db.update('UPDATE registered_users SET rank=%s WHERE user_id=%s;', [session["rank"], session["user_id"]])
+            result3 = db.update('UPDATE registered_users SET rank=%s WHERE user_id=%s;',
+                                [session["rank"], session["user_id"]])
             if not result3:
                 print("Rank could not be updated")
 
@@ -235,9 +241,9 @@ def add_walk():
         # Redirect to my_trips
         return redirect(url_for("index"))
 
+
 @app.route('/walk/<walk_name>', methods=["GET"])
 def walk_info(walk_name):
-
     db = MySQL_Database()
 
     walks = db.query('SELECT * FROM walks_set WHERE walk_name = %s', [walk_name])
@@ -252,10 +258,23 @@ def walk_info(walk_name):
     return render_template("walk_info_page.html", walk=walk)
 
 
+@app.route('/delete_walk/<trip_id>', methods=["GET"])
+def delete_walk(trip_id):
+    db = MySQL_Database()
+
+    deletion = db.update('DELETE FROM completed_trips WHERE trip_id = %s;', [trip_id])
+
+    if deletion:
+        print("Trip successfully deleted")
+
+    return redirect(url_for("my_trips"))
+
+
 # Under construction page
 @app.route('/underconstruction')
 def under_construction():
     return render_template("under_construction.html")
+
 
 # JSON/Form validation application routes
 
@@ -297,6 +316,7 @@ def basic_walks_query():
 
     return Response(json.dumps(json_walks), mimetype="application/json")
 
+
 @app.route('/user_badges_query', methods=['GET'])
 def user_badges_query():
     # Access user information for query
@@ -305,12 +325,15 @@ def user_badges_query():
     # Access database and pull the corresponding records and process into a JSON array
     db = MySQL_Database()
 
-    json_user_badges = db.query('SELECT b.badge_id, b.user_id, b.trip_id, b.award_date, w.walk_id, w.one_way_distance FROM user_badges AS b, completed_trips AS t, walks_set AS w WHERE b.trip_id = t.trip_id AND t.walk_id = w.walk_id AND b.user_id = %s ORDER BY w.walk_id;', [user_id])
+    json_user_badges = db.query(
+        'SELECT b.badge_id, b.user_id, b.trip_id, b.award_date, w.walk_id, w.one_way_distance FROM user_badges AS b, completed_trips AS t, walks_set AS w WHERE b.trip_id = t.trip_id AND t.walk_id = w.walk_id AND b.user_id = %s ORDER BY w.walk_id;',
+        [user_id])
 
     for badge in json_user_badges:
         badge['award_date'] = '{:%d/%m/%Y}'.format(badge['award_date'])
 
     return Response(json.dumps(json_user_badges), mimetype="application/json")
+
 
 @app.route('/total_distance_query', methods=['GET'])
 def total_distance_query():
@@ -321,7 +344,9 @@ def total_distance_query():
     db = MySQL_Database()
 
     #  Query to extract a user's total travel distance
-    json_user_total_distance = db.query('SELECT SUM(w.one_way_distance) AS total_distance FROM completed_trips AS t, walks_set AS w WHERE t.walk_id=w.walk_id AND t.user_id=%s', [user_id])
+    json_user_total_distance = db.query(
+        'SELECT SUM(w.one_way_distance) AS total_distance FROM completed_trips AS t, walks_set AS w WHERE t.walk_id=w.walk_id AND t.user_id=%s',
+        [user_id])
 
     if json_user_total_distance[0]['total_distance'] is None:
         json_user_total_distance[0]['total_distance'] = 0
@@ -330,9 +355,9 @@ def total_distance_query():
 
     return Response(json.dumps(json_user_total_distance), mimetype="application/json")
 
+
 @app.route('/get_rank', methods=['GET'])
 def get_rank():
-
     db = MySQL_Database()
 
     rank_query = db.query('SELECT rank FROM registered_users WHERE user_id=%s', [session["user_id"]])
@@ -363,10 +388,11 @@ def test():
 
     return render_template("test.html", rows=rows, test=test)
 
+
 @app.route('/setupDB')
 def setupDB():
     print("Re-initializing DB...")
-    #TODO
+    # TODO
 
 
 if __name__ == '__main__':

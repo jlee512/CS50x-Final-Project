@@ -51,10 +51,10 @@
                                 <span class="trip-chip-walk-dates"><strong
                                         class="trip-start-date">{{ trip.date_started }} -</strong><strong
                                         class="trip-end-date">{{ trip.date_completed }}</strong></span>
-                                <button class="mdl-button mdl-js-button mdl-button--icon delete-trip-button"
+                                <a href="/delete_walk/{{ trip.trip_id }}"><button class="mdl-button mdl-js-button mdl-button--icon delete-trip-button"
                                         id="{{ trip.trip_id }}">
                                   <i class="material-icons delete-icon">cancel</i>
-                                </button>
+                                </button></a>
                             </span>
                         {% endfor %}
 
