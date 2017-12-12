@@ -227,11 +227,12 @@ def add_walk():
         else:
             # Update the session rank and database rank for given user
             session["rank"] = session["rank"] + 1
+            user_id = session["user_id"]
             db = MySQL_Database()
             print(session["user_id"])
             print(session["rank"])
-            result3 = db.update('UPDATE registered_users SET rank=%s WHERE user_id=%s;',
-                                [session["rank"], session["user_id"]])
+            result3 = rank_update(user_id)
+            print("Trip successfully deleted and rank updated")
             if not result3:
                 print("Rank could not be updated")
 
@@ -266,8 +267,11 @@ def delete_walk(trip_id):
 
     if deletion:
         user_id = session["user_id"]
-        rank_update(user_id)
-        print("Trip successfully deleted and rank updated")
+        result3 = rank_update(user_id)
+        if not result3:
+            print("Rank could not be updated")
+        else:
+            print("Trip successfully deleted and rank updated")
 
     return redirect(url_for("my_trips"))
 
