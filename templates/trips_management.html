@@ -47,14 +47,27 @@
 
                         {% for trip in trips %}
                             <span class="trip-chip" id="checkbox-{{ loop.index }}">
-                                <span class="trip-chip-walk-name"><strong>{{ trip.walk_name }}&nbsp</strong></span>
-                                <span class="trip-chip-walk-dates"><strong
-                                        class="trip-start-date">{{ trip.date_started }} -</strong><strong
-                                        class="trip-end-date">{{ trip.date_completed }}</strong></span>
-                                <a href="/delete_walk/{{ trip.trip_id }}"><button class="mdl-button mdl-js-button mdl-button--icon delete-trip-button"
-                                        id="{{ trip.trip_id }}">
-                                  <i class="material-icons delete-icon">cancel</i>
-                                </button></a>
+                                <span class="trip-chip-walk-name">
+                                    <strong>
+                                        {{ trip.walk_name }}&nbsp
+                                    </strong>
+                                </span>
+                                <span class="trip-chip-walk-dates">
+                                    <strong class="trip-start-date">
+                                        {{ trip.date_started }} -
+                                    </strong>
+                                    <strong class="trip-end-date">
+                                        {{ trip.date_completed }}
+                                    </strong>
+                                </span>
+                                <a href="/delete_walk/{{ trip.trip_id }}" id="delete-walk-tooltip-{{ trip.trip_id }}">
+                                    <button class="mdl-button mdl-js-button mdl-button--icon delete-trip-button" id="{{ trip.trip_id }}">
+                                        <i class="material-icons delete-icon">cancel</i>
+                                    </button>
+                                </a>
+                            <div class="mdl-tooltip mdl-tooltip--left" for="delete-walk-tooltip-{{ trip.trip_id }}">
+                                Remove Walk
+                            </div>
                             </span>
                         {% endfor %}
 

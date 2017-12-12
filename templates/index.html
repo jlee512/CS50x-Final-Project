@@ -53,6 +53,22 @@
             <section class="mdl-layout__tab-panel is-active" id="my-walks">
                 <div class="page-content">
 
+                    {# ----------Manage my trips/memories button link-------------#}
+                    <a href="/my_trips" id="manage-trips-link-tooltip"
+                       class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect manage-trips-button">
+                        My Trips
+                    </a>
+                    <div class="mdl-tooltip" for="manage-trips-link-tooltip">
+                        Manage your trips
+                    </div>
+                    <a href="/underconstruction" id="manage-memories-link-tooltip"
+                       class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect manage-trips-button">
+                        My Memories
+                    </a>
+                    <div class="mdl-tooltip" for="manage-memories-link-tooltip">
+                        Manage your memories (Coming Soon)
+                    </div>
+
                     {# ----------Basic Stats Dashboard -------- #}
                     <h2 class="page-section-heading first-page-heading">Walks Dashboard</h2>
                     <div class="walks-rank-dashboard">
@@ -86,56 +102,71 @@
                         </div>
                         <div class="rank-text-display">
                             <h2 class="rank-text placeholder">...</h2>
-                            <h4 class="secondary-rank">Next: <span><strong class="next-rank placeholder">...</strong></span></h4>
+                            <h4 class="secondary-rank">Next: <span><strong
+                                    class="next-rank placeholder">...</strong></span></h4>
                         </div>
                         <div class="badges-tumbler-container">
-                                <div class="rank-img">
-                                    <img class="badge-img" id="rank-img-placeholder" src="/static/Media/Loader/loader.svg">
-                                </div>
+                            <div class="rank-img">
+                                <img class="badge-img" id="rank-img-placeholder" src="/static/Media/Loader/loader.svg">
                             </div>
+                        </div>
                     </div>
                     {# ----------Badge Collection -------- #}
                     <h2 class="page-section-heading">Your Great Walks</h2>
                     <div class="great-walks-badge-collection">
                         <div class="badge-row">
                             <div class="badge-coll-item">
-                                <a href="/walk/Lake Waikaremoana" style="display: inline;"><img class="badge" id="gw-badge-1" src="/static/Media/Photographs/Badges/blank_LakeWaikaremoana.png" style="display: inline"></a>
+                                <a href="/walk/Lake Waikaremoana" style="display: inline;"><img class="badge"
+                                                                                                id="gw-badge-1"
+                                                                                                src="/static/Media/Photographs/Badges/blank_LakeWaikaremoana.png"
+                                                                                                style="display: inline"></a>
                             </div>
                             <div class="badge-coll-item">
-                                <a href="/walk/Tongariro Northern Circuit" style="display: inline"><img class="badge" id="gw-badge-2" src="/static/Media/Photographs/Badges/blank_Tongariro.png"></a>
-                            </div>
-                            <div class="badge-coll-item" >
-                                <a href="/walk/Whanganui Journey" style="display: inline"><img class="badge" id="gw-badge-3" src="/static/Media/Photographs/Badges/blank_WhanganuiJourney.png"></a>
-                            </div>
-                            <div class="badge-coll-item">
-                                <a href="/walk/Abel Tasman Coast Track" style="display: inline"><img class="badge" id="gw-badge-4" src="/static/Media/Photographs/Badges/blank_AbelTasman.png"></a>
+                                <a href="/walk/Tongariro Northern Circuit" style="display: inline"><img class="badge"
+                                                                                                        id="gw-badge-2"
+                                                                                                        src="/static/Media/Photographs/Badges/blank_Tongariro.png"></a>
                             </div>
                             <div class="badge-coll-item">
-                                <a href="/walk/Heaphy Track" style="display: inline"><img class="badge" id="gw-badge-5" src="/static/Media/Photographs/Badges/blank_Heaphy.png"></a>
+                                <a href="/walk/Whanganui Journey" style="display: inline"><img class="badge"
+                                                                                               id="gw-badge-3"
+                                                                                               src="/static/Media/Photographs/Badges/blank_WhanganuiJourney.png"></a>
+                            </div>
+                            <div class="badge-coll-item">
+                                <a href="/walk/Abel Tasman Coast Track" style="display: inline"><img class="badge"
+                                                                                                     id="gw-badge-4"
+                                                                                                     src="/static/Media/Photographs/Badges/blank_AbelTasman.png"></a>
+                            </div>
+                            <div class="badge-coll-item">
+                                <a href="/walk/Heaphy Track" style="display: inline"><img class="badge" id="gw-badge-5"
+                                                                                          src="/static/Media/Photographs/Badges/blank_Heaphy.png"></a>
                             </div>
                         </div>
                         <div class="badge-row">
                             <div class="badge-coll-item">
-                                <a href="/walk/Paparoa Track + Pike29 Memorial Track" style="display: inline"><img class="badge" id="gw-badge-6" src="/static/Media/Photographs/Badges/blank_badge_1_2_3_4_6_7.png"></a>
+                                <a href="/walk/Paparoa Track + Pike29 Memorial Track" style="display: inline"><img
+                                        class="badge" id="gw-badge-6"
+                                        src="/static/Media/Photographs/Badges/blank_badge_1_2_3_4_6_7.png"></a>
                             </div>
                             <div class="badge-coll-item">
-                                <a href="/walk/Routeburn Track" style="display: inline"><img class="badge" id="gw-badge-7" src="/static/Media/Photographs/Badges/blank_badge_1_2_3_4_6_7.png"></a>
+                                <a href="/walk/Routeburn Track" style="display: inline"><img class="badge"
+                                                                                             id="gw-badge-7"
+                                                                                             src="/static/Media/Photographs/Badges/blank_badge_1_2_3_4_6_7.png"></a>
                             </div>
                             <div class="badge-coll-item">
-                                <a href="/walk/Kepler Track" style="display: inline"><img class="badge" id="gw-badge-8" src="/static/Media/Photographs/Badges/blank_badge_8.png"></a>
-                            </div>
-                            <div class="badge-coll-item" >
-                                <a href="/walk/Milford Track" style="display: inline"><img class="badge" id="gw-badge-9" src="/static/Media/Photographs/Badges/blank_badge_9.png"></a>
+                                <a href="/walk/Kepler Track" style="display: inline"><img class="badge" id="gw-badge-8"
+                                                                                          src="/static/Media/Photographs/Badges/blank_badge_8.png"></a>
                             </div>
                             <div class="badge-coll-item">
-                                <a href="/walk/Rakiura Track" style="display: inline"><img class="badge" id="gw-badge-10" src="/static/Media/Photographs/Badges/blank_Rakiura.png"></a>
+                                <a href="/walk/Milford Track" style="display: inline"><img class="badge" id="gw-badge-9"
+                                                                                           src="/static/Media/Photographs/Badges/blank_badge_9.png"></a>
+                            </div>
+                            <div class="badge-coll-item">
+                                <a href="/walk/Rakiura Track" style="display: inline"><img class="badge"
+                                                                                           id="gw-badge-10"
+                                                                                           src="/static/Media/Photographs/Badges/blank_Rakiura.png"></a>
                             </div>
                         </div>
                     </div>
-                    {# ----------Manage my trips button linkk-------------#}
-                    <a href="/my_trips" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect manage-trips-button">
-                        Manage My Trips
-                    </a>
                 </div>
             </section>
 
